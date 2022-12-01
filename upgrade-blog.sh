@@ -1,5 +1,4 @@
 #!/bin/bash
-cd edit
 mkdocs build --clean
 rm -rf site/assets/
 rm -rf site/index.html
