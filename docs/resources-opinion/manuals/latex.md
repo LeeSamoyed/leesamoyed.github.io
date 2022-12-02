@@ -8,7 +8,8 @@
 
 ### 小写字母：
 
-
+| 语法 | 效果 |
+| - | - |
 | \\alpha | $\alpha$ |
 | \\beta  | $\beta$ |
 | \\gamma  | $\gamma$ |
@@ -39,6 +40,8 @@
 
 ### 大写字母：
 
+| 语法 | 效果 |
+| - | - |
 | \\Gamma | $\Gamma$ |
 | \\Delta | $\Delta$  |
 | \\Theta | $\Theta$  |
@@ -54,6 +57,8 @@
 
 ### 异性字母：
 
+| 语法 | 效果 |
+| - | - |
 | \\epsilon    \\varepsilon | $\epsilon $ $\varepsilon$ |
 | \\Theta    \\theta    \\vartheta | $\Theta $ $\theta $ $\vartheta$ |
 | \\kappa    \\varkappa | $\kappa $ $\varkappa$ |
@@ -65,11 +70,15 @@
 
 ### 已经停用字母：
 
+| 语法 | 效果 |
+| - | - |
 | \\digamma| $\digamma$ |
 
 
 # 五、希腊语和希伯来语：
 
+| 语法 | 效果 |
+| - | - |
 | \\varGamma   | $\varGamma$ |
 | \\varSigma   | $\varSigma$  |
 | \\varTheta   | $\varTheta$  |
@@ -96,6 +105,8 @@
 
 ### 上标下标积分等：
 
+| 名称 | 语法 | 效果 |
+| - | - | - |
 | 上标 | a^{bc} | $a^{bc}$ |
 | 下标 | a_{bc}  | $a_{bc}$ |
 | 结合上下标 | a_{bc}^{de}  | $a_{bc}^{de} |
@@ -136,8 +147,9 @@
 
 ### 括号：
 
+| 名称 | 语法 | 效果 |
+| - | - | - |
 | 圆括号，小括号                                               | \\left( \\frac{a}{b} \\right)                                | ![LaTeX技巧189：LaTeX括号总结](http://upload.wikimedia.org/math/2/9/0/2905969500b40b2f2c7078206e7e0e81.png "LaTeX技巧189：LaTeX括号总结") |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 方括号，中括号                                               | \\left[ \\frac{a}{b} \\right]                                | ![LaTeX技巧189：LaTeX括号总结](http://upload.wikimedia.org/math/8/5/8/8585c96f355f7e301fd5143bea32efaf.png "LaTeX技巧189：LaTeX括号总结") |
 | 花括号，大括号                                               | \\left\\{ \\frac{a}{b} \\right\\}                            | ![LaTeX技巧189：LaTeX括号总结](http://upload.wikimedia.org/math/c/4/d/c4d4af6bab9a0e6532dddd50e7d27158.png "LaTeX技巧189：LaTeX括号总结") |
 | 角括号                                                       | \\left \\langle \\frac{a}{b} \\right \\rangle                | ![LaTeX技巧189：LaTeX括号总结](http://upload.wikimedia.org/math/d/0/6/d06e733ce705ed26a7e048dbd2945371.png "LaTeX技巧189：LaTeX括号总结") |
@@ -179,8 +191,9 @@
 
 ### 函数：
 
+| 语法 | 效果 |
+| - | - |
 | \\sin\\theta                                                 | ![\sin\!\theta](http://upload.wikimedia.org/wikipedia/zh/math/0/9/3/09370ac60fb75f6555aad6ce6fa51284.png) |
-| ---- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | \\arcsin\\frac{L}{r}                                         | ![\arcsin\frac{L}{r}](http://upload.wikimedia.org/wikipedia/zh/math/5/9/c/59c47fbda47ed6da13841e777d49dd4e.png) |
 | \\sinh g                                                     | ![\sinh\!g](http://upload.wikimedia.org/wikipedia/zh/math/6/6/2/662b4f90832dea02dcee532c226df3bf.png) |
 | \\operatorname{sh}j                                          | ![\operatorname{sh}j](http://upload.wikimedia.org/wikipedia/zh/math/d/9/a/d9a5b98974c7360119bf868fc1c5c544.png) |
@@ -219,6 +232,7 @@
 
 
 ### 符号：
+
 
 | 集合                                                         | \\forall                                                     | ![\forall](http://upload.wikimedia.org/wikipedia/zh/math/d/4/d/d4d49bead125261b226eaa867bd016ce.png) |                                                              |
 | ------------------------------------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -335,7 +349,9 @@
 
 ### 特殊符号：
 
-| \\sim           |                                                              |
+| 语法 | 效果 |
+| - | - |
+| \\sim           | $\sim$ |
 | \\eth           | ![\eth](http://upload.wikimedia.org/wikipedia/zh/math/2/d/a/2dacecd4fffb3d4fdea52ed937b50c81.png) |
 | \\star          | ![\star](http://upload.wikimedia.org/wikipedia/zh/math/2/3/d/23d64887f9c2add7a296e5b99acbbdfb.png) |
 | \\S             | ![\S](http://upload.wikimedia.org/wikipedia/zh/math/5/d/6/5d60d7c05a80628104ef1bd0718eb3fc.png) |
@@ -392,8 +408,9 @@
 
 ### 计算公式：
 
+| 名称 | 语法 | 效果 |
+| - | - | - |
 | 取余 | \\pmod{m}    | ![\pmod{m}](http://upload.wikimedia.org/wikipedia/zh/math/1/6/8/1680ea379fd6694b28ae04a34e77d8e6.png) |
-| ---- | :----------- | :----------------------------------------------------------- |
 |      | a \\bmod b   | ![a \bmod b](http://upload.wikimedia.org/wikipedia/zh/math/5/4/e/54efbc7c212108a4011e84c69cdd91f8.png) |
 | 微分 | \\nabla      | ![\nabla](http://upload.wikimedia.org/wikipedia/zh/math/f/e/3/fe3a83e41074834731743ab803cd4936.png) |
 |      | \\partial x  | ![\partial x](http://upload.wikimedia.org/wikipedia/zh/math/2/8/d/28ddb3e82115d069796faf6356e2dbf6.png) |
@@ -404,8 +421,9 @@
 
 ### 字体：
 
+| 名称 | 语法 | 效果 |
+| - | - | - |
 | 强调       | \\emph{}         | texttext |
-| ---------- | ---------------- | -------- |
 | 加粗       | \\textbf{a}      |          |
 | 公式加粗   | \\mathbf{a]      |          |
 | 字母->文本 | \\mathrm{a}      |          |
