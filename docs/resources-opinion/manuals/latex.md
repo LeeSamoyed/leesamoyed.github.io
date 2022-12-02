@@ -423,17 +423,17 @@
 
 | 名称 | 语法 | 效果 |
 | - | - | - |
-| 强调       | \\emph{}         | texttext |
-| 加粗       | \\textbf{a}      |          |
-| 公式加粗   | \\mathbf{a]      |          |
-| 字母->文本 | \\mathrm{a}      |          |
-| 空心符号   | \\mathbb{a}      |          |
-| 花体符号   | \\mathcal{a}     |          |
-| 彩色字体   | {\\color{blue}a} |          |
-| 三角       | \\hat{a}         |          |
-| 横线       | \\bar{a}         |          |
-| 点         | \\dot{a}         |          |
-| 向量       | \\vec{a}         |          |
+| 强调       | \\emph{}         | $\emph{a}$ |
+| 加粗       | \\textbf{a}      | $\textbf{a}$ |
+| 公式加粗   | \\mathbf{a}      | $\mathbf{a}$ |
+| 字母->文本 | \\mathrm{a}      | $\mathrm{a}$ |
+| 空心符号   | \\mathbb{a}      | $\mathbb{a}$ |
+| 花体符号   | \\mathcal{a}     | $\mathcal{a}$ |
+| 彩色字体   | \\color{blue}a} | $\color{{blue}a}$ |
+| 三角       | \\hat{a}         | $\hat{a}$ |
+| 横线       | \\bar{a}         | $\bar{a}$ |
+| 点         | \\dot{a}         | $\dot{a}$ |
+| 向量       | \\vec{a}         | $\vec{a}$ |
 
 ***
 
