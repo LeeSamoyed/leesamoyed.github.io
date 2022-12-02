@@ -111,6 +111,9 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
 
+  - toc: # Subsection
+      permalink: true
+
   - pymdownx.arithmatex: # Mathematical Formula
       generic: true
 
