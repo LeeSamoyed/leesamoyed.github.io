@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdocs build --clean
-cp site/assets/javascripts ./assets/javascripts
-cp site/assets/stylesheets ./assets/stylesheets
+cp -r site/assets/javascripts ./assets/javascripts
+cp -r site/assets/stylesheets ./assets/stylesheets
 rm -rf site/assets/
 rm -rf site/index.html
 rm -rf site/404.html
