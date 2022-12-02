@@ -111,6 +111,8 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
 
+  - toc: # 折叠导航
+      permalink: true
   - pymdownx.arithmatex: # Mathematical Formula
       generic: true
 
@@ -141,81 +143,81 @@ nav:
   - WikiIntro: wikiintro.md
   - About Me-关于我: aboutme.md
   - 程序&算法&设计:
-    - '编程语言':
+    - 编程语言:
       - Python Crash Course: programming-algorithm-design/programming-language/python-crash-course.md
       - C++ Primer: programming-algorithm-design/programming-language/c-primer.md
       - 环境搭建: programming-algorithm-design/programming-language/environment-build.md
-    - '程序算法':
+    - 程序算法:
       - 基本数据结构: programming-algorithm-design/algorithm/data-structure-basic.md
-    - '设计模式':
+    - 设计模式:
       - 大话设计模式: programming-algorithm-design/design-pattern/westward-design-patterns.md
   - 研发:
-    - · 系统设计:
-      - + 解耦: research-development/system-design/decoupling.md
-      - + 扩展性: research-development/system-design/extensibility.md
-      - + 模块化设计: research-development/system-design/modular-design.md
-      - + 健壮性: research-development/system-design/robustness.md
-      - + 简化操作: research-development/system-design/simplified-operation.md
-    - · 需求分析与设计:
-      - + 分析与设计: research-development/requirements-analysis-design/analysis-design.md
-    - · 业务逻辑:
-      - + 请求的安全与健全: research-development/business-logic/soundness-and-security-of-requests.md
-      - + 唯一数据插入: research-development/business-logic/unique-insert.md
-      - + 标识位的利用: research-development/business-logic/flag-is-important.md
-      - + 算法的引入: research-development/business-logic/algorithm.md
+    - 系统设计:
+      - 解耦: research-development/system-design/decoupling.md
+      - 扩展性: research-development/system-design/extensibility.md
+      - 模块化设计: research-development/system-design/modular-design.md
+      - 健壮性: research-development/system-design/robustness.md
+      - 简化操作: research-development/system-design/simplified-operation.md
+    - 需求分析与设计:
+      - 分析与设计: research-development/requirements-analysis-design/analysis-design.md
+    - 业务逻辑:
+      - 请求的安全与健全: research-development/business-logic/soundness-and-security-of-requests.md
+      - 唯一数据插入: research-development/business-logic/unique-insert.md
+      - 标识位的利用: research-development/business-logic/flag-is-important.md
+      - 算法的引入: research-development/business-logic/algorithm.md
   - 嵌入式:
-    - · 开发板:
-      - + Jetson + 视觉: embedded/development-board/jetson-vision.md
+    - 开发板:
+      - Jetson + 视觉: embedded/development-board/jetson-vision.md
   - 云原生:
-    - · Cloud Native: cloud-native/about.md
-    - · VPC: cloud-native/vpc.md
-    - · Docker: cloud-native/docker.md
-    - · Kubernetes: cloud-native/k8s.md
-    - · DevOps: cloud-native/devops.md
-    - · Micro Services: cloud-native/micro-services.md
-    - · Service Mesh: cloud-native/service-mesh.md
-    - · 工具:
-      - + KuberShpere: cloud-native/platform/kubersphere.md
-      - + Jenkins: cloud-native/platform/jenkins.md
-    - · 搭建&维护:
-      - + AKS SelfHost Gitpod: cloud-native/build-ops/aks-selfhost-gitpod.md
+    - Cloud Native: cloud-native/about.md
+    - VPC: cloud-native/vpc.md
+    - Docker: cloud-native/docker.md
+    - Kubernetes: cloud-native/k8s.md
+    - DevOps: cloud-native/devops.md
+    - Micro Services: cloud-native/micro-services.md
+    - Service Mesh: cloud-native/service-mesh.md
+    - 工具:
+      - KuberShpere: cloud-native/platform/kubersphere.md
+      - Jenkins: cloud-native/platform/jenkins.md
+    - 搭建&维护:
+      - AKS SelfHost Gitpod: cloud-native/build-ops/aks-selfhost-gitpod.md
   - 网络安全:
-    - · 工具:
-      - + ECS代理池: cyber-security/tools/ecs-proxypool.md
+    - 工具:
+      - ECS代理池: cyber-security/tools/ecs-proxypool.md
     - 网络安全待整理更新: cyber-security/start.md
   - 机器&深度学习:
-    - · 论文整理: machine-deep-learning/paper-arrangement.md
-    - · 数据集: machine-deep-learning/databases.md
+    - 论文整理: machine-deep-learning/paper-arrangement.md
+    - 数据集: machine-deep-learning/databases.md
   - 分布式系统:
-    - · 分布式一致性算法: distributed-systems/distributed-consistency-algorithm.md
+    - 分布式一致性算法: distributed-systems/distributed-consistency-algorithm.md
   - 代码改进:
-    - · QDUOJ 青岛大学开源OJ系统: code-improvements/qduoj.md
+    - QDUOJ 青岛大学开源OJ系统: code-improvements/qduoj.md
   - 数理:
-    - · 微积分:
-      - + 微积分待更新: mathematical-theory/calculus/start.md
+    - 微积分:
+      - 微积分待更新: mathematical-theory/calculus/start.md
   - 资源&心得:
-    - · 学习路线:
-      - + 纯开发: resources-opinion/study-routes/develop-research.md
-      - + 设计模式: resources-opinion/study-routes/design-pattern.md
-      - + 云原生: resources-opinion/study-routes/cloud-native.md
-      - + 网络安全: resources-opinion/study-routes/cyber-security.md
-      - + 大数据: resources-opinion/study-routes/big-data.md
-      - + 机器学习: resources-opinion/study-routes/machine-learning.md
-      - + 深度学习: resources-opinion/study-routes/deep-learning.md
-      - + 爬虫: resources-opinion/study-routes/crawler.md
-      - + 嵌入式开发: resources-opinion/study-routes/embedded-development.md
-      - + 数学理论: resources-opinion/study-routes/mathematical-theory.md
-      - + 论文写作: resources-opinion/study-routes/paper.md
-    - · 使用手册:
-      - + Docker: resources-opinion/manuals/docker.md
-      - + Latex: resources-opinion/manuals/latex.md
-    - · 效率提升:
-      - + MacOS自我修养: resources-opinion/efficiency-improvement/macos.md
-      - + 通用自我修养: resources-opinion/efficiency-improvement/common.md
-    - · 操作系统相关问题: 
-      - + LinuxOS: resources-opinion/operation-system-issue/linuxos.md
-      - + WindowsOS: resources-opinion/operation-system-issue/windowsos.md
+    - 学习路线:
+      - 纯开发: resources-opinion/study-routes/develop-research.md
+      - 设计模式: resources-opinion/study-routes/design-pattern.md
+      - 云原生: resources-opinion/study-routes/cloud-native.md
+      - 网络安全: resources-opinion/study-routes/cyber-security.md
+      - 大数据: resources-opinion/study-routes/big-data.md
+      - 机器学习: resources-opinion/study-routes/machine-learning.md
+      - 深度学习: resources-opinion/study-routes/deep-learning.md
+      - 爬虫: resources-opinion/study-routes/crawler.md
+      - 嵌入式开发: resources-opinion/study-routes/embedded-development.md
+      - 数学理论: resources-opinion/study-routes/mathematical-theory.md
+      - 论文写作: resources-opinion/study-routes/paper.md
+    - 使用手册:
+      - Docker: resources-opinion/manuals/docker.md
+      - Latex: resources-opinion/manuals/latex.md
+    - 效率提升:
+      - MacOS自我修养: resources-opinion/efficiency-improvement/macos.md
+      - 通用自我修养: resources-opinion/efficiency-improvement/common.md
+    - 操作系统相关问题: 
+      - LinuxOS: resources-opinion/operation-system-issue/linuxos.md
+      - WindowsOS: resources-opinion/operation-system-issue/windowsos.md
   - 知识:
-    - · 知识清单: knowledge/knowledge-list.md
-    - · 新概念:
-      - + 元宇宙: knowledge/new-concept/metaverse.md
+    - 知识清单: knowledge/knowledge-list.md
+    - 新概念:
+      - 元宇宙: knowledge/new-concept/metaverse.md
