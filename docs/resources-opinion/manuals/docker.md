@@ -6,10 +6,6 @@
 
 ***
 
-资料:
-
-转自：[https://segmentfault.com/a/1190000010219967](https://segmentfault.com/a/1190000010219967)
-
 ## Docker基础命令
 
 ### 查看docker版本信息
@@ -180,3 +176,9 @@ $ docker login
 ```
 $ docker push xiaoming/centos:v1
 ```
+
+***
+
+资料:
+
+转自：[https://segmentfault.com/a/1190000010219967](https://segmentfault.com/a/1190000010219967)
