@@ -111,8 +111,6 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
 
-  - toc: # 折叠导航
-      permalink: true
   - pymdownx.arithmatex: # Mathematical Formula
       generic: true
 
@@ -144,9 +142,9 @@ nav:
   - About Me-关于我: aboutme.md
   - 程序&算法&设计:
     - 编程语言:
-      - Python Crash Course: programming-algorithm-design/programming-language/python-crash-course.md
-      - C++ Primer: programming-algorithm-design/programming-language/c-primer.md
-      - 环境搭建: programming-algorithm-design/programming-language/environment-build.md
+      - 'Python Crash Course': 'programming-algorithm-design/programming-language/python-crash-course.md'
+      - 'C++ Primer': 'programming-algorithm-design/programming-language/c-primer.md'
+      - '环境搭建': 'programming-algorithm-design/programming-language/environment-build.md'
     - 程序算法:
       - 基本数据结构: programming-algorithm-design/algorithm/data-structure-basic.md
     - 设计模式:
