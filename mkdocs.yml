@@ -131,9 +131,6 @@ extra:
       link: https://www.yuque.com/leesamoyed
     - icon: fontawesome/brands/d-and-d
       link: http://coolmoon327.github.io/
-  palette:
-    primary: 'Purple'
-    accent: 'Deep Purple'
 
 # Page tree
 nav:
