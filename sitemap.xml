@@ -111,7 +111,72 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/start/</loc>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/area-and-slope/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/chain-rule-multiplication-rule/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/exponential-function-derivation/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/geometric-derivation/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/higher-order-derivative/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/implicit-function-derivation/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/integration-and-calculus/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/limit/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/nature-of-calculus/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/paradox-of-derivatives/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/calculus/taylor-series/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/expand/euler-formula/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/expand/exp-e/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/mathematical-theory/expand/imaginary-and-real-numbers/</loc>
          <lastmod>2022-12-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -202,6 +267,11 @@
     </url>
     <url>
          <loc>https://leesamoyed.github.io/resources-opinion/manuals/docker/</loc>
+         <lastmod>2022-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/resources-opinion/manuals/git/</loc>
          <lastmod>2022-12-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
