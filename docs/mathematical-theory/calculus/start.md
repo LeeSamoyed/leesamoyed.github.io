@@ -1,3 +1,3 @@
 # 公式测试
 
-$$x_y$$
+$p(x|y) = \frac{p(y|x)p(x)}{p(y)}$, \(p(x|y) = \frac{p(y|x)p(x)}{p(y)}\).
