@@ -17,7 +17,7 @@ theme:
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    - navigation.expand # sidebar 侧栏收缩
     - navigation.indexes
     # - navigation.instant
     # - navigation.prune
@@ -39,8 +39,8 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: Purple
+      accent: Deep Purple
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -79,7 +79,7 @@ markdown_extensions:
   - codehilite:
       guess_lang: false
       linenums: false
-  - toc:
+  - toc: # Subsection
       permalink: true
   - pymdownx.arithmatex:
       generic: true
@@ -110,10 +110,6 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist
   - pymdownx.tilde
-
-  - toc: # Subsection
-      permalink: true
-
   - pymdownx.arithmatex: # Mathematical Formula
       generic: true
 
@@ -134,9 +130,7 @@ extra:
       link: https://www.yuque.com/leesamoyed
     - icon: fontawesome/brands/d-and-d
       link: http://coolmoon327.github.io/
-  palette:
-    primary: 'Purple'
-    accent: 'Deep Purple'
+
 
 # Page tree
 nav:
@@ -145,9 +139,9 @@ nav:
   - About Me-关于我: aboutme.md
   - 程序&算法&设计:
     - 编程语言:
-      - 'Python Crash Course': 'programming-algorithm-design/programming-language/python-crash-course.md'
-      - 'C++ Primer': 'programming-algorithm-design/programming-language/c-primer.md'
-      - '环境搭建': 'programming-algorithm-design/programming-language/environment-build.md'
+      - Python Crash Course: 'programming-algorithm-design/programming-language/python-crash-course.md'
+      - C++ Primer: 'programming-algorithm-design/programming-language/c-primer.md'
+      - 环境搭建: 'programming-algorithm-design/programming-language/environment-build.md'
     - 程序算法:
       - 基本数据结构: programming-algorithm-design/algorithm/data-structure-basic.md
     - 设计模式:
