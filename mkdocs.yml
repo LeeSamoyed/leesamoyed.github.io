@@ -111,6 +111,8 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
 
+  - pymdownx.arithmatex # Mathematical Formula
+
 # Customization
 extra:
   analytics:
