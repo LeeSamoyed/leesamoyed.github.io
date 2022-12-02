@@ -429,7 +429,7 @@
 | 字母->文本 | \\mathrm{a}      | $\mathrm{a}$ |
 | 空心符号   | \\mathbb{a}      | $\mathbb{a}$ |
 | 花体符号   | \\mathcal{a}     | $\mathcal{a}$ |
-| 彩色字体   | \\color{blue}a} | $\color{{blue}a}$ |
+| 彩色字体   | \\color{{blue}a} | $\color{{blue}a}$ |
 | 三角       | \\hat{a}         | $\hat{a}$ |
 | 横线       | \\bar{a}         | $\bar{a}$ |
 | 点         | \\dot{a}         | $\dot{a}$ |
