@@ -1,5 +1,7 @@
 # ECS 代理池配置
 
+开发完了，自己扫一扫，封一封
+
 ## 代理池的配置前提：
 - 代理池的原始代码位置：https://github.com/Python3WebSpider/ProxyPool
 - 安装步骤

@@ -71,7 +71,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/cyber-security/start/</loc>
+         <loc>https://leesamoyed.github.io/cyber-security/code-audit/audit-process/</loc>
          <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -86,12 +86,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://leesamoyed.github.io/cyber-security/penetration-test/cms/</loc>
+         <lastmod>2022-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cyber-security/penetration-test/information-gathering/</loc>
+         <lastmod>2022-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cyber-security/penetration-test/owasp-top10/</loc>
+         <lastmod>2022-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://leesamoyed.github.io/cyber-security/tools/ecs-proxypool/</loc>
          <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://leesamoyed.github.io/cyber-security/tools/preemptive-server-configuration/</loc>
+         <lastmod>2022-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cyber-security/tools/tool-extension/</loc>
          <lastmod>2022-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>

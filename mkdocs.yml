@@ -177,14 +177,19 @@ nav:
     - 搭建&维护:
       - AKS SelfHost Gitpod: cloud-native/build-ops/aks-selfhost-gitpod.md
   - 网络安全:
+    - 渗透测试:
+      - 信息收集: cyber-security/penetration-test/information-gathering.md
+      - OWASP-Top10: cyber-security/penetration-test/owasp-top10.md
+      - CMS: cyber-security/penetration-test/cms.md
     - 代码审计:
+      - 审计流程: /cyber-security/code-audit/audit-process.md
       - 危险函数关键字: cyber-security/code-audit/dangerous-function-keyword.md
     - 爬虫:
       - 爬虫综述: cyber-security/crawler/summarize.md
     - 工具:
       - 抢占式服务器配置: cyber-security/tools/preemptive-server-configuration.md
       - ECS代理池: cyber-security/tools/ecs-proxypool.md
-    - 网络安全待整理更新: cyber-security/start.md
+      - 工具扩展: cyber-security/tools/tool-extension.md
   - 机器&深度学习:
     - 论文整理: machine-deep-learning/paper-arrangement.md
     - 数据集: machine-deep-learning/databases.md
