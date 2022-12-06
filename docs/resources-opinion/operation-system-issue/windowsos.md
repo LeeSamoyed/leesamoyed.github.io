@@ -9,4 +9,4 @@ cl : Command line error D8021 : invalid numeric argument '/Wno-cpp'
 ```
 
 解决方法:
-![windowsos-cocoapi-vc14](../../../assets/images/resources-opinion/operation-system-issue/windowsos-cocoapi-vc14.png)
+![windowsos-cocoapi-vc14](/../assets/images/resources-opinion/operation-system-issue/windowsos-cocoapi-vc14.png)

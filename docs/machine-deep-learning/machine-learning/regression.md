@@ -42,7 +42,7 @@
 
 ##### 线性拟合是用线去拟合样本点：
 
-![least -square-method.png](../../assets/images/machine-deep-learning/machine-learning/least -square-method.png)
+![least -square-method.png](/assets/images/machine-deep-learning/machine-learning/least -square-method.png)
 
 假设：$D=\{(x_1,y_1),(x_2,y_2),...,(x_N,y_N)\}$
 其中：$x_i \epsilon R^p$ ，$y_i \epsilon R$ ，$i \epsilon 1,2,...,N$
@@ -220,7 +220,7 @@ $\hat{W}=(X^TX+\lambda I)^{-1}X^TY$
 ### 正则化-岭回归-贝叶斯角度：
 
 频率角度：
-![ridge-regression-0.png](../../assets/images/machine-deep-learning/machine-learning/ridge-regression-0.png)
+![ridge-regression-0.png](/assets/images/machine-deep-learning/machine-learning/ridge-regression-0.png)
 贝叶斯角度：
 先验：$W \sim N(0,\sigma_0^2)$（此时$W$不再是常数）
 后验：$p(W|y)=\frac{p(y|W)\cdot p(W)}{p(y)}$
@@ -236,7 +236,7 @@ $=\arg \min \limits_{W}(-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2
 这里省略了$\mathop \Sigma \limits_{i=1} \limits^{N}$完全写出来如下：
 $\hat{W}=\arg\min\mathop \Sigma \limits_{i=1} \limits^{N}(\frac{1}{2}(y_i -W^Tx_i)^2+\frac{\sigma^2}{\sigma_0^2||w||^2_2})$
 和$J(W)$一样 
-![ridge-regression-1.png](../../assets/images/machine-deep-learning/machine-learning/ridge-regression-1.png)
+![ridge-regression-1.png](/assets/images/machine-deep-learning/machine-learning/ridge-regression-1.png)
 Regularized$LSE \Leftrightarrow MAP$（noise为Gaussian Dist）（prior也是GD）
 
 线性回归：
