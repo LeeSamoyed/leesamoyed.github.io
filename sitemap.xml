@@ -146,6 +146,76 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/attention-mechanism/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/computer-vision/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/natural-language-processing/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/neural-architecture-search/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/open-source-library/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/time-series-prediction/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning-pytorch-object-detection/pytorch-basic/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning-pytorch-object-detection/pytorch-object-detection/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/machine-learning/frequentist%26bayesian/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/machine-learning/gaussian-distribution/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/machine-learning/linear-classification/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/machine-learning/regression/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/statistical-methods/k-nearest-neighbor/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/machine-deep-learning/statistical-methods/perceptron/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://leesamoyed.github.io/mathematical-theory/calculus/area-and-slope/</loc>
          <lastmod>2022-12-06</lastmod>
          <changefreq>daily</changefreq>
