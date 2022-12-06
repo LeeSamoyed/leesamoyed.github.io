@@ -461,3 +461,7 @@ json_string = model.to_json()
 model = model_from_json(json_string)
 """
 ```
+
+***
+学习资料:
+- [莫烦Keras](https://www.bilibili.com/video/BV1TW411Y7HU/?spm_id_from=333.999.0.0)
