@@ -8,7 +8,7 @@
 
 Wiki主要用于整理学习成果、学习路线以及分享一些我觉得好玩儿的东西。这是一个快乐的攻城狮的Wiki~~~
 
-任何问题可以直接联系我 <a href="mailto:leesamoyed@163.com">E-mail</a>
+任何问题(资料过期、内存存误、学习交流)可以直接联系我 <a href="mailto:leesamoyed@163.com">E-mail</a>
 
 ***
 
