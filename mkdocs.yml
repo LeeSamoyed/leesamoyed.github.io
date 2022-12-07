@@ -132,7 +132,7 @@ extra:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home: index.html
   - WikiIntro: wikiintro.md
   - About Me-关于我: aboutme.md
   - 编程&算法:
