@@ -164,13 +164,14 @@ nav:
     - 开发板:
       - Jetson + 视觉: embedded/development-board/jetson-vision.md
   - 云原生:
-    - 云原生综述: cloud-native/summarize.md
-    - VPC: cloud-native/vpc.md
-    - Docker: cloud-native/docker.md
-    - Kubernetes: cloud-native/k8s.md
-    - DevOps: cloud-native/devops.md
-    - Micro Services: cloud-native/micro-services.md
-    - Service Mesh: cloud-native/service-mesh.md
+    - 体系:
+      - 云原生综述: cloud-native/system/summarize.md
+      - VPC: cloud-native/system/vpc.md
+      - Docker: cloud-native/system/docker.md
+      - Kubernetes: cloud-native/system/k8s.md
+      - DevOps: cloud-native/system/devops.md
+      - Micro Services: cloud-native/system/micro-services.md
+      - Service Mesh: cloud-native/system/service-mesh.md
     - 工具:
       - KuberShpere: cloud-native/platform/kubersphere.md
       - Jenkins: cloud-native/platform/jenkins.md
