@@ -198,6 +198,7 @@ nav:
       - 回归: machine-deep-learning/machine-learning/regression.md
       - 线性分类: machine-deep-learning/machine-learning/linear-classification.md
     - 深度学习:
+      - 基本概念: machine-deep-learning/deep-learning/concept.md
       - 神经网络架构搜索: machine-deep-learning/deep-learning/neural-architecture-search.md
       - 注意力机制: machine-deep-learning/deep-learning/attention-mechanism.md
       - 计算机视觉: machine-deep-learning/deep-learning/computer-vision.md

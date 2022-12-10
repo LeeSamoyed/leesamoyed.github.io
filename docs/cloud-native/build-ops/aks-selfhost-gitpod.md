@@ -35,7 +35,7 @@ az upgrade
 brew install helm
 brew install jq
 
-# 和windows方法一样配置 .env 文件
+# 和windows方法一样下载 code 配置 .env 文件
 
 # 安装
 sh setup.sh
