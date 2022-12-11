@@ -6,7 +6,7 @@ Hi! 我是李屹(Yam Li)
 
 硕士就读于中国民用航空飞行学院(CAFUC)-计算机学院-交通运输专业
 
-一个热爱 **软件开发** 与 **网络安全** 的攻城狮，当前正在研究这些好玩儿的：
+一个热爱 **研发** 与 **网安** 的攻城狮，当前正在研究这些好玩儿的：
 
 - CloudNative (Docker & DevOps & Jenkins & VPC & K8S) | RDSec Group | Secure Dev Zone (Microsoft Azure etc.) Team
 - Building Object Detection System On Large-scale Data
@@ -14,8 +14,8 @@ Hi! 我是李屹(Yam Li)
 
 ### Internship Experience
 
-- 江苏绿盟安全科技有限公司, 安全服务工程师, 安全开发、代码审计、渗透测试, 2022.06-2022.9
-- 趋势科技（中国）有限公司南京分公司, R&D Engineer, 系统解耦设计、后端开发重构、云原生, 2022.09-至今
+| 江苏绿盟安全科技有限公司 | 安全服务工程师 | 安全开发、代码审计、渗透测试 | 2022.06-2022.9 |
+| 趋势科技（中国）有限公司南京分公司 | R&D Engineer | 系统解耦设计、后端开发重构、云原生 | 2022.09-至今 |
 
 ### Publication
 

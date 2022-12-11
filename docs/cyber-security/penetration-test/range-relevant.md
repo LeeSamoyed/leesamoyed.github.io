@@ -33,3 +33,7 @@
 
 - [网址](https://www.mozhe.cn/bug)
 - 自解: SQL手工注入漏洞测试(Sql Server数据库) SQL手工注入漏洞测试(Access数据库) 命令注入执行分析 PHP代码分析溯源 Webmin未经身份验证的远程代码执行
+
+## BUUCTF
+
+- 自解: [RoarCTF 2019]Easy Java 1
