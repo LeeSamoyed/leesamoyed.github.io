@@ -137,21 +137,22 @@ nav:
   - About Me-关于我: aboutme.md
   - 编程&算法:
     - 编程语言:
-      - Python Crash Course: 'programming-algorithm/programming-language/python-crash-course.md'
-      - C++ Primer: 'programming-algorithm/programming-language/c-primer.md'
-      - 环境搭建: 'programming-algorithm/programming-language/environment-build.md'
-    - 程序算法:
+      - Python Crash Course: programming-algorithm/programming-language/python-crash-course.md
+      - Python基础扩展 优课达: programming-algorithm/programming-language/python-extension-ykd.md
+      - C++ Primer: programming-algorithm/programming-language/c-primer.md
+      - 环境搭建: programming-algorithm/programming-language/environment-build.md
+    - ★ 程序算法:
       - 基本数据结构: programming-algorithm/algorithm/data-structure-basic.md
-  - 研发&设计:
-    - 系统设计:
+  - ★ 研发&设计:
+    - ★ 系统设计:
       - 解耦: research-development-design/system-design/decoupling.md
       - 扩展性: research-development-design/system-design/extensibility.md
       - 模块化设计: research-development-design/system-design/modular-design.md
       - 健壮性: research-development-design/system-design/robustness.md
       - 简化操作: research-development-design/system-design/simplified-operation.md
-    - 需求分析与设计:
+    - ★ 需求分析与设计:
       - 分析与设计: research-development-design/requirements-analysis-design/analysis-design.md
-    - 业务逻辑:
+    - ★ 业务逻辑:
       - 请求的安全与健全: research-development-design/business-logic/soundness-and-security-of-requests.md
       - 唯一数据插入: research-development-design/business-logic/unique-insert.md
       - 标识位的利用: research-development-design/business-logic/flag-is-important.md
@@ -160,10 +161,10 @@ nav:
       - 大话设计模式: research-development-design/design-pattern/westward-design-patterns.md
     - 开发框架:
       - 框架综述: research-development-design/development-framework/summarize.md
-  - 嵌入式:
-    - 开发板:
+  - ★ 嵌入式:
+    - ★ 开发板:
       - Jetson + 视觉: embedded/development-board/jetson-vision.md
-  - 云原生:
+  - ★ 云原生:
     - 体系:
       - 云原生综述: cloud-native/system/summarize.md
       - VPC: cloud-native/system/vpc.md
@@ -175,13 +176,14 @@ nav:
     - 工具:
       - KuberShpere: cloud-native/platform/kubersphere.md
       - Jenkins: cloud-native/platform/jenkins.md
-    - 搭建&维护:
+    - ★ 搭建&维护:
       - AKS SelfHost Gitpod: cloud-native/build-ops/aks-selfhost-gitpod.md
   - 网络安全:
     - 渗透测试:
       - 信息收集: cyber-security/penetration-test/information-gathering.md
       - OWASP-Top10: cyber-security/penetration-test/owasp-top10.md
       - CMS: cyber-security/penetration-test/cms.md
+      - 靶场相关: cyber-security/penetration-test/range-relevant.md
     - 代码审计:
       - 审计流程: cyber-security/code-audit/audit-process.md
       - 危险函数关键字: cyber-security/code-audit/dangerous-function-keyword.md
@@ -190,7 +192,7 @@ nav:
     - 工具:
       - 抢占式服务器配置: cyber-security/tools/preemptive-server-configuration.md
       - ECS代理池: cyber-security/tools/ecs-proxypool.md
-      - 工具扩展: cyber-security/tools/tool-extension.md
+      - 工具相关: cyber-security/tools/tool-relevant.md
   - 机器&深度学习:
     - 机器学习:
       - 频率派&贝叶斯派: machine-deep-learning/machine-learning/frequentist&bayesian.md
@@ -215,8 +217,8 @@ nav:
     - 数据集整理: machine-deep-learning/databases.md
   - 分布式系统:
     - 分布式一致性算法: distributed-systems/distributed-consistency-algorithm.md
-  - 代码改进:
-    - QDUOJ 青岛大学开源OJ系统: code-improvements/qduoj.md
+  - ★ 代码改进:
+    - ★ QDUOJ 青岛大学开源OJ系统: code-improvements/qduoj.md
   - 数理:
     - 微积分:
       - 微积分的本质: mathematical-theory/calculus/nature-of-calculus.md
