@@ -18,7 +18,7 @@
 
 ### 论文投递建议：
 
-[小木虫](http://muchong.com/bbs/)
+- [小木虫](http://muchong.com/bbs/)
 
 ### 论文分区查询
 
