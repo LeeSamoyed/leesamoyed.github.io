@@ -8,5 +8,10 @@
 规定一个虚数单位：$I = \sqrt{-1}$（这样当我们利用判别式计算一元二次方程式，当判别式小于0，也能拥有费实数解）
 对于实数，我们能用$i=\sqrt{-1} \quad ai(a \epsilon R)$这样我们称$ai$是虚数
 复平面&复数
-复数四种表示方法：①$a+bi$ ②$a(\cos\varphi+i \sin\varphi)$ ③$ae^{i \varphi}$ ④$e^{i\varphi}=-1+0 \quad e^{i\varphi}+1=0$
+复数四种表示方法：
+
+- $a+bi$ 
+- $a(\cos\varphi+i \sin\varphi)$ 
+- $ae^{i \varphi}$ 
+- $e^{i\varphi}=-1+0 \quad e^{i\varphi}+1=0$
 
