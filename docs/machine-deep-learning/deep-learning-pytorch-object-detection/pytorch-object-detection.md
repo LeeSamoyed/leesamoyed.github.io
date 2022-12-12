@@ -37,10 +37,10 @@ def iou(boxA,boxB):
 ```
 
 - mAP计算过程
-- AP计算过程$\begin{equation*}
+- AP计算过程
 
-\begin{matrix} \int_{0}^{1} PdR\end{matrix}
-
+$\begin{equation*}
+    \begin{matrix} \int_{0}^{1} PdR\end{matrix}
 \end{equation*}$
 
 ```python

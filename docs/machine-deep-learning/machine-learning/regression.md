@@ -29,6 +29,7 @@
 一般来说，回归分析是通过规定因变量和自变量来确定变量之间的因果关系，建立回归模型，并根据实测数据来求解模型的各个参数，然后评价回归模型是否能够很好的拟合实测数据；如果能够很好的拟合，则可以根据自变量作进一步预测。
 
 例如:
+
 如果要研究质量和用户满意度之间的因果关系，从实践意义上讲，产品质量会影响用户的满意情况，因此设用户满意度为因变量，记为Y；质量为自变量，记为X。通常可以建立下面的线性关系： Y=A+BX+§
 式中：A和B为待定参数，A为回归直线的截距；B为回归直线的斜率，表示X变化一个单位时，Y的平均变化情况；§为依赖于用户满意度的随机误差项。
 对于经验回归方程： y=0.857+0.836x
@@ -45,136 +46,113 @@
 ![least -square-method.png](/assets/images/machine-deep-learning/machine-learning/least -square-method.png)
 
 假设：$D=\{(x_1,y_1),(x_2,y_2),...,(x_N,y_N)\}$
+
 其中：$x_i \epsilon R^p$ ，$y_i \epsilon R$ ，$i \epsilon 1,2,...,N$
-有：$X = (x_1,x_2,...,x_N)^T 
-=
-\begin{gathered}
-\begin{pmatrix}
-x_1^T\\x_2^T\\...\\x_N^T
-\end{pmatrix}
-\end{gathered} 
-=
-\begin{gathered}
-\begin{pmatrix} 
-x_{11} & x_{12} & ... & x_{1p}\\x_{21} & x_{22} & ... & x_{2p}\\... & ... &... & ...\\x_{N1} & x_{N2} & ... & x_{Np}
-\end{pmatrix}_{N×p}
-\end{gathered}$
+
+有：$X = (x_1,x_2,...,x_N)^T =\begin{gathered}\begin{pmatrix}x_1^T\\x_2^T\\...\\x_N^T\end{pmatrix}\end{gathered} =\begin{gathered}\begin{pmatrix} x_{11} & x_{12} & ... & x_{1p}\\x_{21} & x_{22} & ... & x_{2p}\\... & ... &... & ..\\x_{N1} & x_{N2} & ... & x_{Np}\end{pmatrix}_{N×p}\end{gathered}$
+
 事实上要拟合的曲线：$f(w) = w^Tx+w_0x_0$
-其中：$W
-=
-\begin{gathered}
-\begin{pmatrix} 
-w_1\\w_2\\...\\w_p
-\end{pmatrix}
-\end{gathered}$（在这里$x_0=1$所以我们更倾向于把它写入$W^Tx$）
+
+其中：$W=\begin{gathered}\begin{pmatrix} w_1\\w_2\\...\\w_p\end{pmatrix}\end{gathered}$（在这里 $x_0=1$ 所以我们更倾向于把它写入 $W^Tx$ ）
 
 ##### 最小二乘估计：
 
-最小二乘法定义：$L(w)
-= \mathop\Sigma\limits_{i=1}\limits^{N}w^T||x_i-y_i||^2
-=
-\mathop\Sigma\limits_{i=1}\limits^{N}w^T(x_i-y_i)^2
-=
-(w^Tx_1-y_1,w^Tx_2-y_2,...,w^Tx_N-y_N)
-=
-\begin{gathered}
-\begin{pmatrix} 
-w^Tx_1-y_1\\w^Tx_2-y_2\\...\\w^Tx_N-y_N
-\end{pmatrix}
-\end{gathered}$
-其中：   
-$(w^Tx_1-y_1,w^Tx_2-y_2,...,w^Tx_N-y_N)
-\\
-=
-(w^Tx_1,w^Tx_2,...,w^Tx_N)-(y_1,y_2,...,y_n)
-\\
-=
-w^T(x_1,x_2,...,x_N)-(y_1,y_2,...,y_N)
-\\
-=W^TX^T-Y^T$
+最小二乘法定义：$L(w)= \mathop\Sigma\limits_{i=1}\limits^{N}w^T||x_i-y_i||^2=\mathop\Sigma\limits_{i=1}\limits^{N}w^T(x_i-y_i)^2=(w^Tx_1-y_1,w^Tx_2-y_2,...,w^Tx_N-y_N)=\begin{gathered}\begin{pmatrix} w^Tx_1-y_1\\w^Tx_2-y_2\\...\\w^Tx_N-y_N\end{pmatrix}\end{gathered}$
+
+其中：  
+
+$(w^Tx_1-y_1,w^Tx_2-y_2,...,w^Tx_N-y_N)\\=(w^Tx_1,w^Tx_2,...,w^Tx_N)-(y_1,y_2,...,y_n)\\=w^T(x_1,x_2,...,x_N)-(y_1,y_2,...,y_N)\\=W^TX^T-Y^T$
+
 得到：
-$L(W)=(W^TX^T-Y^T)(WX-Y)
-\\
-=W^TX^TXW-W^TX^TY-Y^TXW+Y^TY
-\\
-=W^TX^TXW-2W^TX^TY+Y^TY$
+
+$L(W)=(W^TX^T-Y^T)(WX-Y)\\=W^TX^TXW-W^TX^TY-Y^TXW+Y^TY\\=W^TX^TXW-2W^TX^TY+Y^TY$
+
 得到：
+
 $\hat w = \arg \min L(W)$
+
 得到：
+
 $\frac{\partial L(w)}{\partial w} = 2X^TXW - 2X^TY = 0$
+
 所以：
-$X^TXW=X^TY
-\\
-W=(X^TX)^{-1}X^TY$
-注意：$(X^TX)^-1X^T$称为伪逆记为$X^+$
+
+$X^TXW=X^TY\\W=(X^TX)^{-1}X^TY$
+
+注意：$(X^TX)^-1X^T$ 称为伪逆记为 $X^+$
 
 ---
 
 第一个几何解释：距离和。
-另一个几何解释：对于要拟合的直线我们从另一个角度看：$f(W)=W^Tx=x^T\beta$，把$x$想象为$p$维度的一个系数：$\begin{gathered}
-\begin{pmatrix} 
-x_{11} & x_{12} & ... & x_{1N}\\x_{21} & x_{22} & ... & x_{2N}\\... & ... &... & ...\\x_{n1} & x_{n2} & ... & x_{NN}
-\end{pmatrix}_{N×p}
-\end{gathered}$，横着看就是$N$样本点，竖着看就是一个$p$维，由$p$可以形成一个$p$维空间（一般$N>p$），$Y$形成的向量一般不在$p$维空间（存在噪声之类的），最小二乘法就是在$p$维空间中找到一条线，让$Y$距离线（平面最近），那么很显然就是投影。  
-既然是投影就会垂直于$p$维空间，就会垂直于每一个向量，就有$X^T(Y-X\beta)=0$                                               
-显而易见的是，结果和我们之前推导的结果是一样的，所以从这个角度就很好推证。    
+
+另一个几何解释：对于要拟合的直线我们从另一个角度看：$f(W)=W^Tx=x^T\beta$，把$x$想象为$p$维度的一个系数：$\begin{gathered}\begin{pmatrix} x_{11} & x_{12} & ... & x_{1N}\\x_{21} & x_{22} & ... & x_{2N}\\... & ... &... & ...\\x_{n1} & x_{n2} & ... & x_{NN}\end{pmatrix}_{N×p}\end{gathered}$，横着看就是 $N$ 样本点，竖着看就是一个 $p$ 维，由 $p$ 可以形成一个 $p$ 维空间（一般 $N>p$ ）， $Y$ 形成的向量一般不在 $p$ 维空间（存在噪声之类的），最小二乘法就是在 $p$ 维空间中找到一条线，让 $Y$ 距离线（平面最近），那么很显然就是投影。  
+既然是投影就会垂直于 $p$ 维空间，就会垂直于每一个向量，就有 $X^T(Y-X\beta)=0$                 
+
+显而易见的是，结果和我们之前推导的结果是一样的，所以从这个角度就很好推证。   
+
 这个就是把误差看成每个维度。
 
 
 ### 最小二乘法-概率角度：
 
 概率视角：
-假设：$D=\{(x_1,y_1),(x_2,y_2),...,(x_N,y_N)\}$
-其中：$x_i \epsilon R^p$ ，$y_i \epsilon R$ ，$i \epsilon 1,2,...,N$
-有：$X = (x_1,x_2,...,x_N)^T 
-=
-\begin{gathered}
-\begin{pmatrix}
-x_1^T\\x_2^T\\...\\x_N^T
-\end{pmatrix}
-\end{gathered} 
-=
-\begin{gathered}
-\begin{pmatrix} 
-x_{11} & x_{12} & ... & x_{1p}\\x_{21} & x_{22} & ... & x_{2p}\\... & ... &... & ...\\x_{N1} & x_{N2} & ... & x_{Np}
-\end{pmatrix}_{N×p}
-\end{gathered}$
-$Y=
-\begin{gathered}
-\begin{pmatrix}
-y_1^T\\y_2^T\\...\\y_N^T
-\end{pmatrix}
-\end{gathered}
 
-\quad$$x$：样本    $y$：值
+假设：$D=\{(x_1,y_1),(x_2,y_2),...,(x_N,y_N)\}$
+
+其中：$x_i \epsilon R^p$ ，$y_i \epsilon R$ ，$i \epsilon 1,2,...,N$
+
+有：$X = (x_1,x_2,...,x_N)^T =\begin{gathered}\begin{pmatrix}x_1^T\\x_2^T\\...\\x_N^T\end{pmatrix}\end{gathered} =\begin{gathered}\begin{pmatrix} x_{11} & x_{12} & ... & x_{1p}\\x_{21} & x_{22} & ... & x_{2p}\\... & ... &... & ...\\x_{N1} & x_{N2} & ... & x_{Np}\end{pmatrix}_{N×p}\end{gathered}$, $Y=\begin{gathered}\begin{pmatrix}y_1^T\\y_2^T\\...\\y_N^T\end{pmatrix}\end{gathered}\quad$, $x$：样本    $y$：值
+
 最小二乘估计：
+
 $L(w)=\mathop \Sigma \limits_{i=1} \limits^{N}||w^Tx_i-y_i||^2_2$
+
 $\hat{W}=\arg\min \limits_{w}L(W)$
+
 $\hat{W}=(X^TX)^{-1}X^TY$ 
+
 假设存在噪声：
+
 $\varepsilon \sim (0,\sigma^2)$
+
 $y=f(W)+\varepsilon$
+
 $f(W)=W^Tx$
+
 $y=W^Tx+\varepsilon$
+
 $y|x;W \sim N(W^Tx,\sigma^2) \rightarrow P(y|x;w)=\frac{1}{\sqrt{2\pi}\sigma}\exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}\}$
+
 $MLE:\mathcal{L}(W)=\log P(Y|X;W)=\log \mathop\Pi\limits_{i=1}\limits^NP(y_i|x_i;W)=\mathop \Sigma \limits_{i=1}\limits^N\log P(y_i|x_i;W)\\=\mathop \Sigma \limits_{i=1}\limits^N\log \frac{1}{\sqrt{2\pi}\sigma}+\log \exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}\}\\=\mathop \Sigma \limits_{i=1}\limits^N(\log \frac{1}{\sqrt{2\pi}\sigma}\cdot - \cdot -\frac{1}{2\sigma^2}(y-W^Tx)^2)$
+
 $\hat{W}=\arg\max \limits_{W}\mathcal{L}(W)\\
 =\arg\max\limits_{W}-\frac{1}{2\sigma^2}(y-W^Tx)^2\\
 =\arg\min\limits_{W}(y_i-W^Tx_i)^2$
+
 和最小二乘估计的$L(W)$一样
+
 $LSE \Leftrightarrow MLE$（noise is Gaussian Dist）
-
-
 ### 正则化-岭回归-频率角度：
 
 Loss Function：$L(w)=\mathop \Sigma \limits_{i=1} \limits^{N}||w^Tx_i-y_i||^2_2$    $\hat{W}=(X^TX)^{-1}X^TY$
+
 $X_{N×p}$，$N$个样本，$x_i \epsilon R^p$（一般$N \gg p$），如果样本纬度高，样本量少容易造成过拟合
-过拟合$\rightarrow$①加数据；②特征选择/特征提取；③正则化；
+
+过拟合$\rightarrow$
+    - 加数据
+    - 特征选择/特征提取
+    - 正则化
+
 正则化是对对目标函数的约束
+
 正则化框架：$\arg\min[L(w)+\lambda P(w)]$（loss+惩罚）
+
 L1（一范式）Lasso，$P(W)=||W||_1$
+
 L2（二范式）：Ridge（岭回归），$P(W)=||W||_2=W^TW$（岭回归全称：权值衰减）
+
 L2对应的函数：
+
 $\begin{gathered}
 \begin{matrix}
 J(W)=
@@ -196,6 +174,7 @@ y_1 & y_2  & ... & y_N
 \end{pmatrix}
 
 \\
+
 W^T\begin{pmatrix}
 x_1 & x_2  & ... & x_N
 \end{pmatrix}-
@@ -220,27 +199,43 @@ $\hat{W}=(X^TX+\lambda I)^{-1}X^TY$
 ### 正则化-岭回归-贝叶斯角度：
 
 频率角度：
+
 ![ridge-regression-0.png](/assets/images/machine-deep-learning/machine-learning/ridge-regression-0.png)
+
 贝叶斯角度：
+
 先验：$W \sim N(0,\sigma_0^2)$（此时$W$不再是常数）
+
 后验：$p(W|y)=\frac{p(y|W)\cdot p(W)}{p(y)}$
+
 $p(y|W)=\frac{1}{\sqrt{2\pi}\sigma}\exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}\}$    $p(W)=\frac{1}{\sqrt{2\pi}\sigma_0}\exp\{-\frac{||W||^2}{2\sigma_0^2}\}$
+
 $p(y|W)\cdot p(W)=\frac{1}{\sqrt{2\pi}\sigma} \cdot \frac{1}{\sqrt{2\pi}\sigma_0} \cdot \exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2}\}$
+
 $MAP:\hat{W}=\arg \max \limits_{W} p(w|y)
 =\arg \max p(y|W) \cdot p(W)\\
 =\arg \max \log [p(y|W) \cdot p(W)] \\
 =\arg \max \limits_{W} \log [\frac{1}{\sqrt{2\pi}\sigma} \cdot \frac{1}{\sqrt{2\pi}\sigma_0}]+\log\exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2}\}$
+
 这里$\sigma$和$\sigma_0$是我设置的，本质上是超参数，但是这里可以看做常数
+
 $=\arg \min \limits_{W}(-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2})
 \\=\arg\min(\frac{1}{2}(y-W^Tx)^2+\frac{\sigma^2}{\sigma_0^2||w||^2_2})$
+
 这里省略了$\mathop \Sigma \limits_{i=1} \limits^{N}$完全写出来如下：
+
 $\hat{W}=\arg\min\mathop \Sigma \limits_{i=1} \limits^{N}(\frac{1}{2}(y_i -W^Tx_i)^2+\frac{\sigma^2}{\sigma_0^2||w||^2_2})$
+
 和$J(W)$一样 
+
 ![ridge-regression-1.png](/assets/images/machine-deep-learning/machine-learning/ridge-regression-1.png)
+
 Regularized$LSE \Leftrightarrow MAP$（noise为Gaussian Dist）（prior也是GD）
 
 线性回归：
-①线性    ②全局性    ③数据未加工
+    - 线性    
+    - 全局性    
+    - 数据未加工
 
 ## 广义线性模型
 - 目的：解决非线性问题。

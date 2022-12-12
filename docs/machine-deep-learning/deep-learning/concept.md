@@ -45,6 +45,7 @@
 #### 全连接层（FullyConnect）
 
 深度学习网络的一大特点是学习过程是端到端的，也就是说输入是一张图片，输出则是一个表达的信息，常见的是一个列向量，表征需求的的结果，例如分类信息，相对位置坐标等等。
+
 就我们已经实现的组件而言，无论是卷积层还是池化层都是图片（with channels）输入，图片(with channels)输出，全连接层实现的就是将所谓图片的特征表示转化为向量，然后通过 ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697564-d6e31557-a922-408d-b471-24696a6e139d.svg#crop=0&crop=0&crop=1&crop=1&height=23&id=j0tQz&originHeight=23&originWidth=104&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=104) 把转化后向量再一次transform到我们需要的特征空间，也就是样本标记空间。而这个图片到向量的过程就是单纯的展开，用 ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697511-0afa1623-4973-4575-be99-afab399e52bb.svg#crop=0&crop=0&crop=1&crop=1&height=26&id=BoPot&originHeight=26&originWidth=121&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=121) 实现。所以
 ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697534-32501ae3-07f5-4723-99cf-29ade526286c.svg#crop=0&crop=0&crop=1&crop=1&height=23&id=fJFWs&originHeight=23&originWidth=352&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=352)
 
@@ -63,8 +64,11 @@ class FullyConnect(object):
 ```
 
 我们可以看到通过计算 self.input_len 得到 flatten 之后的向量长度，其余的步骤就和MLP一模一样，如何用Numpy实现MLP，我想看过上一篇MLP的反向传播的公式的读者应该没有什么压力，都是用 ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697550-369d6157-32a2-425d-ac38-ff636e3fc47d.svg#crop=0&crop=0&crop=1&crop=1&height=26&id=k62gw&originHeight=26&originWidth=77&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=77) 实现的。（如果有压力，请自己画出来看一下每个节点的贡献。）
+
 前向传播： ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697612-3c748a44-aba0-40c1-80d5-9861d6410523.svg#crop=0&crop=0&crop=1&crop=1&height=21&id=t8IA4&originHeight=21&originWidth=138&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=138)
+
 反向传播： ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697586-ede67bad-17db-438d-ae60-342ee4f72480.svg#crop=0&crop=0&crop=1&crop=1&height=27&id=kXc8g&originHeight=27&originWidth=132&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=132)
+
 参数求导：![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697640-c5186fe8-7f40-431d-89e2-f25afecf9b0b.svg#crop=0&crop=0&crop=1&crop=1&height=50&id=YGd12&originHeight=50&originWidth=152&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=152) ,代码里实现时batch的形式， ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059698535-751e9063-3ccb-4933-b0c4-90193733ae0c.svg#crop=0&crop=0&crop=1&crop=1&height=60&id=FtJc4&originHeight=60&originWidth=233&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=233)
 
 ```
@@ -143,17 +147,17 @@ def forward(self, x):
 ### 如何修正：
 
 1. 我们最终能够获得损失，利用损失对于某一个权重进行偏导数的计算，我们就可以获得，这个权重，或者说参数，“下降”的方向，利用这个方向进行修正；
-2. 数学算式：$\frac{\partial C_0}{\partial w^{(L)}}$这里的$L$指神经网络的层数
-   1. $\partial w^{(L)}$看作对$w$的微小扰动
-   2. $\partial C_0$看作“改变$w$对$C$的值造成的变化”
+2. 数学算式：$\frac{\partial C_0}{\partial w^{(L)}}$ 这里的 $L$ 指神经网络的层数
+   1. $\partial w^{(L)}$ 看作对 $w$ 的微小扰动
+   2. $\partial C_0$ 看作“改变 $w$ 对 $C$ 的值造成的变化”
 3. 多元函数偏导的链式法则：
    1. $C_0 = (a^{(L)}-y)^2 \quad z^{(L)}=w^{(L)}a^{(L-1)}+b^{(L)} \quad a^{(L)}=\sigma(z^{(L)})$
-   2. $$$\frac{\partial C_0}{\partial w^{(L)}} = \frac{\partial z^{(L)}}{\partial w^{(L)}}\frac{\partial a^{(L)}}{\partial z^{(L)}}\frac{\partial C_0}{\partial a^{(L)}}$
+   2. $\frac{\partial C_0}{\partial w^{(L)}} = \frac{\partial z^{(L)}}{\partial w^{(L)}}\frac{\partial a^{(L)}}{\partial z^{(L)}}\frac{\partial C_0}{\partial a^{(L)}}$
    3. 由上述式子可以计算出$C$对$w^{(L)}$的微小变化的敏感性
    4. $\frac{\partial C_0}{\partial a^{(L)}}=2(a^{(L)}-y)$    $\frac{\partial a^{(L)}}{\partial z^{(L)}} = \sigma'(z^{(L)})$    $\frac{\partial z^{(L)}}{\partial w^{(L)}}=a^{(L-1)}$
 4. 当然除了对权重偏导也可以对偏置偏导（当然偏置的偏导就是1）
-5. 直接上对于多层：（$j$是当前层神经元；$k$是上一层神经元）
-   $C_0 =\mathop \Sigma \limits_{j=0}\limits^{n_L-1}(a_j^{(L)}-y_i)^2$    $z^{(L)}_j=w^{(L)}_{j0}a^{(L-1)}_0+w^{(L)}_{j1}a^{(L-1)}_1+...+b^{(L)}_j$    $a^{(L)}_j=\sigma(z^{(L)}_j)$$\frac{\partial C_0}{\partial w_{jk}^{(L)}} = \frac{\partial z_j^{(L)}}{\partial w_{jk}^{(L)}}\frac{\partial a_j^{(L)}}{\partial z_j^{(L)}}\frac{\partial C_0}{\partial a_j^{(L)}}$；对于上一层的某一个神经元：$\frac{\partial C_0}{\partial a_{k}^{(L)}} = \mathop \Sigma \limits_{j=0} \limits^{n_L-1} \frac{\partial z_j^{(L)}}{\partial a_{k}^{(L)}}\frac{\partial a_j^{(L)}}{\partial z_j^{(L)}}\frac{\partial C_0}{\partial a_j^{(L)}}$
+5. 直接上对于多层：（ $j$ 是当前层神经元； $k$ 是上一层神经元）
+   $C_0 =\mathop \Sigma \limits_{j=0}\limits^{n_L-1}(a_j^{(L)}-y_i)^2$    $z^{(L)}_j=w^{(L)}_{j0}a^{(L-1)}_0+w^{(L)}_{j1}a^{(L-1)}_1+...+b^{(L)}_j$    $a^{(L)}_j=\sigma(z^{(L)}_j)$ $\frac{\partial C_0}{\partial w_{jk}^{(L)}} = \frac{\partial z_j^{(L)}}{\partial w_{jk}^{(L)}}\frac{\partial a_j^{(L)}}{\partial z_j^{(L)}}\frac{\partial C_0}{\partial a_j^{(L)}}$；对于上一层的某一个神经元：$\frac{\partial C_0}{\partial a_{k}^{(L)}} = \mathop \Sigma \limits_{j=0} \limits^{n_L-1} \frac{\partial z_j^{(L)}}{\partial a_{k}^{(L)}}\frac{\partial a_j^{(L)}}{\partial z_j^{(L)}}\frac{\partial C_0}{\partial a_j^{(L)}}$
 6. 以此类推直到第一层神经元就能够更新权重（所有的神经元激活值都由上一层计算得来，那么一直传到第一层，在已知激活值的情况下就能更新权重，更改第二层激活值，再由第二层激活值继续更新权重，同理继续向下一层修正直到更改最后一层激活值，由能计算新的损失（更新完权重；这个时候就是前向了））
 
 ## 梯度下降法的理解：

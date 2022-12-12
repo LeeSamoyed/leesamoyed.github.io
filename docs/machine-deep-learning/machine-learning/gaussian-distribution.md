@@ -6,61 +6,39 @@ Kalman Fillter（卡诺曼滤波）
 
 ### 极大似然估计：
 
-$X:(x_1,x_2,...,x_n)^T
-=
-\begin{gathered}
-\begin{pmatrix}
-x_1\\x_2\\...\\x_n
-\end{pmatrix}
-\end{gathered}$
+$X:(x_1,x_2,...,x_n)^T=\begin{gathered}\begin{pmatrix}x_1\\x_2\\...\\x_n\end{pmatrix}\end{gathered}$
+
 $x_i \epsilon R^p \quad x_i \mathop{\sim}^{iid} N(\mu,\Sigma) \quad \theta  = (\mu,\Sigma)$
+
 其中，iid：独立同分布 
+
 $MLE:\theta_{MLE} = \arg\max\limits_{\theta} P(X|\theta)$
-令$p=1,\theta=(\mu,\sigma^2)$
-（$p=1$方便计算）
+
+令$p=1,\theta=(\mu,\sigma^2)$（$p=1$方便计算）
+
 一维：
+
 $p(x) = \frac {1}{\sqrt{2\pi}\sigma}exp(-\frac{(x-\mu)^2}{2\sigma^2})$
+
 多维（假设是$p$维）：
+
 $p(x) = \frac {1}{(2\pi)^{\frac{p}{2}}|\Sigma|^{\frac{1}{2}}}exp(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu))$
 
 ---
 
 那么我们可以写出他的似然函数：
 
-$\log P(X|\theta)
-= 
-\log \mathop \Pi \limits_{i=1} \limits^{N} p(x_i|\theta) 
-=
- \mathop \Pi \limits_{i=1} \limits^{N} \log p(x_i|\theta)
-\\
-=\mathop \Sigma \limits_{i=1} \limits^{N}\log\frac{1}{\sqrt{2\pi}\sigma}exp(-\frac{(x-\mu)^2}{2\sigma^2})
-\\
-=\mathop \Sigma \limits_{i=1} \limits^{N}[\log\frac{1}{\sqrt{2\pi}}+log{\frac{1}{\sigma}}-\frac{(x_i-\mu)^2}{2\sigma^2}
-]$
-那么$\mu$估计：
-$\mu_{MLE} = \arg\max\limits_{\mu}\log p(X|\theta)
-\\
-=\arg\max \mathop \Sigma \limits_{i=1}\limits^{N}-\frac{(x_i-\mu)^2}{2\sigma^2}
+$\log P(X|\theta)= \log \mathop \Pi \limits_{i=1} \limits^{N} p(x_i|\theta) =\mathop \Pi \limits_{i=1} \limits^{N} \log p(x_i|\theta)\\=\mathop \Sigma \limits_{i=1} \limits^{N}\log\frac{1}{\sqrt{2\pi}\sigma}exp(-\frac{(x-\mu)^2}{2\sigma^2})\\=\mathop \Sigma \limits_{i=1} \limits^{N}[\log\frac{1}{\sqrt{2\pi}}+log{\frac{1}{\sigma}}-\frac{(x_i-\mu)^2}{2\sigma^2}]$
 
-\\
-=\arg\min\limits_{\mu} \mathop \Sigma \limits_{i=1}\limits^{N}(x_i-\mu)^2$
+那么$\mu$估计：
+
+$\mu_{MLE} = \arg\max\limits_{\mu}\log p(X|\theta)\\=\arg\max \mathop \Sigma \limits_{i=1}\limits^{N}-\frac{(x_i-\mu)^2}{2\sigma^2}\\=\arg\min\limits_{\mu} \mathop \Sigma \limits_{i=1}\limits^{N}(x_i-\mu)^2$
+
 对$\mu$进行求导：
-$\frac{\partial}{\partial\mu}\Sigma(x_i-\mu)^2 = \mathop \Sigma \limits_{i-1}\limits^{N} 2\cdot(x_i-\mu) \cdot (-1)=0
-\\
-\mathop \Sigma \limits_{i=1}\limits^{N}(x_i-\mu)=0
-\\
-\mathop \Sigma \limits_{i=1}\limits^{N}x_i -\mathop \Sigma \limits_{i=1}\limits^{N} \mu =0
-\\
-\mu_{MLE} = \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}x_i$
-无偏估计$E[\mu_{MLE}] 
-\\
-= \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}E[x_i]
-\\
-= \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}\mu
-\\
-= \frac{1}{N}N\cdot\mu
-\\
-=\mu$
+
+$\frac{\partial}{\partial\mu}\Sigma(x_i-\mu)^2 = \mathop \Sigma \limits_{i-1}\limits^{N} 2\cdot(x_i-\mu) \cdot (-1)=0\\\mathop \Sigma \limits_{i=1}\limits^{N}(x_i-\mu)=0\\\mathop \Sigma \limits_{i=1}\limits^{N}x_i -\mathop \Sigma \limits_{i=1}\limits^{N} \mu =0\\\mu_{MLE} = \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}x_i$
+
+无偏估计 $E[\mu_{MLE}]\\= \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}E[x_i]\\= \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}\mu\\= \frac{1}{N}N\cdot\mu\\=\mu$
 
 ---
 
