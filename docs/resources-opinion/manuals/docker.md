@@ -11,79 +11,79 @@
 ### 查看docker版本信息
 
 ```
-$ docker --version
+docker --version
 ```
 
 ### 查看docker安装信息
 
 ```
-$ docker info
+docker info
 ```
 
 ### 查看本机Docker中存在哪些镜像
 
 ```
-$ docker images
+docker images
 ```
 
 ### 检索images
 
 ```
-$ docker search images
+docker search images
 ```
 
 ### 拉images
 
 ```
-$ docker pull images
+docker pull images
 ```
 
 ### 显示一个镜像的历史操作
 
 ```
-$ docker history images
+docker history images
 ```
 
 ### 列出一个容器里面被改变的文件或者目录
 
 ```
-$ docker diff container
+docker diff container
 ```
 
 ### 列出当前所有正在运行的容器
 
 ```
-$ docker ps
+docker ps
 ```
 
 ### 列出所有的容器
 
 ```
-$ docker ps -a
+docker ps -a
 ```
 
 ### 列出最近一次启动的容器
 
 ```
-$ docker ps -f
+docker ps -f
 ```
 
 ### 查看容器的相关信息
 
 ```
-$ docker inspect $CONTAINER_ID
+docker inspect $CONTAINER_ID
 ```
 
 ### 显示容器IP地址和端口号，如果输出是空的说明没有配置IP地址（不同的Docker容器可以通过此IP地址互相访问）
 
 ```
-$ docker inspect --format='{{.NetworkSettings.IPAddress}}' $CONTAINER_ID
+docker inspect --format='{{.NetworkSettings.IPAddress}}' $CONTAINER_ID
 ```
 
 ### 通过容器生成新的镜像
 
 ```
-$ docker commit -m "Added ssh from centos" -a "xiaoming" 4a4de4cf223d1 xiaoming/centos:v1
+docker commit -m "Added ssh from centos" -a "xiaoming" 4a4de4cf223d1 xiaoming/centos:v1
 
 参数：
 -m参数用来来指定提交的说明信息；
@@ -95,7 +95,7 @@ birdben/ubuntu:v1指定目标镜像的用户名、仓库名和 tag 信息。
 ### 构建一个容器
 
 ```
-$ docker build -t="centos:v1" .
+docker build -t="centos:v1" .
 
 参数：
 -t为构建的镜像制定一个标签，便于记忆/索引等
@@ -105,25 +105,25 @@ $ docker build -t="centos:v1" .
 ### 在docker中运行centos镜像
 
 ```
-$ docker run <相关参数> <镜像 ID> <初始命令>
+docker run <相关参数> <镜像 ID> <初始命令>
 ```
 
 ### 守护模式启动
 
 ```
-$ docker run -it centos:v1
+docker run -it centos:v1
 ```
 
 ### 指定端口号启动
 
 ```
-$ docker run -p 80:80 centos:v1
+docker run -p 80:80 centos:v1
 ```
 
 ### 指定配置启动
 
 ```
-$ sudo docker run -d -p 10.211.55.4:9999:22 birdben/ubuntu:v1 '/usr/sbin/sshd' -D
+sudo docker run -d -p 10.211.55.4:9999:22 birdben/ubuntu:v1 '/usr/sbin/sshd' -D
 
 参数：
 -d：表示以“守护模式”执行，日志不会出现在输出终端上。
@@ -138,47 +138,47 @@ $ sudo docker run -d -p 10.211.55.4:9999:22 birdben/ubuntu:v1 '/usr/sbin/sshd' -
 ### start 启动容器
 
 ```
-$ docker start 117843ade696117843ade696
+docker start 117843ade696117843ade696
 ```
 
 ### stop 停止正在运行的容器
 
 ```
-$ docker stop 117843ade696117843ade696
+docker stop 117843ade696117843ade696
 ```
 
 ### restart 重启容器
 
 ```
-$ docker restart 117843ade696117843ade696
+docker restart 117843ade696117843ade696
 ```
 
 ### rm 删除容器
 
 ```
-$ docker rm 117843ade696117843ade696
+docker rm 117843ade696117843ade696
 ```
 
 ### rmi 删除镜像
 
 ```
-$ docker rmi ed9c93747fe1Deleted
+docker rmi ed9c93747fe1Deleted
 ```
 
 ### 登录Docker Hub中心
 
 ```
-$ docker login
+docker login
 ```
 
 ### 发布上传image（push）
 
 ```
-$ docker push xiaoming/centos:v1
+docker push xiaoming/centos:v1
 ```
 
 ***
 
 资料:
 
-转自：[https://segmentfault.com/a/1190000010219967](https://segmentfault.com/a/1190000010219967)
+[https://segmentfault.com/a/1190000010219967](https://segmentfault.com/a/1190000010219967)
