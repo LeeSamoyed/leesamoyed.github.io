@@ -59,9 +59,9 @@
 
 | 语法 | 效果 |
 | - | - |
-| \\epsilon    \\varepsilon | $\epsilon $ $\varepsilon$ |
-| \\Theta    \\theta    \\vartheta | $\Theta $ $\theta $ $\vartheta$ |
-| \\kappa    \\varkappa | $\kappa $ $\varkappa$ |
+| \\epsilon    \\varepsilon | $\epsilon$ $\varepsilon$ |
+| \\Theta    \\theta    \\vartheta | $\Theta$ $\theta$ $\vartheta$ |
+| \\kappa    \\varkappa | $\kappa$ $\varkappa$ |
 | \\Pi    \\pi    \\varpi | $\Pi$ $\pi$ $\varpi$ |
 | \\rho    \\varrho | $\rho$ $\varrho$ |
 | \\Sigma    \\sigma    \\varsigma | $\Sigma$ $\sigma$ $\varsigma$ |
@@ -109,7 +109,7 @@
 | - | - | - |
 | 上标 | a^{bc} | $a^{bc}$ |
 | 下标 | a_{bc}  | $a_{bc}$ |
-| 结合上下标 | a_{bc}^{de}  | $a_{bc}^{de} |
+| 结合上下标 | a_{bc}^{de}  | $a_{bc}^{de}$ |
 | 前置上下标 | {}_a^b\\!X_c^d  | ${}_a^b\!X_c^d$ |
 | 导数（html）| x' | $x'$ |
 | 导数（png）| x^\\prime | $x^\prime$ |
@@ -168,25 +168,13 @@
 
 ### 矩阵：
 
-| 空 | \\begin{gathered}
-\\begin{matrix} 0 & 1 \\\\ 1 & 0 \\end{matrix}
-\\end{gathered} |  |
-| --- | --- | --- |
-| 圆括号 | \\begin{gathered}
-\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}
-\\end{gathered} |  |
-| 方括弧 | \\begin{gathered}
-\\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}
-\\end{gathered} |  |
-| 大括弧 | \\begin{gathered}
-\\begin{Bmatrix} 0 & 1 \\\\ 1 & 0 \\end{Bmatrix}
-\\end{gathered} |  |
-|  | \\begin{gathered}
-\\begin{vmatrix} 0 & 1 \\\\ 1 & 0 \\end{vmatrix}
-\\end{gathered} |  |
-|  | \\begin{gathered}
-\\begin{Vmatrix} 0 & 1 \\\\ 1 & 0 \\end{Vmatrix}
-\\end{gathered} |  |
+| 空 | $\begin{gathered}\begin{matrix} 0 & 1 \\ 1 & 0 \end{matrix}\end{gathered}$ |
+| - | - |
+| 圆括号 | $\begin{gathered}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\end{gathered}$ |
+| 方括弧 | $\begin{gathered}\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}\end{gathered}$ |
+| 大括弧 | $\begin{gathered}\begin{Bmatrix} 0 & 1 \\ 1 & 0 \end{Bmatrix}\end{gathered}$ |
+|  | $\begin{gathered}\begin{vmatrix} 0 & 1 \\ 1 & 0 \end{vmatrix}\end{gathered}$ |
+|  | $\begin{gathered}\begin{Vmatrix} 0 & 1 \\ 1 & 0 \end{Vmatrix}\end{gathered}$ |
 
 
 ### 函数：
@@ -274,14 +262,14 @@
 |                                                              | \\smallsetminus                                              | ![\pagecolor{White} \smallsetminus](http://upload.wikimedia.org/wikipedia/zh/math/7/2/9/7290ff3fe4f3ef8927caf56dc3c2d131.png) | 
 | 根号                                                         | \\sqrt{3}                                                    | ![\sqrt{3}](http://upload.wikimedia.org/wikipedia/zh/math/1/7/c/17c68e294ba0dc1356295bac633bf868.png) | 
 |                                                              | \\sqrt[n]{3}                                                 | ![\pagecolor{White}\sqrt[n]{3}](http://upload.wikimedia.org/wikipedia/zh/math/f/7/7/f77bdd840c6d77e25f5c88640bf0ffbf.png) | 
-| 关系符号                                                     | \\Delta ABC\\sim\\Delta XYZ   ![](http://latex.codecogs.com/gif.latex?%5CDelta%20ABC%5Csim%5CDelta%20XYZ) | ![\Delta ABC\sim\Delta XYZ\!](http://upload.wikimedia.org/wikipedia/zh/math/6/a/3/6a3e77cae79f0fdcc1727b5061411221.png) | 
-|                                                              | \\sqrt{3}\\approx1.732050808\\ldots   ![](http://latex.codecogs.com/gif.latex?%5Csqrt%7B3%7D%5Capprox1.732050808%5Cldots) | ![\sqrt{3}\approx1.732050808\ldots](http://upload.wikimedia.org/wikipedia/zh/math/d/a/7/da73a49927110231f6021c6adb08a43d.png) | 
+| 关系符号                                                     | \\Delta ABC\\sim\\Delta XYZ | ![\Delta ABC\sim\Delta XYZ\!](http://upload.wikimedia.org/wikipedia/zh/math/6/a/3/6a3e77cae79f0fdcc1727b5061411221.png) | 
+|                                                              | \\sqrt{3}\\approx1.732050808\\ldots | ![\sqrt{3}\approx1.732050808\ldots](http://upload.wikimedia.org/wikipedia/zh/math/d/a/7/da73a49927110231f6021c6adb08a43d.png) | 
 |                                                              | \\simeq                                                      | ![\simeq](http://upload.wikimedia.org/wikipedia/zh/math/8/e/3/8e3648e8286c414a11b8f10a833d5596.png) | 
 |                                                              | \\cong                                                       | ![\cong](http://upload.wikimedia.org/wikipedia/zh/math/f/1/6/f16a7bd80bb5648a755eb58221d03546.png) | 
 |                                                              | \\dot=                                                       | ![\dot=](http://upload.wikimedia.org/wikipedia/zh/math/e/0/1/e011dac23072797e8fc73cf575709782.png) | 
-|                                                              | \\ggg   ![](http://latex.codecogs.com/gif.latex?%5Cggg)      | ![\ggg](http://upload.wikimedia.org/wikipedia/zh/math/f/b/7/fb7d1cf9a5e65f98089b6b2cb1570a3c.png) | 
-|                                                              | \\gg       >>                                                | ![\gg](http://upload.wikimedia.org/wikipedia/zh/math/3/3/e/33e3502dfbd3f875dcbdd2f9a40eedb4.png) | 
-|                                                              |                                                              | ![>\,](http://upload.wikimedia.org/wikipedia/zh/math/1/1/4/114529aa81593e4dfb2279a9b594c779.png) | 
+|                                                              | \\ggg                                                        | ![\ggg](http://upload.wikimedia.org/wikipedia/zh/math/f/b/7/fb7d1cf9a5e65f98089b6b2cb1570a3c.png) | 
+|                                                              | \\gg                                                         | ![\gg](http://upload.wikimedia.org/wikipedia/zh/math/3/3/e/33e3502dfbd3f875dcbdd2f9a40eedb4.png) | 
+|                                                              | >                                                        | ![>\,](http://upload.wikimedia.org/wikipedia/zh/math/1/1/4/114529aa81593e4dfb2279a9b594c779.png) | 
 |                                                              | \\ge                                                         | ![\ge](http://upload.wikimedia.org/wikipedia/zh/math/8/f/b/8fbe2a506fe3db0835548e1b648ec977.png) | 
 |                                                              | \\geqq                                                       | ![\geqq](http://upload.wikimedia.org/wikipedia/zh/math/2/3/e/23e68b97e8ddf443cdeed5ce45e04abe.png) | 
 |                                                              | =                                                            | ![=\,](http://upload.wikimedia.org/wikipedia/zh/math/4/4/8/4488ba5f7e82e2d8c136b559d95283d5.png) | 
@@ -291,13 +279,7 @@
 |                                                              | \\ll                                                         | ![\ll](http://upload.wikimedia.org/wikipedia/zh/math/9/4/3/9439146cc81e763e0563ccbbcb523314.png) | 
 |                                                              | \\lll                                                        | ![\lll](http://upload.wikimedia.org/wikipedia/zh/math/4/e/8/4e8dc43a1f5be9ea3d8d27fdea882497.png) | 
 |                                                              | (x-y)^2\\equiv(-x+y)^2\\equiv x^2-2xy+y^2                    | ![(x-y)^2\equiv(-x+y)^2\equiv x^2-2xy+y^2](http://upload.wikimedia.org/wikipedia/zh/math/6/c/9/6c9a2bfd0d3b9a5a74f8682479733cf9.png) | 
-| | \begin{align}
-\because\begin{cases}
-\acute{a}x^2+bx^2+c\gtrless0\gtrless\grave{a}x^2+bx^2+c\\
-\acute{a}>0>\grave{a}
-\end{cases}\\
-\therefore\frac{-b\pm\sqrt{b^2-4\acute{a}c}}{2\acute{a}}{}_\lessgtr^\gtrlessx_\lessgtr^\gtrless\frac{-b\pm\sqrt{b^2-4\grave{a}c}}{2\grave{a}}
-\end{align} | ![\begin{align} \because\begin{cases} \acute{a}x^2+bx^2+c\gtrless0\gtrless\grave{a}x^2+bx^2+c\ \acute{a}>0>\grave{a} \end{cases}\ \therefore\frac{-b\pm\sqrt{b^2-4\acute{a}c}}{2\acute{a}}{}_\lessgtr^\gtrless x_\lessgtr^\gtrless\frac{-b\pm\sqrt{b^2-4\grave{a}c}}{2\grave{a}} \end{align}](http://upload.wikimedia.org/wikipedia/zh/math/8/1/0/8105aed2a6a0372d348af577ea8652d8.png) |  
+| | \begin{align}\because\begin{cases}\acute{a}x^2+bx^2+c\gtrless0\gtrless\grave{a}x^2+bx^2+c\\\acute{a}>0>\grave{a}\end{cases}\\\therefore\frac{-b\pm\sqrt{b^2-4\acute{a}c}}{2\acute{a}}{}_\lessgtr^\gtrlessx_\lessgtr^\gtrless\frac{-b\pm\sqrt{b^24\grave{a}c}}{2\grave{a}}\end{align} | ![\begin{align} \because\begin{cases} \acute{a}x^2+bx^2+c\gtrless0\gtrless\grave{a}x^2+bx^2+c\ \acute{a}>0>\grave{a} \end{cases}\ \therefore\frac{-b\pm\sqrt{b^2-4\acute{a}c}}{2\acute{a}}{}_\lessgtr^\gtrless x_\lessgtr^\gtrless\frac{-b\pm\sqrt{b^2-4\grave{a}c}}{2\grave{a}} \end{align}](http://upload.wikimedia.org/wikipedia/zh/math/8/1/0/8105aed2a6a0372d348af577ea8652d8.png) |  
 |                                                              | x\\not\\equiv N                                              | ![x\not\equiv N](http://upload.wikimedia.org/wikipedia/zh/math/1/b/0/1b05bef638197b56e7298f7ce316ad13.png) | 
 |                                                              | x\\ne A                                                      | ![x\ne A](http://upload.wikimedia.org/wikipedia/zh/math/3/1/0/3104de4e8ef189be10d43d6ca8e9444a.png) | 
 |                                                              | x\\neq C                                                     | ![x\neq C](http://upload.wikimedia.org/wikipedia/zh/math/7/0/1/7016f46da82d8566a65d93a0ed082874.png) | 
