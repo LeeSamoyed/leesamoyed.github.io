@@ -138,7 +138,7 @@ nav:
     - 简历: aboutme/resume.md
     - 项目: aboutme/project.md
     - 学术: aboutme/academic.md
-  - 编程&算法:
+  - ★编程&算法:
     - 编程语言:
       - Python Crash Course: programming-algorithm/programming-language/python-crash-course.md
       - Python基础扩展 优课达: programming-algorithm/programming-language/python-extension-ykd.md
