@@ -6,7 +6,7 @@ Kalman Fillter（卡诺曼滤波）
 
 ### 极大似然估计：
 
-$X:(x_1,x_2,...,x_n)^T=\begin{gathered}\begin{pmatrix}x_1\\x_2\\...\\x_n\end{pmatrix}\end{gathered}$
+$X:(x_1,x_2,...,x_n)^T=\begin{gathered}\begin{pmatrix}x_1\\x_2\\...\\ x_n\end{pmatrix}\end{gathered}$
 
 $x_i \epsilon R^p \quad x_i \mathop{\sim}^{iid} N(\mu,\Sigma) \quad \theta  = (\mu,\Sigma)$
 
@@ -49,7 +49,7 @@ $\sigma^2_{MLE} = \arg\max\limits_{\sigma} p(X|\sigma)\\=\arg\max \Sigma \begin{
 
 求导：
 
-$\$ $\frac{\partial\alpha}{\partial\sigma} = \mathop \Sigma \limits_{i=1}\limits^{N}[-\frac{1}{\sigma}+\frac{1}{2}(x_i-\mu)^2 \cdot (+2)\sigma^{-3}] = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}[-\frac{1}{\sigma}+ (x_i-\mu)^2 \cdot \sigma^{-3}] = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}[-\sigma^2 + (x_i-\mu)^2] = 0\\-\mathop \Sigma \limits_{i=1}\limits^{N}\sigma^2 + \mathop \Sigma \limits_{i-1}\limits^{N}(x_i-\mu)^2 = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}\sigma^2 = \mathop \Sigma \limits_{i-1}\limits^{N(x_i-\mu)^2\\\sigma^2_{MLE} = \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}(x_i-\mu)^2$
+$\frac{\partial\alpha}{\partial\sigma} = \mathop \Sigma \limits_{i=1}\limits^{N}[-\frac{1}{\sigma}+\frac{1}{2}(x_i-\mu)^2 \cdot (+2)\sigma^{-3}] = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}[-\frac{1}{\sigma}+ (x_i-\mu)^2 \cdot \sigma^{-3}] = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}[-\sigma^2 + (x_i-\mu)^2] = 0\\-\mathop \Sigma \limits_{i=1}\limits^{N}\sigma^2 + \mathop \Sigma \limits_{i-1}\limits^{N}(x_i-\mu)^2 = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}\sigma^2 = \mathop \Sigma \limits_{i-1}\limits^{N(x_i-\mu)^2\\\sigma^2_{MLE}} = \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}(x_i-\mu)^2$
 
 $\sigma^2_{MLE} = \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}(x_i-\mu_{MLE})^2$
 
@@ -96,7 +96,7 @@ $x \sim (\mu,\Sigma) = p(x) = \frac {1}{(2\pi)^{\frac{p}{2}}|\Sigma|^{\frac{1}{2
 
 $x_i \epsilon R^p \quad r.v$
 
-$x:(x_1,x_2,...,x_n)^T=\begin{gathered}\begin{pmatrix}x_1\\x_2\\...\\x_p\end{pmatrix}\end{gathered}$    
+$x:(x_1,x_2,...,x_n)^T=\begin{gathered}\begin{pmatrix}x_1\\ x_2 \\ ... \\ x_p \end{pmatrix}\end{gathered}$    
 
 $\mu=\begin{gathered}\begin{pmatrix}\mu_1\\\mu_2\\...\\\mu_p\end{pmatrix}\end{gathered}$   $\Sigma=\begin{gathered}\begin{pmatrix}\sigma_{11} \quad \sigma_{12} \quad ... \quad \sigma_{1p}\\\sigma_{21} \quad \sigma_{22} \quad ... \quad \sigma_{2p}\\... \quad ... \quad ... \quad ...\\\sigma_{p1} \quad \sigma_{p2} \quad ... \quad \sigma_{pp}\end{pmatrix}\end{gathered}_{p×p}$ 
 
@@ -111,7 +111,7 @@ $\Sigma = U \wedge U^T$（特征分解），$UU^T=U^TU=I$，$\wedge = diag(\lamb
 
 $=(u_1 \quad u_2 \quad ... \quad u_p)\begin{gathered}\begin{pmatrix}\lambda_1 \quad ... \quad ... \quad ...\\ ... \quad \lambda_2 \quad ... \quad ...\\ ... \quad ... \quad ... \quad ...\\  ... \quad ... \quad ... \quad \lambda_p\end{pmatrix}\end{gathered}$
 
-$=(u1\lambda_1 \quad u2\lambda_2 \quad ... \quad  up\lambda_p)\begin{gathered}\begin{pmatrix}u_1^T\\u_2^T\\...\\u_p^T\end{pmatrix}\end{gathered}$ $=$ $\mathop \Sigma \limits_{i=1} \limits^{p}u_i\lambda_iu_i^T$
+$=(u1\lambda_1 \quad u2\lambda_2 \quad ... \quad  up\lambda_p)\begin{gathered}\begin{pmatrix}u_1^T u_2^T \\ ... \\ u_p^T \end{pmatrix}\end{gathered}$ $=$ $\mathop \Sigma \limits_{i=1} \limits^{p}u_i\lambda_iu_i^T$
 
 $\Sigma^{-1}=(U^T\wedge U)^{-1}=(U^T)^{-1}\wedge^{-1}U^{-1}=U\wedge^{-1}U^T$其中：$\wedge^{-1}=diag(\frac{1}{\lambda_i})$，$i=1,...,p$
 
@@ -119,7 +119,7 @@ $=\mathop \Sigma \limits_{i=1} \limits^{p}u_i\frac{1}{\lambda_i}u_i^T$
 
 $(x-\mu)^T \Sigma^{-1}(x-\mu)\quad = \quad (x-\mu)^T\mathop \Sigma \limits_{i=1} \limits^{p}u_i\frac{1}{\lambda_i}u_i^T(x-\mu)\quad =\quad \mathop \Sigma \limits_{i=1} \limits^{p}(x-\mu)^Tu_i\frac{1}{\lambda_i}u_i^T(x-\mu)$
 
-令：$y_i=\begin{gathered}\begin{pmatrix}y_1\\y_2\\...\\y_p\end{pmatrix}\end{gathered}$    
+令：$y_i=\begin{gathered}\begin{pmatrix}y_1 \\ y_2 \\ ... \\ y_p\end{pmatrix}\end{gathered}$    
 
 $y_i=(x-\mu)^Tu_i \quad = \quad \mathop \Sigma \limits_{i=1} \limits^{p}y_i\frac{1}{\lambda_i}y_i^T \quad  = \quad \mathop \Sigma \limits_{i=1} \limits^{p}\frac{y_i^2}{\lambda_i}$
 
@@ -144,11 +144,11 @@ $\Delta=\frac{y_1^2}{\lambda_1} + \frac{y_2^2}{\lambda_2}=1$
 
 高维高斯分布推到最复杂的地方章节！！！（要敏感）
 
-已知：$x=\begin{gathered}\begin{pmatrix}x_a\\x_b\end{pmatrix}\end{gathered}\begin{gathered}\begin{matrix}\rightarrow m\\\rightarrow n\end{matrix}\end{gathered}$    
+已知：$x=\begin{gathered}\begin{pmatrix}x_a \\ x_b\end{pmatrix}\end{gathered}\begin{gathered}\begin{matrix}\rightarrow m\\\rightarrow n\end{matrix}\end{gathered}$    
 
 $m+n=p$    
 
-$u=\begin{gathered}\begin{pmatrix}u_a\\u_b\end{pmatrix}\end{gathered}$    
+$u=\begin{gathered}\begin{pmatrix}u_a \\ u_b\end{pmatrix}\end{gathered}$    
 
 $\Sigma=\begin{gathered}\begin{pmatrix}\Sigma_{aa} \quad \Sigma_{ab}\\\Sigma_{ba} \quad \Sigma_{bb}\end{pmatrix}\end{gathered}$
 
@@ -168,7 +168,9 @@ $\Sigma=\begin{gathered}\begin{pmatrix}\Sigma_{aa} \quad \Sigma_{ab}\\\Sigma_{ba
 
 ---
 
- 现在定义：$x_a=\begin{gathered}\begin{matrix}\underbrace{\begin{pmatrix}I_m & 0_n\end{pmatrix}}\\A\end{matrix}\end{gathered}\begin{gathered}\begin{matrix}\underbrace{\begin{pmatrix}x_a\\x_b\end{pmatrix}}\\x\end{matrix}\end{gathered}+0$
+现在定义：
+
+$x_a=\begin{gathered}\begin{matrix}\underbrace{\begin{pmatrix}I_m & 0_n\end{pmatrix}}\\A\end{matrix}\end{gathered}\begin{gathered}\begin{matrix}\underbrace{\begin{pmatrix}x_a \\ x_b\end{pmatrix}}\\ x\end{matrix}\end{gathered}+0$
 
 $E[x_a] = \begin{gathered}\begin{pmatrix}I_m & 0\end{pmatrix}\end{gathered}\begin{gathered}\begin{pmatrix}\mu_a\\ \mu_b \end{pmatrix}\end{gathered}=\mu_a\quadVar[x_a] = \begin{gathered}\begin{pmatrix}I_m & 0\end{pmatrix}\end{gathered}\begin{gathered}\begin{pmatrix}\Sigma_{aa} & \Sigma_{ab}\\ \Sigma_{ba} & \Sigma_{bb} \en{pmatrix}\end{gathered}=\begin{gathered}\begin{pmatrix}\Sigma_{aa} & \Sigma{ab}\end{pmatrix}\end{gathered}\begin{gathered}\begin{pmatrix}I_m \\ 0\end{pmatrix}\end{gathered}=\Sigma_{aa}$
 
@@ -176,7 +178,7 @@ $E[x_a] = \begin{gathered}\begin{pmatrix}I_m & 0\end{pmatrix}\end{gathered}\begi
 
 $\Sigma_{b \cdot a}=\Sigma_b - \Sigma_{ba} \Sigma_{aa}^{-1}\Sigma_a$（$\Sigma_{aa}$schur complement）
 
-$x_{b \cdot a} = \begin{gathered}\begin{matrix}\underbrace{\begin{pmatrix}-\Sigma_{ba} \Sigma_{aa}^{-1} & I \end{pmatrix}}\\A \end{matrix}\end{gathered}\begin{gathered}\begin{matrix}\underbrace{\begin{pmatrix}x_a \\ x_b\end{pmatrix}}\\x \end{matrix}\end{gathered}$
+$x_{b \cdot a} = \begin{gathered}\begin{matrix}\underbrace{\begin{pmatrix}-\Sigma_{ba} \Sigma_{aa}^{-1} & I \end{pmatrix}}\\ A \end{matrix}\end{gathered}\begin{gathered}\begin{matrix}\underbrace{\begin{pmatrix}x_a \\ x_b\end{pmatrix}}\\ x \end{matrix}\end{gathered}$
 
 $E[x_{b \cdot a}] = \begin{gathered}\begin{pmatrix}-\Sigma_{ba} \Sigma_{aa}^{-1} & I \end{pmatrix}\end{gathered}\begin{gathered}\begin{pmatrix}x_a \\ x_b\end{pmatrix}\end{gathered}=\mu_a-\Sigma_{ba}\Sigma_{aa}^{-1}\mu_a=\mu_{b \cdot a}$
 
@@ -214,7 +216,7 @@ $y \sim N(A\mu+b,A\cdot \wedge^{-1} \cdot A^T +L^{-1})$
 ---
 
 ②第二步：
-$Z=\begin{gathered}\begin{pmatrix} x\\y\end{pmatrix}\end{gathered}\simN(\begin{gathered}\begin{matrix}\underbrace{\begin{bmatrix} \mu \\ A\mu+b\end{bmatrix}}\\E[z] \end{matrix}\end{gathered},\begin{gathered}\begin{bmatrix}  \wedge^{-1} & O \\O & L^{-1}+A\wedge^{-1}A^T \end{bmatrix}\end{gathered})$，我们缺少$O$（圆圈）的部分，实质上两个圆圈缺的内容是一样的（本质一个圆圈内容是另一个圆圈内容转置，但是他们互为转置），我们定义圆圈的内容为$\Delta$，$\Delta=Cov(x,y)\\=E[(x-E[x]) \cdot (y-E[y])]^T\\=E[(x-\mu)(y-A\mu-b)]^T\\=E[(x-\mu)(Ax+b+\varepsilon-A/mu-b)^T]\\=E[(x-\mu)(Ax-A\mu+\varepsilon)^T]\\=E[(x-\mu)(Ax-A/mu)^T+(x-\mu)\varepsilon^T]\\=E[(x-\mu)(Ax-A/mu)^T]+\begin{gathered}\begin{matrix}\underbrace{E[(x-\mu)\varepsilon^T]}\\x\bot\varepsilon\\x-\mu\bot\varepsilon\\ E[(x-\mu)]E[\varepsilon] =0\end{matrix}\end{gathered}\\=E[(x-u)(Ax-A\mu^T)]\\=E[(x-\mu)(x-\mu)^T\cdot A^T]\\=E[(x-u)(Ax-A\mu^T)]\\=E[(x-\mu)(x-\mu)^T\cdot A^T\\=Var[x] /cdot A^T\\=\wedge^{-1}A^T$
+$Z=\begin{gathered}\begin{pmatrix} x\\y\end{pmatrix}\end{gathered}\simN(\begin{gathered}\begin{matrix}\underbrace{\begin{bmatrix} \mu \\ A\mu+b\end{bmatrix}}\\ E[z] \end{matrix}\end{gathered},\begin{gathered}\begin{bmatrix}  \wedge^{-1} & O \\ O & L^{-1}+A\wedge^{-1}A^T \end{bmatrix}\end{gathered})$，我们缺少$O$（圆圈）的部分，实质上两个圆圈缺的内容是一样的（本质一个圆圈内容是另一个圆圈内容转置，但是他们互为转置），我们定义圆圈的内容为$\Delta$，$\Delta=Cov(x,y)\\=E[(x-E[x]) \cdot (y-E[y])]^T\\=E[(x-\mu)(y-A\mu-b)]^T\\=E[(x-\mu)(Ax+b+\varepsilon-A/mu-b)^T]\\=E[(x-\mu)(Ax-A\mu+\varepsilon)^T]\\=E[(x-\mu)(Ax-A/mu)^T+(x-\mu)\varepsilon^T]\\=E[(x-\mu)(Ax-A/mu)^T]+\begin{gathered}\begin{matrix}\underbrace{E[(x-\mu)\varepsilon^T]}\\ x\bot\varepsilon\\ x-\mu\bot\varepsilon\\ E[(x-\mu)]E[\varepsilon] =0\end{matrix}\end{gathered}\\=E[(x-u)(Ax-A\mu^T)]\\=E[(x-\mu)(x-\mu)^T\cdot A^T]\\=E[(x-u)(Ax-A\mu^T)]\\=E[(x-\mu)(x-\mu)^T\cdot A^T]\\=Var[x] /cdot A^T\\=\wedge^{-1}A^T$
 **最后一步中，$\mu$就是$E[x]$，所以那个事方差公式**
 
 ---
