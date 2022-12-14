@@ -179,7 +179,7 @@ $p(y|W)=\frac{1}{\sqrt{2\pi}\sigma}\exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}\}$    
 
 $p(y|W)\cdot p(W)=\frac{1}{\sqrt{2\pi}\sigma} \cdot \frac{1}{\sqrt{2\pi}\sigma_0} \cdot \exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2}\}$
 
-$MAP:\hat{W}=\arg \max \limits_{W} p(w|y) =\arg \max p(y|W) \cdot p(W)\\ =\arg \max \log [p(y|W) \cdot p(W)] \\ =\arg \max \limits_{W} \log [\frac{1}{\sqrt{2\pi}\sigma} \cdot \frac{1}{\sqrt{2\pi \sigma_0}]+\log\exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2}\}$
+$ MAP:\hat{W}=\arg \max \limits_{W} p(w|y) =\arg \max p(y|W) \cdot p(W)\\ =\arg \max \log [p(y|W) \cdot p(W)] \\ =\arg \max \limits_{W} \log [\frac{1}{\sqrt{2\pi}\sigma} \cdot \frac{1}{\sqrt{2\pi \sigma_0}]+\log\exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2}\} $
 
 这里$\sigma$和$\sigma_0$是我设置的，本质上是超参数，但是这里可以看做常数
 
