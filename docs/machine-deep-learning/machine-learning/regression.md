@@ -125,16 +125,17 @@ $y|x;W \sim N(W^Tx,\sigma^2) \rightarrow P(y|x;w)=\frac{1}{\sqrt{2\pi}\sigma}\ex
 
 $MLE:\mathcal{L}(W)=\log P(Y|X;W)=\log \mathop\Pi\limits_{i=1}\limits^NP(y_i|x_i;W)=\mathop \Sigma \limits_{i=1}\limits^N\log P(y_i|x_i;W)\\=\mathop \Sigma \limits_{i=1}\limits^N\log \frac{1}{\sqrt{2\pi}\sigma}+\log \exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}\}\\=\mathop \Sigma \limits_{i=1}\limits^N(\log \frac{1}{\sqrt{2\pi}\sigma}\cdot - \cdot -\frac{1}{2\sigma^2}(y-W^Tx)^2)$
 
-$\hat{W}=\arg\max \limits_{W}\mathcal{L}(W)\\
-=\arg\max\limits_{W}-\frac{1}{2\sigma^2}(y-W^Tx)^2\\
-=\arg\min\limits_{W}(y_i-W^Tx_i)^2$
+$\hat{W}=\arg\max \limits_{W}\mathcal{L}(W)\\ =\arg\max\limits_{W}-\frac{1}{2\sigma^2}(y-W^Tx)^2\\ =\arg\min\limits_{W}(y_i-W^Tx_i)^2$
 
 和最小二乘估计的$L(W)$一样
 
 $LSE \Leftrightarrow MLE$（noise is Gaussian Dist）
+
 ### 正则化-岭回归-频率角度：
 
-Loss Function：$L(w)=\mathop \Sigma \limits_{i=1} \limits^{N}||w^Tx_i-y_i||^2_2$    $\hat{W}=(X^TX)^{-1}X^TY$
+Loss Function：$L(w)=\mathop \Sigma \limits_{i=1} \limits^{N}||w^Tx_i-y_i||^2_2$  
+
+$\hat{W}=(X^TX)^{-1}X^TY$
 
 $X_{N×p}$，$N$个样本，$x_i \epsilon R^p$（一般$N \gg p$），如果样本纬度高，样本量少容易造成过拟合
 
@@ -153,46 +154,12 @@ L2（二范式）：Ridge（岭回归），$P(W)=||W||_2=W^TW$（岭回归全称
 
 L2对应的函数：
 
-$\begin{gathered}
-\begin{matrix}
-J(W)=
-\underbrace{
-\mathop \Sigma \limits_{i=1} \limits^{N}||w^Tx_i-y_i||^2_2
-}
-+
-\lambda W^TW
-\\
-\begin{pmatrix}
-W^Tx_1-y_1 & W^Tx_2-y_2  & ... & W^Tx_N-y_N
-\end{pmatrix}
-\\
-\begin{pmatrix}
-W^Tx_1 & W^Tx_2  & ... & W^Tx_N
-\end{pmatrix}-
-\begin{pmatrix}
-y_1 & y_2  & ... & y_N
-\end{pmatrix}
+$\begin{gathered} \begin{matrix} J(W)= \underbrace{ \mathop \Sigma \limits_{i=1} \limits^{N}||w^Tx_i-y_i||^2_2 } + \lambda W^TW \\ \begin{pmatrix} W^Tx_1-y_1 & W^Tx_2-y_2  & ... & W^Tx_N-y_N \end{pmatrix} \\ \begin{pmatrix} W^Tx_1 & W^Tx_2  & ... & W^Tx_N \end{pmatrix}- \begin{pmatrix} y_1 & y_2  & ... & y_N \end{pmatrix} \\ W^T\begin{pmatrix} x_1 & x_2  & ... & x_N \end{pmatrix}- \begin{pmatrix} y_1 & y_2  & ... & y_N \end{pmatrix} \end{matrix} \end{gathered} \\(W^T+X^T-Y^T)(XW-Y) \\ = (W^T+X^T-Y^T)(XW-Y)+\lambda W^TW \\ =W^TX^TXW-2W^TX^TY+Y^TY+\lambda W^TW \\ =W^T(X^TX+\lambda I)W-2W^TX^TY+Y^TY$
 
-\\
-
-W^T\begin{pmatrix}
-x_1 & x_2  & ... & x_N
-\end{pmatrix}-
-\begin{pmatrix}
-y_1 & y_2  & ... & y_N
-\end{pmatrix}
-\end{matrix}
-\end{gathered}
-\\(W^T+X^T-Y^T)(XW-Y)
-\\
-=
-(W^T+X^T-Y^T)(XW-Y)+\lambda W^TW
-\\
-=W^TX^TXW-2W^TX^TY+Y^TY+\lambda W^TW
-\\
-=W^T(X^TX+\lambda I)W-2W^TX^TY+Y^TY$
 $\hat{W}=\arg\min J(W)$
+
 $\frac{\partial J(W)}{\partial W}=2(X^TX+\lambda I)W - 2X^TY=0$
+
 $\hat{W}=(X^TX+\lambda I)^{-1}X^TY$
 
 
@@ -212,15 +179,11 @@ $p(y|W)=\frac{1}{\sqrt{2\pi}\sigma}\exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}\}$    
 
 $p(y|W)\cdot p(W)=\frac{1}{\sqrt{2\pi}\sigma} \cdot \frac{1}{\sqrt{2\pi}\sigma_0} \cdot \exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2}\}$
 
-$MAP:\hat{W}=\arg \max \limits_{W} p(w|y)
-=\arg \max p(y|W) \cdot p(W)\\
-=\arg \max \log [p(y|W) \cdot p(W)] \\
-=\arg \max \limits_{W} \log [\frac{1}{\sqrt{2\pi}\sigma} \cdot \frac{1}{\sqrt{2\pi}\sigma_0}]+\log\exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2}\}$
+$MAP:\hat{W}=\arg \max \limits_{W} p(w|y) =\arg \max p(y|W) \cdot p(W)\\ =\arg \max \log [p(y|W) \cdot p(W)] \\ =\arg \max \limits_{W} \log [\frac{1}{\sqrt{2\pi}\sigma} \cdot \frac{1}{\sqrt{2\pi \sigma_0}]+\log\exp\{-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2}\}$
 
 这里$\sigma$和$\sigma_0$是我设置的，本质上是超参数，但是这里可以看做常数
 
-$=\arg \min \limits_{W}(-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2})
-\\=\arg\min(\frac{1}{2}(y-W^Tx)^2+\frac{\sigma^2}{\sigma_0^2||w||^2_2})$
+$=\arg \min \limits_{W}(-\frac{(y-W^Tx)^2}{2\sigma^2}-\frac{||W||^2}{2\sigma_0^2})\\=\arg\min(\frac{1}{2}(y-W^Tx)^2+\frac{\sigma^2}{\sigma_0^2||w||^2_2})$
 
 这里省略了$\mathop \Sigma \limits_{i=1} \limits^{N}$完全写出来如下：
 
