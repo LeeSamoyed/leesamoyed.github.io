@@ -49,11 +49,7 @@ $\sigma^2_{MLE} = \arg\max\limits_{\sigma} p(X|\sigma)\\=\arg\max \Sigma \begin{
 
 求导：
 
-$\frac{\partial\alpha}{\partial\sigma} = \mathop \Sigma \limits_{i=1}\limits^{N}[-\frac{1}{\sigma}+\frac{1}{2}(x_i-\mu)^2 \cdot (+2)\sigma^{-3}] = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}[-\frac{1}{\sigma}+ (x_i-\mu)^2 \cdot \sigma^{-3}]$
-
-$ = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}[-\sigma^2 + (x_i-\mu)^2] = 0\\-\mathop \Sigma \limits_{i=1}\limits^{N}\sigma^2 + \mathop \Sigma \limits_{i-1}\limits^{N}(x_i-\mu)^2 = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}\sigma^2$
-
-$ = \mathop \Sigma \limits_{i-1}\limits^{N(x_i-\mu)^2\\\sigma^2_{MLE}} = \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}(x_i-\mu)^2$
+$\frac{\partial\alpha}{\partial\sigma} = \mathop \Sigma \limits_{i=1}\limits^{N}[-\frac{1}{\sigma}+\frac{1}{2}(x_i-\mu)^2 \cdot (+2)\sigma^{-3}] = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}[-\frac{1}{\sigma}+ (x_i-\mu)^2 \cdot \sigma^{-3}]= 0\\\mathop \Sigma \limits_{i=1}\limits^{N}[-\sigma^2 + (x_i-\mu)^2] = 0\\-\mathop \Sigma \limits_{i=1}\limits^{N}\sigma^2 + \mathop \Sigma \limits_{i-1}\limits^{N}(x_i-\mu)^2 = 0\\\mathop \Sigma \limits_{i=1}\limits^{N}\sigma^2 = \mathop \Sigma \limits_{i-1}\limits^{N(x_i-\mu)^2\\\sigma^2_{MLE}} = \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}(x_i-\mu)^2$
 
 $\sigma^2_{MLE} = \frac{1}{N}\mathop \Sigma \limits_{i=1}\limits^{N}(x_i-\mu_{MLE})^2$
 
