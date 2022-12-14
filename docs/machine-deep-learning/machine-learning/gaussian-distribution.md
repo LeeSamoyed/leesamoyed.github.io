@@ -217,7 +217,7 @@ $y \sim N(A\mu+b,A\cdot \wedge^{-1} \cdot A^T +L^{-1})$
 
 ②第二步：
 $Z=\begin{gathered}\begin{pmatrix} x\\y\end{pmatrix}\end{gathered}\simN(\begin{gathered}\begin{matrix}\underbrace{\begin{bmatrix} \mu \\ A\mu+b\end{bmatrix}}\\ E[z] \end{matrix}\end{gathered},\begin{gathered}\begin{bmatrix}  \wedge^{-1} & O \\ O & L^{-1}+A\wedge^{-1}A^T \end{bmatrix}\end{gathered})$，我们缺少$O$（圆圈）的部分，实质上两个圆圈缺的内容是一样的（本质一个圆圈内容是另一个圆圈内容转置，但是他们互为转置），我们定义圆圈的内容为$\Delta$，$\Delta=Cov(x,y)\\=E[(x-E[x]) \cdot (y-E[y])]^T\\=E[(x-\mu)(y-A\mu-b)]^T\\=E[(x-\mu)(Ax+b+\varepsilon-A/mu-b)^T]\\=E[(x-\mu)(Ax-A\mu+\varepsilon)^T]\\=E[(x-\mu)(Ax-A/mu)^T+(x-\mu)\varepsilon^T]\\=E[(x-\mu)(Ax-A/mu)^T]+\begin{gathered}\begin{matrix}\underbrace{E[(x-\mu)\varepsilon^T]}\\ x\bot\varepsilon\\ x-\mu\bot\varepsilon\\ E[(x-\mu)]E[\varepsilon] =0\end{matrix}\end{gathered}\\=E[(x-u)(Ax-A\mu^T)]\\=E[(x-\mu)(x-\mu)^T\cdot A^T]\\=E[(x-u)(Ax-A\mu^T)]\\=E[(x-\mu)(x-\mu)^T\cdot A^T]\\=Var[x] /cdot A^T\\=\wedge^{-1}A^T$
-**最后一步中，$\mu$就是$E[x]$，所以那个事方差公式**
+**最后一步中，$\mu$就是$E[x]$，所以那个是方差公式**
 
 ---
 
