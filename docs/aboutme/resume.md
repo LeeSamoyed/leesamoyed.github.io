@@ -2,15 +2,18 @@
 
 Hi! 我是李屹(Yam Li)
 
-本科就读于南京工程学院(NJIT)-计算机工程学院-数字媒体技术专业
-
-硕士就读于中国民用航空飞行学院(CAFUC)-计算机学院-交通运输专业
 
 一个热爱 **研发** 与 **网安** 的攻城狮，当前正在研究这些好玩儿的：
 
 - CloudNative (Docker & DevOps & Jenkins & VPC & K8S) | RDSec Group | Secure Dev Zone (Microsoft Azure etc.) Team
 - Building Object Detection System On Large-scale Data
 
+### 教育经历
+
+| | | | | |
+|-|-|-|-|-|
+| 本科 | 南京工程学院(NJIT) | 计算机工程学院 | 数字媒体技术 | 2017.09-2021.06 |
+| 硕士 | 中国民用航空飞行学院(CAFUC) | 计算机学院 | 交通运输 | 2021.09-至今 |
 
 ### 实习经历
 
