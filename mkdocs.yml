@@ -148,20 +148,20 @@ nav:
     - ★程序算法:
       - 基本数据结构: programming-algorithm/algorithm/data-structure-basic.md
   - ★研发&设计:
-    - 系统设计:
+    - ★系统设计:
       - 解耦: research-development-design/system-design/decoupling.md
       - 扩展性: research-development-design/system-design/extensibility.md
       - 模块化设计: research-development-design/system-design/modular-design.md
       - 健壮性: research-development-design/system-design/robustness.md
       - 简化操作: research-development-design/system-design/simplified-operation.md
-    - 需求分析与设计:
+    - ★需求分析与设计:
       - 分析与设计: research-development-design/requirements-analysis-design/analysis-design.md
-    - 业务逻辑:
+    - ★业务逻辑:
       - 请求的安全与健全: research-development-design/business-logic/soundness-and-security-of-requests.md
       - 唯一数据插入: research-development-design/business-logic/unique-insert.md
       - 标识位的利用: research-development-design/business-logic/flag-is-important.md
       - 算法的引入: research-development-design/business-logic/algorithm.md
-    - 测试:
+    - ★测试:
       - Testcase设计: research-development-design/test/testcase-design.md
     - 设计模式:
       - 大话设计模式: research-development-design/design-pattern/westward-design-patterns.md
