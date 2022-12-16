@@ -124,10 +124,11 @@ extra:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
+    - icon: fontawesome/regular/envelope
+      link: mailto:leesamoyed@163.com
     - icon: fontawesome/brands/github
       link: https://github.com/LeeSamoyed/
-    - icon: fontawesome/brands/d-and-d
-      link: http://coolmoon327.github.io/
+
 
 
 # Page tree
@@ -223,7 +224,7 @@ nav:
   - 分布式系统:
     - 分布式一致性算法: distributed-systems/distributed-consistency-algorithm.md
   - ★代码改进:
-    - ★QDUOJ 青岛大学开源OJ系统: code-improvements/qduoj.md
+    - QDUOJ 青岛大学开源OJ系统: code-improvements/qduoj.md
   - 数理:
     - 微积分:
       - 微积分的本质: mathematical-theory/calculus/nature-of-calculus.md
