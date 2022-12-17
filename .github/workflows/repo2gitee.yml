@@ -11,7 +11,7 @@ jobs:
       gitee_user: ${{ secrets.GITEE_USER }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/repo2gitee@v1
+      - uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
 
