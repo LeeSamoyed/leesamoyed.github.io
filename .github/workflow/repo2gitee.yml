@@ -1,25 +1,26 @@
-name: Repo 2 Gitee
-
+name: repo2gitee
 on:
   push:
-    branches: 
+    branches:
       - master
-
 jobs:
-  build:
-    runs-on: ubuntu-20.04
+  repo-sync:
+    env:
+      dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+      dst_token: ${{ secrets.GITEE_TOKEN }}
+      gitee_user: ${{ secrets.GITEE_USER }}
+    runs-on: ubuntu-latest
     steps:
+      - uses: actions/repo2gitee@v1
+        with:
+          persist-credentials: false
 
-    - name: Repo 2 Gitee
-      uses: LeeSamoyed/LeeSamoyed.git.io@v1.1
-      with:
-        src: github/LeeSamoyed
-        dst: gitee/LeeSamoyed
-        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-        dst_token:  ${{ secrets.GITEE_TOKEN }}
-        account_type: user
-        clone_style: "https"
-        debug: true 
-        force_update: true 
-        static_list: "python-nianbao-struct"
-        timeout: '600s'
+      - name: repo2gitee
+        uses: LeeSamoyed/leesamoyed.github.io@master
+        if: env.dst_key && env.dst_token && env.gitee_user
+        with:
+          src: 'github/${{ github.repository_owner }}'
+          dst: 'gitee/${{ secrets.GITEE_USER }}'
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token:  ${{ secrets.GITEE_TOKEN }}
+          static_list: ${{ github.event.repository.name }}
