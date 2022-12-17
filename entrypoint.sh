@@ -23,4 +23,5 @@ fi
 mkdir -p ~/.ssh
 cp /root/.ssh/* ~/.ssh/ 2> /dev/null || true
 
+chmod 777 /git-mirror.sh
 sh -c "/git-mirror.sh $*"
