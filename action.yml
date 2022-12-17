@@ -7,11 +7,11 @@ inputs:
   source-repo:
     description: 'SSH URL of the source repo.'
     required: true
-    default: 'git@github.com:LeeSamoyed/leesamoyed.github.io.git'
+    default: ''
   destination-repo:
     description: 'SSH URL of the destination repo.'
     required: true
-    default: 'git@gitee.com:leesamoyed/leesamoyed.gitee.io.git'
+    default: ''
   dry-run:
     description: 'Execute a dry run.'
     required: false

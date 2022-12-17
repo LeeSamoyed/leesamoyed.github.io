@@ -1,4 +1,4 @@
-name: repo2gitee
+name: Repo2Gitee
 on:
   push:
     branches:
@@ -13,5 +13,18 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: repo2gitee
+      - name: Repo to Gitee
         uses: LeeSamoyed/leesamoyed.github.io@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
+        with:
+          source-repo: "git@github.com:LeeSamoyed/leesamoyed.github.io.git"
+          destination-repo: "git@gitee.com:leesamoyed/leesamoyed.gitee.io.git"
+
+      - name: Build Gitee Pages
+        uses: leesamoyed/leesamoyed.gitee.io@master
+        with:
+          gitee-username: LeeSamoyed
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          gitee-repo: leesamoyed/leesamoyed.gitee.io
+          branch: master
