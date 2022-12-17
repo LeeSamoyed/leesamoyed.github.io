@@ -14,7 +14,7 @@ jobs:
           persist-credentials: false
 
       - name: Repo to Gitee
-        uses: LeeSamoyed/leesamoyed.github.io@master
+        uses: wearerequired/git-mirror-action@master
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
         with:
