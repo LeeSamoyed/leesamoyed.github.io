@@ -1,6 +1,7 @@
-FROM ubuntu
+FROM alpine
 
-RUN apt update && apt install git python3 python3-pip -y && \
-  echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+RUN apk add --no-cache git openssh-client
 
-ADD . /
+ADD *.sh /
+
+ENTRYPOINT ["/entrypoint.sh"]

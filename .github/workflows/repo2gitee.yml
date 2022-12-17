@@ -5,25 +5,7 @@ on:
       - master
 jobs:
   repo2gitee:
-    env:
-      dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-      dst_token: ${{ secrets.GITEE_TOKEN }}
-      gitee_user: ${{ secrets.GITEE_USER }}
-      
     runs-on: ubuntu-latest
-    
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
-        with:
-          persist-credentials: false
-
-      - name: repo2gitee
-        uses: LeeSamoyed/leesamoyed.github.io@master
-        if: env.dst_key && env.dst_token && env.gitee_user
-        with:
-          src: 'github/${{ github.repository_owner }}'
-          dst: 'gitee/${{ secrets.GITEE_USER }}'
-          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token:  ${{ secrets.GITEE_TOKEN }}
-          static_list: ${{ github.event.repository.name }}
