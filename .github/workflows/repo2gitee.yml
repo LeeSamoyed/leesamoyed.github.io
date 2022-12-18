@@ -16,7 +16,7 @@ jobs:
       - name: Repo to Gitee
         uses: LeeSamoyed/leesamoyed.github.io@master
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           source-repo: "git@github.com:LeeSamoyed/leesamoyed.github.io.git"
           destination-repo: "git@gitee.com:leesamoyed/leesamoyed.gitee.io.git"

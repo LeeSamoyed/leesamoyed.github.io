@@ -13,7 +13,7 @@ echo "SOURCE=$SOURCE_REPO"
 echo "DESTINATION=$DESTINATION_REPO"
 echo "DRY RUN=$DRY_RUN"
 
-git config --global --add safe.directory /github/workspace
+# git config --global --add safe.directory /github/workspace
 
 git clone --mirror "$SOURCE_REPO" "$SOURCE_DIR" && cd "$SOURCE_DIR"
 git remote set-url --push origin "$DESTINATION_REPO"
