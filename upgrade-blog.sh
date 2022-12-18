@@ -9,3 +9,4 @@ mv site/* ./
 
 git add .
 git commit -m $1
+sudo git push origin master
