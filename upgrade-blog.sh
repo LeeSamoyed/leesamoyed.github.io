@@ -1,14 +1,15 @@
 #!/bin/bash
 
+# check args
 if [ $# -le 0 ]
   then
   echo what is your commmit notes?
   exit
 fi
 
+# update wiki 
 if [ $# -gt 0 ]
   then
-  # update wiki 
   mkdocs build --clean
   rm -rf $(ls | grep -v .docs | grep -v material | \
           grep -v  .github | grep -v site | grep -v .gitignore | \
