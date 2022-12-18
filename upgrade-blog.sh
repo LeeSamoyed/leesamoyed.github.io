@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $# -le 0 ]
+  then
+  echo what is your commmit notes?
+fi
+
 if [ $# -gt 0 ]
   then
   # update wiki 
@@ -19,6 +24,6 @@ if [ $# -gt 0 ]
 
   # auto push to gitee (github action workflow)
 fi
-echo what is your commmit notes?
-exit
+
+
   
