@@ -7,10 +7,13 @@ site_description: >-
 repo_name: 'LeeSamoyed/leesamoyed.github.io'
 repo_url: 'https://github.com/LeeSamoyed/leesamoyed.github.io'
 
+# Docs
+docs_dir: '.docs'
+
 # Configuration
 theme:
   name: material
-  custom_dir: material/.overrides
+  custom_dir: .docs/.overrides
   features:
     # - announce.dismiss
     - content.code.annotate
