@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# update wiki 
 mkdocs build --clean
 rm -rf $(ls | grep -v docs | grep -v material | \
         grep -v  .github | grep -v site | grep -v .gitignore | \
@@ -7,6 +9,9 @@ rm -rf $(ls | grep -v docs | grep -v material | \
         grep -v Dockerfile | grep -v action.yml)
 mv site/* ./
 
+# auto push to github
 git add .
 git commit -m $1
-git push origin master 
+git push origin master
+
+# auto push to gitee (github action workflow)
