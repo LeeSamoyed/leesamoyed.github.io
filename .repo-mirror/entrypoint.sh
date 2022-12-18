@@ -23,5 +23,5 @@ fi
 mkdir -p ~/.ssh
 cp /root/.ssh/* ~/.ssh/ 2> /dev/null || true
 
-chmod 777 /.repo-mirror/mirror.sh
-sh -c "/.repo-mirror/mirror.sh $*"
+chmod 777 .repo-mirror/mirror.sh
+sh -c ".repo-mirror/mirror.sh $*"
