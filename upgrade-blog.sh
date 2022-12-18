@@ -6,3 +6,6 @@ rm -rf $(ls | grep -v docs | grep -v material | \
         grep -v upgrade-blog.sh | grep -v git-mirror.sh | grep -v entrypoint.sh | \
         grep -v Dockerfile | grep -v action.yml)
 mv site/* ./
+
+git add .
+git commit -m '$1'
