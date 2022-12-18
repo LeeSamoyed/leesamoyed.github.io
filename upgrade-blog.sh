@@ -20,7 +20,7 @@ if [ $# -gt 0 ]
   # auto push to github
   git add .
   git commit -m $1
-  git push origin master
+  git push -f origin master
 
   # auto push to gitee (github action workflow)
 fi
