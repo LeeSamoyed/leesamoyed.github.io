@@ -8,4 +8,4 @@ rm -rf $(ls | grep -v docs | grep -v material | \
 mv site/* ./
 
 git add .
-git commit -m '$1'
+git commit -m $1
