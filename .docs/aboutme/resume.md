@@ -25,14 +25,14 @@ Hi! 我是李屹(Yam Li)
 <section id="company" class="company-wrapper">
     <div class="inner alt">
         <section class="spotlight">
-            <div class="image"><img src="assets/images/about-me/Trend_Micro_logo.png" alt="" /></div>
+            <div class="image"><img src="/assets/images/about-me/Trend_Micro_logo.png" alt="" /></div>
             <div class="content">
                 <h3>Magna sed ultrices</h3>
                 <p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
             </div>
         </section>
         <section class="spotlight">
-            <div class="image"><img src="assets/images/about-me/NSFOCUS_logo.png" alt="" /></div>
+            <div class="image"><img src="/assets/images/about-me/NSFOCUS_logo.png" alt="" /></div>
             <div class="content">
                 <h3>Ultrices nullam aliquam</h3>
                 <p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
@@ -45,7 +45,7 @@ Hi! 我是李屹(Yam Li)
 
 期刊论文:
 
-- Wang, X.; **Li, Y.** ; Xu, Y.; Liu, X.; Zheng, T.; Zheng, B. [Remaining Useful Life Prediction for Aero-Engines Using a Time-Enhanced Multi-Head Self-Attention Model.](https://www.mdpi.com/2226-4310/10/1/80) <em>Aerospace</em> 2023, 10, 80. https://doi.org/10.3390/aerospace10010080
+- Wang, X.; **Li, Y.** ; Xu, Y.; Liu, X.; Zheng, T.; Zheng, B. [Remaining Useful Life Prediction for Aero-Engines Using a Time-Enhanced Multi-Head Self-Attention Model.](https://www.mdpi.com/2226-4310/10/1/80) <em>Aerospace</em> 2023, 10, 80.
 
 - 王欣; **李屹**; 孟天宇; 黄佳琪, [风格迁移增强的机场目标检测方法研究](), 计算机应用与软件.（未见刊）
 - 王欣; 孟天宇; 黄佳琪; **李屹**, [基于ERNIE-SKEP与BiGRU的航空公司旅客评价情感分析](), 计算机仿真.（未见刊）
