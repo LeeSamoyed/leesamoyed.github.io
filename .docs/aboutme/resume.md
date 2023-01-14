@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="assets/css-extension/resume.css" />
-
 # 关于我
 
 Hi! 我是李屹(Yam Li)

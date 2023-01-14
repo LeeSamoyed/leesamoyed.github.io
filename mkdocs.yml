@@ -132,7 +132,8 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/LeeSamoyed/
 
-
+extra_css:
+  - '/assets/css-extension/resume.css' # 企业展示块
 
 # Page tree
 nav:
