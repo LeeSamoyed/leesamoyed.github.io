@@ -27,14 +27,14 @@ Hi! 我是李屹(Yam Li)
 <section id="two" class="wrapper">
     <div class="inner alt">
         <section class="spotlight">
-            <div class="image"><img src="assets/images/Trend_Micro_logo.png" alt="" /></div>
+            <div class="image"><img src="assets/images/about-me/Trend_Micro_logo.png" alt="" /></div>
             <div class="content">
                 <h3>Magna sed ultrices</h3>
                 <p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
             </div>
         </section>
         <section class="spotlight">
-            <div class="image"><img src="assets/images/NSFOCUS_logo.png" alt="" /></div>
+            <div class="image"><img src="assets/images/about-me/NSFOCUS_logo.png" alt="" /></div>
             <div class="content">
                 <h3>Ultrices nullam aliquam</h3>
                 <p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
