@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="assets/css-extension/resume.css" />
+
 # 关于我
 
 Hi! 我是李屹(Yam Li)
@@ -22,9 +24,30 @@ Hi! 我是李屹(Yam Li)
 | 江苏绿盟安全科技有限公司 | 安全服务工程师 | 安全开发、代码审计、渗透测试 | 2022.06-2022.9 |
 | 趋势科技（中国）有限公司南京分公司 | R&D Engineer | 系统解耦设计、后端开发重构、云原生 | 2022.09-至今 |
 
+<section id="two" class="wrapper">
+    <div class="inner alt">
+        <section class="spotlight">
+            <div class="image"><img src="assets/images/Trend_Micro_logo.png" alt="" /></div>
+            <div class="content">
+                <h3>Magna sed ultrices</h3>
+                <p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <div class="image"><img src="assets/images/NSFOCUS_logo.png" alt="" /></div>
+            <div class="content">
+                <h3>Ultrices nullam aliquam</h3>
+                <p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+            </div>
+        </section>
+    </div>
+</section>
+
 ### 科研学术
 
 期刊论文:
+
+- Wang, X.; **Li, Y.** ; Xu, Y.; Liu, X.; Zheng, T.; Zheng, B. [Remaining Useful Life Prediction for Aero-Engines Using a Time-Enhanced Multi-Head Self-Attention Model.](https://www.mdpi.com/2226-4310/10/1/80) <em>Aerospace</em> 2023, 10, 80. https://doi.org/10.3390/aerospace10010080
 
 - 王欣; **李屹**; 孟天宇; 黄佳琪, [风格迁移增强的机场目标检测方法研究](), 计算机应用与软件.（未见刊）
 - 王欣; 孟天宇; 黄佳琪; **李屹**, [基于ERNIE-SKEP与BiGRU的航空公司旅客评价情感分析](), 计算机仿真.（未见刊）
