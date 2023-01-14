@@ -22,17 +22,17 @@ Hi! 我是李屹(Yam Li)
         <section class="spotlight">
             <div class="image"><img src="/assets/images/about-me/NSFOCUS_logo.png" alt="" /></div>
             <div class="content">
-                <h3>江苏绿盟安全科技有限公司 2022.06-2022.9</h3>
-                <p>安全服务工程师</p>
-                <p>安全开发、代码审计、渗透测试</p>
+                <h3>江苏绿盟安全科技有限公司</h3>
+                <p>2022.06-2022.9</p>
+                <p>安全服务工程师 : 安全开发、代码审计、渗透测试</p>
             </div>
         </section>
         <section class="spotlight">
             <div class="image"><img src="/assets/images/about-me/Trend_Micro_logo.png" alt="" /></div>
             <div class="content">
-                <h3>趋势科技（中国）有限公司南京分公司 2022.09-至今</h3>
-                <p>R&D Engineer</p>
-                <p>系统解耦设计、后端开发重构、云原生</p>
+                <h3>趋势科技（中国）有限公司南京分公司</h3>
+                <p>2022.09-至今</p>
+                <p>R&D Engineer : 系统解耦设计、后端开发重构、云原生</p>
             </div>
         </section>
     </div>
