@@ -51,7 +51,7 @@ Hi! 我是李屹(Yam Li)
 会议论文:
 
 - Xiaohua Huang; Wei Huang; **Yi Li**; Xiuyan Shao; Hang Li; Xiang Yu; Lei Han, [Domain adaptive object detection with generative adversarial network](https://ieeexplore.ieee.org/document/9312304), 2020 International Conference on Internet of Things and Intelligent Applications (ITIA)
-- X. Wang, J. Chen, Y. Li and Y. Xu, [Research on Baggage Tray Recognition in Airports Based on Residual Neural Network](https://ieeexplore.ieee.org/document/9980849), 2022 2nd International Conference on Big Data Engineering and Education (BDEE)
+- X. Wang, J. Chen, **Y. Li** and Y. Xu, [Research on Baggage Tray Recognition in Airports Based on Residual Neural Network](https://ieeexplore.ieee.org/document/9980849), 2022 2nd International Conference on Big Data Engineering and Education (BDEE)
 
 软著专利:
 
