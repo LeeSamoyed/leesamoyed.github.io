@@ -56,7 +56,7 @@ Hi! 我是李屹(Yam Li)
 软著专利:
 
 - 徐梦溪; 杜心宇; 吴晓彬; **李屹**; 项鹏; 朱广锋, [一种光流法和深度网络结合的视频高时空分辨率信号处理方法](https://xueshu.baidu.com/usercenter/paper/show?paperid=1u6u0220285v0x20wb7f0a00jv087515&site=xueshu_se), 国家发明专利, CN201910906175.1
-- 王欣; **李屹**; 许雅玺; 傅强; 刘晓东; 潘磊, [风格迁移增强的机场目标检测方法](), 国家发明专利, CN202210332513.7 （实质审查）
+- 王欣; **李屹**; 许雅玺; 傅强; 刘晓东; 潘磊, [风格迁移增强的机场目标检测方法](https://xueshu.baidu.com/usercenter/paper/show?paperid=1f0508q09v6m0tj0cd4804d0jh553615&site=xueshu_se), 国家发明专利, CN202210332513.7
 
 ### 项目经验
 
