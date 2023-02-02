@@ -361,6 +361,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://leesamoyed.github.io/research-development-design/sql/sams-teach-yourself-sql-in-10-minutes/</loc>
+         <lastmod>2023-02-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://leesamoyed.github.io/research-development-design/system-design/decoupling/</loc>
          <lastmod>2023-02-02</lastmod>
          <changefreq>daily</changefreq>

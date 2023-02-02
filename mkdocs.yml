@@ -171,6 +171,8 @@ nav:
       - 大话设计模式: research-development-design/design-pattern/westward-design-patterns.md
     - 开发框架:
       - 框架综述: research-development-design/development-framework/summarize.md
+    - 数据库:
+      - MySQL必知必会: research-development-design/sql/sams-teach-yourself-sql-in-10-minutes.md
   - ★嵌入式:
     - ★开发板:
       - Jetson + 视觉: embedded/development-board/jetson-vision.md
