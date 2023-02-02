@@ -128,7 +128,7 @@ sudo gedit /sys/devices/pwm-fan/target_pwm
 # 255（最大）
 ```
 
-### 十五、最大功率（板子）
+### 最大功率（板子）
 
 ```
 # 功率设置最大
