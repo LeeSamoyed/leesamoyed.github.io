@@ -145,6 +145,7 @@ nav:
     - 学术: aboutme/academic.md
   - ★编程&算法:
     - 编程语言:
+      - Go语言标准库:  programming-algorithm/programming-language/go-standard-library.md
       - Go in Action: programming-algorithm/programming-language/go-in-action.md
       - Python Crash Course: programming-algorithm/programming-language/python-crash-course.md
       - Python基础扩展 优课达: programming-algorithm/programming-language/python-extension-ykd.md
