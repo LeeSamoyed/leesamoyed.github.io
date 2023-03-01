@@ -264,6 +264,8 @@ nav:
       - 嵌入式开发: resources-opinion/study-routes/embedded-development.md
       - 数学理论: resources-opinion/study-routes/mathematical-theory.md
       - 论文写作: resources-opinion/study-routes/paper.md
+    - 复习:
+      - 开发: resources-opinion/review/research-and-development.md
     - 使用手册:
       - Git: resources-opinion/manuals/git.md
       - Docker: resources-opinion/manuals/docker.md
