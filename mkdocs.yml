@@ -193,6 +193,7 @@ nav:
       - Jenkins: cloud-native/platform/jenkins.md
     - ★搭建&维护:
       - AKS SelfHost Gitpod: cloud-native/build-ops/aks-selfhost-gitpod.md
+      - AKS QDUOJ: cloud-native/build-ops/aks-qduoj.md
   - 网络安全:
     - 渗透测试:
       - 信息收集: cyber-security/penetration-test/information-gathering.md
