@@ -4,11 +4,11 @@
 
 ** 也许你关心：**
 
-- [系统设计（解耦、模块化设计、数据安全保障）](https://leesamoyed.github.io/research-development-design/system-design/decoupling/)
+- [系统设计（解耦、模块化设计、数据安全保障）](/research-development-design/system-design/decoupling/)
 
-- [云原生开发与部署](https://leesamoyed.github.io/cloud-native/build-ops/aks-qduoj/)
+- [云原生开发与部署](/cloud-native/build-ops/aks-qduoj/)
 
-- [嵌入式落地项目](https://leesamoyed.github.io/embedded/development-board/jetson-vision/)
+- [嵌入式落地项目](/embedded/development-board/jetson-vision/)
 
 ***
 
@@ -16,7 +16,7 @@
 
 ***
 
-欢迎访问 Wiki 的首页！这里有[自我介绍](https://leesamoyed.github.io/aboutme/)
+欢迎访问 Wiki 的首页！这里有[自我介绍](/aboutme)
 
 Wiki主要用于整理学习成果、学习路线以及分享一些我觉得好玩儿的东西。这是一个快乐的攻城狮的Wiki~~~
 

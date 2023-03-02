@@ -2,8 +2,8 @@
 
 ### RNN
 
-[RNN](https://leesamoyed.github.io/machine-deep-learning/deep-learning/open-source-library/)
+[RNN](/machine-deep-learning/deep-learning/open-source-library/)
 
 ### LSTM
 
-[LSTM](https://leesamoyed.github.io/machine-deep-learning/deep-learning/open-source-library/)
+[LSTM](/machine-deep-learning/deep-learning/open-source-library/)

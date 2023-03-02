@@ -3,7 +3,7 @@
 
 思考一下中这样的场景
 
-你的系统是一个耦合性较高的系统(如果不知道耦合和解决方法概念的话请查看：[Decoupling-解耦](https://leesamoyed.github.io/index.html?file=002-Original%20Notes-%E5%8E%9F%E5%88%9B%E7%AC%94%E8%AE%B0/001-System%20Design-%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/01-Decoupling-%E8%A7%A3%E8%80%A6))
+你的系统是一个耦合性较高的系统(如果不知道耦合和解决方法概念的话请查看：[Decoupling-解耦](/research-development-design/system-design/decoupling)
 
 这个时候，你需要在已经实现的功能上进行扩展，这可能导致你需要调用一些接口（但我们之前提到了，你的耦合性较高，所以这些接口在一开始就被集合到某些方法中了）
 
@@ -11,7 +11,7 @@
 
 或者你思考一下这样的场景
 
-在系统设计初，你并没有考虑到你的系统需要进化，或者处理一些较为复杂的问题，因此你串行的完成着你的业务逻辑（真是悲哀啊，建议看看，[Robustness-健壮性](https://leesamoyed.github.io/index.html?file=002-Original%20Notes-%E5%8E%9F%E5%88%9B%E7%AC%94%E8%AE%B0/001-System%20Design-%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/03-Robustness-%E5%81%A5%E5%A3%AE%E6%80%A7)）
+在系统设计初，你并没有考虑到你的系统需要进化，或者处理一些较为复杂的问题，因此你串行的完成着你的业务逻辑（真是悲哀啊，建议看看，[Robustness-健壮性](/research-development-design/system-design/robustness）
 
 经历了这样的场景构建，现在聪明的你，应该明白了什么是扩展性了吧？？
 
