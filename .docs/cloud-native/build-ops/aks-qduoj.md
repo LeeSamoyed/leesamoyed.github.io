@@ -430,4 +430,3 @@ spec:
 ##### 找不到oj-redis:6379或服务拒绝
 
 这个问题是由于service没开，无法通过oj-redis找到服务，同时开了service之后请注意K8S是否自动打开了endpoint，如果没打开，大概率是connect refuse
-
