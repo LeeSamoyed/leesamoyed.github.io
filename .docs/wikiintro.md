@@ -1,5 +1,17 @@
 <h1 style="text-align:center">Home</h1>
 
+***
+
+** 也许你关心：**
+
+- [系统设计（解耦、模块化设计、数据安全保障）](https://leesamoyed.github.io/research-development-design/system-design/decoupling/)
+
+- [云原生开发与部署](https://leesamoyed.github.io/cloud-native/build-ops/aks-qduoj/)
+
+- [嵌入式落地项目](https://leesamoyed.github.io/embedded/development-board/jetson-vision/)
+
+***
+
 <img style="width:100%; alt="game gif" src="https://raw.githubusercontent.com/leesamoyed/leesamoyed/main/assets/github-contribution-grid-snake.svg"/>
 
 ***
