@@ -132,4 +132,4 @@ docker-compose up -d
 
 ##### K8S Build
 
-[K8S-QDUOJ](https://leesamoyed.github.io/code-improvements/qduoj)
+[K8S-QDUOJ](https://leesamoyed.github.io/cloud-native/build-ops/aks-qduoj)
