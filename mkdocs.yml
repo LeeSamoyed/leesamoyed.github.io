@@ -132,13 +132,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/LeeSamoyed/
 
-extra_css:
-  - '/assets/css/about-me/resume-1.css' # 企业展示块
-
 # Page tree
 nav:
   - 主页: index.html
-  - 简介: wikiintro.md
   - 关于我: 
     - 简历: aboutme/resume.md
     - 项目: aboutme/project.md
