@@ -172,7 +172,7 @@ nav:
       - Testcase设计: research-development-design/test/testcase-design.md
     - 设计模式:
       - 大话设计模式: research-development-design/design-pattern/westward-design-patterns.md
-    - 数据库:
+    - 数据库系统:
       - MySQL必知必会: research-development-design/sql/sams-teach-yourself-sql-in-10-minutes.md
     - 开发框架:
       - 框架综述: research-development-design/development-framework/summarize.md
