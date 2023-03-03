@@ -133,7 +133,7 @@ extra:
       link: https://github.com/LeeSamoyed/
 
 extra_css:
-  - '/assets/css-extension/about-me/resume-1.css' # 企业展示块
+  - '/assets/css/about-me/resume-1.css' # 企业展示块
 
 # Page tree
 nav:
