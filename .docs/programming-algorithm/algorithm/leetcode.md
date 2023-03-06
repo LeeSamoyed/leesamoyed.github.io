@@ -20,6 +20,48 @@ func twoSum(nums []int, target int) []int {
 }
 ```
 
+### 9. 回文数
+
+各人想法：如果不使用数组，当前的数字x每次都能通过%拿到最后一位(%10)，这个位数乘以它的位数为y，x减去y，应该要和它取模y一样过程如下：
+
+```
+假设现在为12321
+
+1. 取位数1
+2. 乘以100000
+3. 12321-10000为2321，12321%10000为2321。否则false
+4. 之后用2321/10就能得到232
+5. 递归，直到小于100，用极限条件判断即可
+```
+
+```
+func isPalindrome(x int) bool {
+    if x<0{
+        return false
+    }
+
+    if x<10{
+		return true
+	}
+    
+    if x<100 && x>=10{
+        if (x/10) == (x%10){
+            return true
+        }else{
+            return false
+        }
+    }
+
+    num := strconv.Itoa(x)
+    for w := 0; w<len(num)/2; w++{
+        if num[w] != num[len(num)-w-1]{
+            return false
+        }
+    }
+    return true
+}
+```
+
 ### 704. 二分查找
 
 ```
