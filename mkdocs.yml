@@ -159,7 +159,7 @@ nav:
       - 开发框架:
         - 框架综述: research-development-design/development-framework/summarize.md
       - 流量:
-        - Nginx: research-development-design/development-framework/nginx.md
+        - Nginx: research-development-design/flow/nginx.md
       - 测试:
         - Testcase设计: research-development-design/test/testcase-design.md
     - 设计:
