@@ -376,6 +376,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://leesamoyed.github.io/research-development-design/flow/nginx/</loc>
+         <lastmod>2023-03-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://leesamoyed.github.io/research-development-design/requirements-analysis-design/analysis-design/</loc>
          <lastmod>2023-03-06</lastmod>
          <changefreq>daily</changefreq>
