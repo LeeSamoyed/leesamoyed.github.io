@@ -2,8 +2,6 @@
 
 ### 1. 两数之和
 
-
-
 ```
 func twoSum(nums []int, target int) []int {
 	answer := []int{0,0}
@@ -59,6 +57,29 @@ func isPalindrome(x int) bool {
         }
     }
     return true
+}
+```
+
+### 27. 移除元素
+
+更多在于实现方向的转变，先达成一些条件，再寻求另一些条件。不要一味的考虑到暴力求解的情况。
+
+```
+func removeElement(nums []int, val int) int {
+
+    count := 0
+
+    for x:= 0; x<len(nums); x++{
+        if nums[x] == val{
+            count = count + 1
+        }else{
+            temp := nums[x-count]
+            nums[x-count] = nums[x]
+            nums[x] = temp
+        }
+    }
+
+    return len(nums) - count
 }
 ```
 
