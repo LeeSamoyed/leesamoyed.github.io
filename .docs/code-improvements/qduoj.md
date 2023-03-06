@@ -130,6 +130,6 @@ example:
 docker-compose up -d
 ```
 
-##### K8S Build
+### K8S Build
 
 [K8S-QDUOJ](/cloud-native/build-ops/aks-qduoj)

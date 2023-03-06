@@ -189,7 +189,7 @@ nav:
     - 工具:
       - KuberShpere: cloud-native/platform/kubersphere.md
       - Jenkins: cloud-native/platform/jenkins.md
-    - ★搭建&维护:
+    - 搭建&维护:
       - AKS SelfHost Gitpod: cloud-native/build-ops/aks-selfhost-gitpod.md
       - AKS QDUOJ: cloud-native/build-ops/aks-qduoj.md
   - 网络安全:
@@ -231,7 +231,7 @@ nav:
     - 数据集整理: machine-deep-learning/databases.md
   - 分布式系统:
     - 分布式一致性算法: distributed-systems/distributed-consistency-algorithm.md
-  - ★代码改进:
+  - 代码改进:
     - QDUOJ 青岛大学开源OJ系统: code-improvements/qduoj.md
   - 数理:
     - 微积分:
