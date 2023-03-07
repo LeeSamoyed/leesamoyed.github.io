@@ -14,6 +14,8 @@ docs_dir: '.docs'
 theme:
   name: material
   custom_dir: .docs/.overrides
+  feature:
+    tabs: true
   features:
     # - navigation.tracking
     # - announce.dismiss
@@ -55,6 +57,7 @@ theme:
   favicon: assets/favicon.png
   icon:
     logo: logo
+    
 
 
 # Plugins
