@@ -60,6 +60,70 @@ func isPalindrome(x int) bool {
 }
 ```
 
+### 13. 罗马数字转整数
+
+```
+func romanToInt(s string) int {
+    
+    result := 0
+    
+    for x := 0; x < len(s); x++{
+        switch {
+            case s[x] == 'M':
+                result = result + 1000
+            case s[x] == 'D':
+                result = result + 500
+            case s[x] == 'C':
+                if x == len(s)-1{
+                    result = result + 100
+                }else if s[x+1] == 'D'{
+                    result = result + 400
+                    x = x+1
+                }else if s[x+1] == 'M'{
+                    result = result + 900
+                    x = x+1
+                }else{
+                    result = result + 100
+                }
+            case s[x] == 'L':
+                result = result + 50
+            case s[x] == 'X':
+                if x == len(s)-1{
+                    result = result + 10
+                }else if s[x+1] == 'L'{
+                    result = result + 40
+                    x = x+1
+                }else if s[x+1] == 'C'{
+                    result = result + 90
+                    x = x+1
+                }else{
+                    result = result + 10
+                }
+            case s[x] == 'V':
+                result = result + 5
+            case s[x] == 'I':
+                if x == len(s)-1{
+                    result = result + 1
+                }else if s[x+1] == 'V'{
+                    result = result + 4
+                    x = x+1
+                }else if s[x+1] == 'X'{
+                    result = result + 9
+                    x = x+1
+                }else{
+                    result = result + 1
+                }
+            default:
+                return result
+        }
+        if x == len(s)-1{
+            return result
+        }
+    }
+    return result
+}
+```
+
 ### 27. 移除元素
 
 更多在于实现方向的转变，先达成一些条件，再寻求另一些条件。不要一味的考虑到暴力求解的情况。
