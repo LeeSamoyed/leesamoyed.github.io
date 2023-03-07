@@ -24,7 +24,7 @@
 
 预备阶段
 - 
-```
+```sh
 # 安装 azure-cli
 brew update && brew install python@3.10 && brew upgrade python@3.10
 brew link --overwrite python@3.10

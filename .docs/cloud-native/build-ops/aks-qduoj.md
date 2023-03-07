@@ -15,7 +15,7 @@
 
 参考：[K8S-deployment](https://kubernetes.io/zh-cn/docs/concepts/workloads/controllers/deployment/) & [AKS-deployment](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster?tabs=azure-cli)
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -235,7 +235,7 @@ status: {}
 - 请务必确保Service以及EndPoint都开启了
 - loadBalancer的规则Azure会处理
 
-```
+```sh
 kubectl get service
 
 kubectl get ep
@@ -243,7 +243,7 @@ kubectl get ep
 
 参考：[K8S-service](https://kubernetes.io/zh-cn/docs/concepts/services-networking/service/) & [AKS-service](https://learn.microsoft.com/en-us/azure/aks/)
 
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -324,7 +324,7 @@ status:
 
 参考：[K8S-PV,PVC](https://kubernetes.io/zh-cn/docs/concepts/storage/persistent-volumes/) & [AKS-PV,PVC](https://learn.microsoft.com/en-us/azure/aks/azure-csi-disk-storage-provision) & [备份](https://opensource.qduoj.com/#/onlinejudge/guide/backup)
 
-```
+```yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -398,7 +398,7 @@ spec:
 
 直接上文件
 
-```
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

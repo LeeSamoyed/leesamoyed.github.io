@@ -14,8 +14,6 @@ docs_dir: '.docs'
 theme:
   name: material
   custom_dir: .docs/.overrides
-  feature:
-    tabs: true
   features:
     # - navigation.tracking
     # - announce.dismiss
