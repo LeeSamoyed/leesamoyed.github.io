@@ -13,11 +13,10 @@ docs_dir: '.docs'
 
 # Configuration
 theme:
-  feature:
-    tabs: true
   name: material
   custom_dir: .docs/.overrides
   features:
+    - navigation.instant
     # - navigation.tracking
     # - announce.dismiss
     - content.action.edit
@@ -76,6 +75,8 @@ plugins:
   #       upgrading.md: upgrade.md
   - minify:
       minify_html: true
+  - git-revision-date
+  
 
 # Extensions
 markdown_extensions:
