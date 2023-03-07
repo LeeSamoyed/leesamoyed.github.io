@@ -6,17 +6,21 @@ site_description: >-
 
 repo_name: 'LeeSamoyed/leesamoyed.github.io'
 repo_url: 'https://github.com/LeeSamoyed/leesamoyed.github.io'
+edit_uri: 'edit/master/.docs/'
 
 # Docs
 docs_dir: '.docs'
 
 # Configuration
 theme:
+  feature:
+    tabs: true
   name: material
   custom_dir: .docs/.overrides
   features:
     # - navigation.tracking
     # - announce.dismiss
+    - content.action.edit
     - content.code.annotate
     # - content.tabs.link
     - content.tooltips
