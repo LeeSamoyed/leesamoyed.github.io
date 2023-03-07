@@ -15,7 +15,7 @@ theme:
   name: material
   custom_dir: .docs/.overrides
   features:
-    - navigation.tracking
+    # - navigation.tracking
     # - announce.dismiss
     - content.code.annotate
     # - content.tabs.link
