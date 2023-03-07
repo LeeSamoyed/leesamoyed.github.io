@@ -20,6 +20,8 @@ func twoSum(nums []int, target int) []int {
 
 ### 9. 回文数
 
+
+思考：不使用数组
 各人想法：如果不使用数组，当前的数字x每次都能通过%拿到最后一位(%10)，这个位数乘以它的位数为y，x减去y，应该要和它取模y一样过程如下：
 
 ```
@@ -177,6 +179,31 @@ func findTarget(head int, tail int, target int, nums []int) int{
         return findTarget(head, head+(tail-head)/2-1, target, nums)
     }
     return -1
+}
+```
+
+### 977. 有序数组的平方
+
+思考：O(n)解决方案
+
+```
+func sortedSquares(nums []int) []int {
+   
+    for x:=0; x<len(nums); x++{
+        nums[x] = nums[x]*nums[x]
+    }
+
+    for x:=0; x<len(nums)-1; x++{
+        for y := 0; y<len(nums)-1-x; y++{
+            if nums[y] > nums[y+1]{
+                temp := nums[y+1]
+                nums[y+1] = nums[y]
+                nums[y] = temp
+            }
+        }
+    }
+    
+    return nums    
 }
 ```
 
