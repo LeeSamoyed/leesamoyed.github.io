@@ -15,12 +15,16 @@ theme:
   name: material
   custom_dir: .docs/.overrides
   features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
     # - announce.dismiss
     - content.code.annotate
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    - navigation.expand # 开启 sidebar 侧栏默认展开
+    # - navigation.expand # 开启 sidebar 侧栏默认展开
+    - navigation.path # 开启路径
     - navigation.indexes
     # - navigation.instant
     # - navigation.prune
