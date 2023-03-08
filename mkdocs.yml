@@ -131,6 +131,7 @@ nav:
     - 项目: aboutme/project.md
     - 学术: aboutme/academic.md
   - 编程&算法:
+    - programming-algorithm/index.md
     - 编程语言:
       - Go语言标准库:  programming-algorithm/programming-language/go-standard-library.md
       - Go in Action: programming-algorithm/programming-language/go-in-action.md

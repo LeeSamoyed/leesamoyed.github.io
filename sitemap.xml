@@ -301,6 +301,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://leesamoyed.github.io/programming-algorithm/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://leesamoyed.github.io/programming-algorithm/algorithm/data-structure-basic/</loc>
          <lastmod>2023-03-08</lastmod>
          <changefreq>daily</changefreq>
