@@ -2,9 +2,9 @@
 
 各位看官～，我叫李屹，[我的简历](/assets/pdf/yamlee.pdf)
 
-Hi! I'm Yam Li, my [CV](/assets/pdf/yamlee.pdf)
-
 一个热爱 **研发**/**网安** 的 攻城狮/程序员
+
+Hi! I'm Yam Li, my [CV](/assets/pdf/yamlee.pdf)
 
 Research Development & Security
 
