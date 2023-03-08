@@ -2,7 +2,7 @@
 
 ### 1. 两数之和
 
-=== "go"
+=== 'go'
 
     ```go
     func twoSum(nums []int, target int) []int {
@@ -20,9 +20,9 @@
     }
     ```
 
-=== "C"
+=== 'c'
 
-    ```C
+    ```c
     int* twoSum(int* nums, int numsSize, int target, int* returnSize){
         for (int i = 0; i < numsSize; ++i) {
             for (int j = i + 1; j < numsSize; ++j) {
@@ -39,9 +39,9 @@
     }
     ```
 
-=== "C++"
+=== 'c++'
 
-    ```C++
+    ```c++
     class Solution {
     public:
         vector<int> twoSum(vector<int>& nums, int target) {
@@ -58,7 +58,7 @@
     };
     ```
 
-=== "java"
+=== 'java'
 
     ```java
     class Solution {
@@ -75,6 +75,31 @@
     }
     ```
 
+### 7. 整数反转
+
+=== 'java'
+
+    ```java
+    class Solution {
+        public int reverse(int x) {
+            try {
+                int Fx;
+                String s = String.valueOf(x);
+                String Fs = "";
+                for (int i = s.length() - 1; i >= 0; i--) {
+                    if (s.charAt(i) == '-') {
+                        Fs = s.charAt(i) + Fs;
+                    } else {
+                        Fs = Fs + s.charAt(i);
+                    }
+                }
+                Fx = Integer.valueOf(Fs);
+                return Fx;
+            }catch (Exception e){return 0;}
+
+        }
+    }
+    ```
 
 
 ### 9. 回文数
@@ -92,97 +117,201 @@
 5. 递归，直到小于100，用极限条件判断即可
 ```
 
-```go
-func isPalindrome(x int) bool {
-    if x<0{
-        return false
-    }
+=== 'go'
 
-    if x<10{
-		return true
-	}
-    
-    if x<100 && x>=10{
-        if (x/10) == (x%10){
+    ```go
+    func isPalindrome(x int) bool {
+        if x<0{
+            return false
+        }
+
+        if x<10{
             return true
-        }else{
-            return false
         }
-    }
+        
+        if x<100 && x>=10{
+            if (x/10) == (x%10){
+                return true
+            }else{
+                return false
+            }
+        }
 
-    num := strconv.Itoa(x)
-    for w := 0; w<len(num)/2; w++{
-        if num[w] != num[len(num)-w-1]{
-            return false
+        num := strconv.Itoa(x)
+        for w := 0; w<len(num)/2; w++{
+            if num[w] != num[len(num)-w-1]{
+                return false
+            }
+        }
+        return true
+    }
+    ```
+
+=== 'java'
+
+    ```java
+    class Solution {
+        public boolean isPalindrome(int x) {
+            try {
+                int Fx;
+                String s = String.valueOf(x);
+                String Fs = "";
+                for (int i = s.length() - 1; i >= 0; i--) {
+                    if (s.charAt(i) == '-') {
+                        return false;
+                    } else {
+                        Fs = Fs + s.charAt(i);
+                    }
+                }
+                Fx = Integer.valueOf(Fs);
+                return Fx==x;
+            }catch (Exception e){return false;}
+
         }
     }
-    return true
-}
-```
+    ```
 
 ### 13. 罗马数字转整数
 
-```go
-func romanToInt(s string) int {
-    
-    result := 0
-    
-    for x := 0; x < len(s); x++{
-        switch {
-            case s[x] == 'M':
-                result = result + 1000
-            case s[x] == 'D':
-                result = result + 500
-            case s[x] == 'C':
-                if x == len(s)-1{
-                    result = result + 100
-                }else if s[x+1] == 'D'{
-                    result = result + 400
-                    x = x+1
-                }else if s[x+1] == 'M'{
-                    result = result + 900
-                    x = x+1
-                }else{
-                    result = result + 100
-                }
-            case s[x] == 'L':
-                result = result + 50
-            case s[x] == 'X':
-                if x == len(s)-1{
-                    result = result + 10
-                }else if s[x+1] == 'L'{
-                    result = result + 40
-                    x = x+1
-                }else if s[x+1] == 'C'{
-                    result = result + 90
-                    x = x+1
-                }else{
-                    result = result + 10
-                }
-            case s[x] == 'V':
-                result = result + 5
-            case s[x] == 'I':
-                if x == len(s)-1{
-                    result = result + 1
-                }else if s[x+1] == 'V'{
-                    result = result + 4
-                    x = x+1
-                }else if s[x+1] == 'X'{
-                    result = result + 9
-                    x = x+1
-                }else{
-                    result = result + 1
-                }
-            default:
+=== 'go'
+    ```go
+    func romanToInt(s string) int {
+        
+        result := 0
+        
+        for x := 0; x < len(s); x++{
+            switch {
+                case s[x] == 'M':
+                    result = result + 1000
+                case s[x] == 'D':
+                    result = result + 500
+                case s[x] == 'C':
+                    if x == len(s)-1{
+                        result = result + 100
+                    }else if s[x+1] == 'D'{
+                        result = result + 400
+                        x = x+1
+                    }else if s[x+1] == 'M'{
+                        result = result + 900
+                        x = x+1
+                    }else{
+                        result = result + 100
+                    }
+                case s[x] == 'L':
+                    result = result + 50
+                case s[x] == 'X':
+                    if x == len(s)-1{
+                        result = result + 10
+                    }else if s[x+1] == 'L'{
+                        result = result + 40
+                        x = x+1
+                    }else if s[x+1] == 'C'{
+                        result = result + 90
+                        x = x+1
+                    }else{
+                        result = result + 10
+                    }
+                case s[x] == 'V':
+                    result = result + 5
+                case s[x] == 'I':
+                    if x == len(s)-1{
+                        result = result + 1
+                    }else if s[x+1] == 'V'{
+                        result = result + 4
+                        x = x+1
+                    }else if s[x+1] == 'X'{
+                        result = result + 9
+                        x = x+1
+                    }else{
+                        result = result + 1
+                    }
+                default:
+                    return result
+            }
+            if x == len(s)-1{
                 return result
+            }
         }
-        if x == len(s)-1{
-            return result
+        return result
+    }
+    ```
+
+=== 'java'
+
+    '''java
+    class Solution {
+        public static int romanToInt(String s) {
+            try {
+                int roman = 0;
+                s = s + "  ";
+
+                for (int i = 0; i < s.length() - 1; ) {
+                    // I
+                    if (s.substring(i, i + 1).equals("I") && !s.substring(i + 1, i + 2).equals("V") && !s.substring(i + 1, i + 2).equals("X")) {
+                        roman = roman + 1;
+                        i = i + 1;
+                    } else if (s.substring(i, i + 1).equals("I") && s.substring(i + 1, i + 2).equals("V")) {
+                        roman = roman + 4;
+                        i = i + 2;
+                    } else if (s.substring(i, i + 1).equals("I") && s.substring(i + 1, i + 2).equals("X")) {
+                        roman = roman + 9;
+                        i = i + 2;
+                    }
+                    // V
+                    if (s.substring(i, i + 1).equals("V")) {
+                        roman = roman + 5;
+                        i = i + 1;
+                    }
+                    // X
+                    if (s.substring(i, i + 1).equals("X") && !s.substring(i + 1, i + 2).equals("L") && !s.substring(i + 1, i + 2).equals("C")) {
+                        roman = roman + 10;
+                        i = i + 1;
+                    } else if (s.substring(i, i + 1).equals("X") && s.substring(i + 1, i + 2).equals("L")) {
+                        roman = roman + 40;
+                        i = i + 2;
+                    } else if (s.substring(i, i + 1).equals("X") && s.substring(i + 1, i + 2).equals("C")) {
+                        roman = roman + 90;
+                        i = i + 2;
+                    }
+                    // L
+                    if (s.substring(i, i + 1).equals("L")) {
+                        roman = roman + 50;
+                        i = i + 1;
+                    }
+                    // C
+                    if (s.substring(i, i + 1).equals("C") && !s.substring(i + 1, i + 2).equals("D") && !s.substring(i + 1, i + 2).equals("M")) {
+                        roman = roman + 100;
+                        i = i + 1;
+                    } else if (s.substring(i, i + 1).equals("C") && s.substring(i + 1, i + 2).equals("D")) {
+                        roman = roman + 400;
+                        i = i + 2;
+                    } else if (s.substring(i, i + 1).equals("C") && s.substring(i + 1, i + 2).equals("M")) {
+                        roman = roman + 900;
+                        i = i + 2;
+                    }
+                    // D
+                    if (s.substring(i, i + 1).equals("D")) {
+                        roman = roman + 500;
+                        i = i + 1;
+                    }
+                    // M
+                    if (s.substring(i, i + 1).equals("M")) {
+                        roman = roman + 1000;
+                        i = i + 1;
+                    }
+
+                    if (s.substring(i, i + 1).equals(" ")) {
+                        return roman;
+                    }
+                }
+
+                return roman;
+            }catch(Exception e){
+                return 0;
+            }
         }
     }
-    return result
-}
-```
+    '''
 
 ### 27. 移除元素
 
