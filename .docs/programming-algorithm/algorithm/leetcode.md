@@ -2,6 +2,10 @@
 
 ### 1. 两数之和
 
+!!! tip "思路"
+    两层循环暴力破解
+
+
 === "go"
 
     ```go
@@ -77,6 +81,9 @@
 
 ### 7. 整数反转
 
+!!! tip "思路"
+    整数变字符串变整数
+
 === "java"
 
     ```java
@@ -100,9 +107,17 @@
         }
     }
     ```
+    
 
 
 ### 9. 回文数
+
+!!! tip "思路"
+    先排出一位数，两位数的情况
+
+    其余情况，转化成字符串
+
+    按着第一位是否和最后一位相等判断
 
 !!! note "不使用数组"
         各人想法：如果不使用数组，当前的数字x每次都能通过%拿到最后一位(%10)，这个位数乘以它的位数为y，x减去y，应该要和它取模y一样过程如下：
@@ -170,8 +185,15 @@
         }
     }
     ```
+    
 
 ### 13. 罗马数字转整数
+
+!!! tip "思路"
+
+    if-else按着%算就行
+
+    注意变化始终在特定某一个字母在另一个特定字符左边的时候（左闭右开考虑即可）
 
 === "go"
 
@@ -314,9 +336,55 @@
     }
     ```
 
+
+
+### 14. 最长公共前缀
+
+!!! tip "思路"
+    两层循环暴力求解（毕竟是前缀，不是最长公共字符串）
+
+
+=== "go"
+
+    ```go
+    func longestCommonPrefix(strs []string) string {
+    
+        short := 201
+        index := -1
+
+        for x:=0; x<len(strs); x++{
+            if len(strs[x]) < short{
+                short = len(strs[x])
+                index = x
+            }
+        }
+
+        if short < 0{
+            return ""
+        }
+
+        result := ""
+
+        for x:=0; x<len(strs[index]); x++{
+            prefix := strs[index][:x+1]
+            for y :=0; y<len(strs); y++{
+                if prefix != strs[y][:x+1]{
+                    return result
+                }
+            }
+            result = prefix
+        }
+        return result
+    }
+    ```  
+
 ### 27. 移除元素
 
-更多在于实现方向的转变，先达成一些条件，再寻求另一些条件。不要一味的考虑到暴力求解的情况。
+!!! tip "思路"
+
+    先确定要移除多少元素（最后剩下多场），之后平移就行（因为一定会把所有匹配的元素都向后挪，每一次都保证匹配的元素在后面的话，那么久能始终知道要将不匹配的元素向前挪动多少）
+
+    更多在于实现方向的转变，先达成一些条件，再寻求另一些条件。不要一味的考虑到暴力求解的情况。
 
 === "go"
 
@@ -340,6 +408,9 @@
     ```
 
 ### 206. 反转链表
+
+!!! tip "思路"
+    正常反转
 
 === "c++"
 
@@ -370,7 +441,91 @@
     };
     ```
 
+### 209. 长度最小的子数组
+
+!!! tip "思路"
+    先排出特殊情况：
+    
+    - 没有数组
+    - 数组为1
+    - 数组第一个大于target
+
+    剩下的就是不够就加，大了就尝试减少（因为要连续）
+
+    这中间判断一下当前长度和最短长度的关系
+
+=== "go"
+
+    ```go
+    func minSubArrayLen(target int, nums []int) int {
+        
+        if len(nums) == 0{
+            return 0
+        }
+        
+        if len(nums) == 1 {
+            if nums[0] > target{
+                return 1
+            }else{
+                return 0
+            }
+            return 0
+        }
+
+        if nums[0] > target{
+            return 1
+        }
+
+        length := 1
+        length_shortest := 100001
+        sum := nums[0]
+        
+        for x := 1; x<len(nums); x++{
+            flag := 0
+            length, length_shortest, sum, flag = shortest(target, nums, length, length_shortest, sum, x, flag)
+        }
+        
+        if length_shortest == 100001{
+            return 0
+        }
+        
+
+        return length_shortest
+    }
+
+    func shortest(target int, nums []int, length int, length_shortest int, sum int, x int, flag int) (int, int, int, int){
+
+        if flag == 0{
+            length = length + 1
+            sum = sum + nums[x]
+            if sum >= target{
+                if length < length_shortest{
+                    length_shortest = length
+                }
+                length, length_shortest, sum, flag = shortest(target, nums, length, length_shortest, sum, x, 1)
+            }
+        }else{
+            sum = sum - nums[x-length+1]
+            if sum >= target{
+                length = length -1
+                if length < length_shortest{
+                    length_shortest = length
+                }
+                length, length_shortest, sum, flag = shortest(target, nums, length, length_shortest, sum, x, 1)
+            }else{
+                sum = sum + nums[x-length+1]
+            }
+            return length, length_shortest, sum, flag
+        }
+        
+        return length, length_shortest, sum, flag
+    }
+    ```
+
 ### 704. 二分查找
+
+!!! tip "思路"
+    基本功
 
 === "go"
 
@@ -406,6 +561,11 @@
     ```
 
 ### 977. 有序数组的平方
+
+!!! tip "思路"
+    先平方
+    
+    然后冒泡
 
 !!! note "O(n)时间限制"
 
