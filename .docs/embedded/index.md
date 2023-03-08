@@ -3,4 +3,4 @@
 ***
 
 - 开发板
-    - [**Jetson + 视觉**](embedded/development-board/jetson-vision.md)
+    - [**Jetson + 视觉**](/embedded/development-board/jetson-vision.md)
