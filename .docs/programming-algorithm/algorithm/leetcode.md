@@ -432,6 +432,107 @@
     }
     ```
 
+### 1213. 三个有序数组的交集
+
+=== 'java'
+
+    ```java
+    class Solution {
+        public static List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {
+
+            List<Integer> list = new LinkedList<>();
+
+            int answer[] = new int[2001];
+            for(int i=0;i<=2000;i++){
+                answer[i] = 0;
+            }
+
+            for(int i=0;i<arr1.length;i++){
+                answer[arr1[i]] = answer[arr1[i]] + 1;
+            }
+            for(int i=0;i<arr2.length;i++){
+                answer[arr2[i]] = answer[arr2[i]] + 1;
+            }
+            for(int i=0;i<arr3.length;i++){
+                answer[arr3[i]] = answer[arr3[i]] + 1;
+            }
+
+            for(int i=0;i<=2000;i++){
+                if(answer[i] == 3){
+                    list.add(i);
+                }
+            }
+
+            return list;
+        }
+    }
+    ```
+
+### 1214. 查找两棵二叉搜索树之和
+
+=== 'java'
+
+    ```java
+    /**
+    * Definition for a binary tree node.
+    * public class TreeNode {
+    *     int val;
+    *     TreeNode left;
+    *     TreeNode right;
+    *     TreeNode(int x) { val = x; }
+    * }
+    */
+    class Solution {
+        public boolean twoSumBSTs(TreeNode root1, TreeNode root2, int target){
+            List<Integer> list1=new ArrayList<>();
+            List<Integer> list2=new ArrayList<>();
+            order(root1,list1);
+            order(root2,list2);
+
+            for(int i=0;i<list1.size();i++){
+                if(list2.contains(target-list1.get(i)) == true){
+                    return true;
+                }
+            }
+            return false;
+        }
+        public void order(TreeNode root,List<Integer> list){
+            if(root==null){
+                return ;
+            }
+            order(root.left,list);
+            list.add(root.val);
+            order(root.right,list);
+        }
+
+    }
+    ```
+
+### 1217. 玩筹码
+
+=== 'java'
+
+    ```java
+    class Solution {
+        public static int minCostToMoveChips(int[] chips) {
+            int cost = 0;
+            int costone = 0;
+
+            for(int i=0;i<chips.length;i++){
+                if(chips[i] % 2 == 0){
+                    cost = cost + 1;
+                }else{
+                    costone = costone + 1;
+                }
+            }
+            if(cost > costone){
+                return costone;
+            }
+            return cost;
+        }
+    }
+    ```
+
 ### 1365. 有多少小于当前数字的数字
 
 === "python"
