@@ -3,16 +3,16 @@
 ***
 
 - 体系
-  - [云原生综述](/cloud-native/system/summarize.md)
-  - [VPC](/cloud-native/system/vpc.md)
-  - [Docker](/cloud-native/system/docker.md)
-  - [Kubernetes](/cloud-native/system/k8s.md)
-  - [DevOps](/cloud-native/system/devops.md)
-  - [Micro Services](/cloud-native/system/micro-services.md)
-  - [Service Mesh](/cloud-native/system/service-mesh.md)
+    - [云原生综述](/cloud-native/system/summarize)  
+    - [VPC](/cloud-native/system/vpc)  
+    - [Docker](/cloud-native/system/docker)  
+    - [Kubernetes](/cloud-native/system/k8s)  
+    - [DevOps](/cloud-native/system/devops)  
+    - [Micro Services](/cloud-native/system/micro-services)  
+    - [Service Mesh](/cloud-native/system/service-mesh)  
 - 工具
-  - [KuberShpere](/cloud-native/platform/kubersphere.md)
-  - [Jenkins](/cloud-native/platform/jenkins.md)
+    - [KuberShpere](/cloud-native/platform/kubersphere)  
+    - [Jenkins](/cloud-native/platform/jenkins)  
 - 搭建&维护
-  - [**AKS SelfHost Gitpod**](/cloud-native/build-ops/aks-selfhost-gitpod.md)
-  - [**AKS QDUOJ**](/cloud-native/build-ops/aks-qduoj.md)
+    - [**AKS SelfHost Gitpod**](/cloud-native/build-ops/aks-selfhost-gitpod)  
+    - [**AKS QDUOJ**](/cloud-native/build-ops/aks-qduoj)  
