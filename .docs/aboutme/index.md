@@ -10,13 +10,13 @@ Research Development & Security
 
 !!! tip "研究方向(Research Direction)"
     
-    === CN
+    === "CN"
 
         - 软件研发（算法 & 数据库 & 设计模式）
         - 云原生（Docker & K8S & Devops & VPC & Jenkins ...）
         - 大数据目标检测
 
-    === EN
+    === "EN"
 
         - Research Development(Algorithm & DBMS & Design)
         - CloudNative (Docker & K8S & Devops & VPC & Jenkins ...)
