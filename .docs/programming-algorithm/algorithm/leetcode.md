@@ -2,21 +2,80 @@
 
 ### 1. 两数之和
 
-```go
-func twoSum(nums []int, target int) []int {
-	answer := []int{0,0}
-    for i:=0; i<len(nums); i++{
-        for j:=i+1; j<len(nums); j++{
-            if nums[i] + nums[j] == target{
-                answer[0] = i
-                answer[1] = j
-                return answer
+=== "go"
+
+    ```go
+    func twoSum(nums []int, target int) []int {
+        answer := []int{0,0}
+        for i:=0; i<len(nums); i++{
+            for j:=i+1; j<len(nums); j++{
+                if nums[i] + nums[j] == target{
+                    answer[0] = i
+                    answer[1] = j
+                    return answer
+                }
             }
         }
+        return answer
     }
-	return answer
-}
-```
+    ```
+
+=== "C"
+
+    ```C
+    int* twoSum(int* nums, int numsSize, int target, int* returnSize){
+        for (int i = 0; i < numsSize; ++i) {
+            for (int j = i + 1; j < numsSize; ++j) {
+                if (nums[i] + nums[j] == target) {
+                    int* ret = malloc(sizeof(int) * 2);
+                    ret[0] = i, ret[1] = j;
+                    *returnSize = 2;
+                    return ret;
+                }
+            }
+        }
+        *returnSize = 0;
+        return NULL;
+    }
+    ```
+
+=== "C++"
+
+    ```C++
+    class Solution {
+    public:
+        vector<int> twoSum(vector<int>& nums, int target) {
+            int n = nums.size();
+            for (int i = 0; i < n; ++i) {
+                for (int j = i + 1; j < n; ++j) {
+                    if (nums[i] + nums[j] == target) {
+                        return {i, j};
+                    }
+                }
+            }
+            return {};
+        }
+    };
+    ```
+
+=== "java"
+
+    ```java
+    class Solution {
+        public int[] twoSum(int[] nums, int target) {
+            for(int i=0;i<nums.length;i++){
+                for(int j=0;j<nums.length;j++){
+                    if(j != i && (nums[j]+nums[i]) == target){
+                        return new int[]{i,j};
+                    }
+                }
+            }
+            return null;
+        }    
+    }
+    ```
+
+
 
 ### 9. 回文数
 
