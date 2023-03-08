@@ -2,7 +2,7 @@
 
 ### 1. 两数之和
 
-```
+```go
 func twoSum(nums []int, target int) []int {
 	answer := []int{0,0}
     for i:=0; i<len(nums); i++{
@@ -33,7 +33,7 @@ func twoSum(nums []int, target int) []int {
 5. 递归，直到小于100，用极限条件判断即可
 ```
 
-```
+```go
 func isPalindrome(x int) bool {
     if x<0{
         return false
@@ -63,7 +63,7 @@ func isPalindrome(x int) bool {
 
 ### 13. 罗马数字转整数
 
-```
+```go
 func romanToInt(s string) int {
     
     result := 0
@@ -129,7 +129,7 @@ func romanToInt(s string) int {
 
 更多在于实现方向的转变，先达成一些条件，再寻求另一些条件。不要一味的考虑到暴力求解的情况。
 
-```
+```go
 func removeElement(nums []int, val int) int {
 
     count := 0
@@ -150,7 +150,7 @@ func removeElement(nums []int, val int) int {
 
 ### 704. 二分查找
 
-```
+```go
 func search(nums []int, target int) int {
     head := 0
     tail := len(nums)-1
@@ -185,7 +185,7 @@ func findTarget(head int, tail int, target int, nums []int) int{
 
 !!! note "O(n)时间限制"
 
-```
+```go
 func sortedSquares(nums []int) []int {
    
     for x:=0; x<len(nums); x++{
