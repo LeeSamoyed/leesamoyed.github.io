@@ -2,7 +2,7 @@
 
 ### 1. 两数之和
 
-=== 'go'
+=== "go"
 
     ```go
     func twoSum(nums []int, target int) []int {
@@ -20,7 +20,7 @@
     }
     ```
 
-=== 'c'
+=== "c"
 
     ```c
     int* twoSum(int* nums, int numsSize, int target, int* returnSize){
@@ -39,7 +39,7 @@
     }
     ```
 
-=== 'c++'
+=== "c++"
 
     ```c++
     class Solution {
@@ -58,7 +58,7 @@
     };
     ```
 
-=== 'java'
+=== "java"
 
     ```java
     class Solution {
@@ -77,7 +77,7 @@
 
 ### 7. 整数反转
 
-=== 'java'
+=== "java"
 
     ```java
     class Solution {
@@ -117,7 +117,7 @@
 5. 递归，直到小于100，用极限条件判断即可
 ```
 
-=== 'go'
+=== "go"
 
     ```go
     func isPalindrome(x int) bool {
@@ -147,7 +147,7 @@
     }
     ```
 
-=== 'java'
+=== "java"
 
     ```java
     class Solution {
@@ -173,7 +173,7 @@
 
 ### 13. 罗马数字转整数
 
-=== 'go'
+=== "go"
 
     ```go
     func romanToInt(s string) int {
@@ -237,7 +237,7 @@
     }
     ```
 
-=== 'java'
+=== "java"
 
     ```java
     class Solution {
@@ -318,7 +318,7 @@
 
 更多在于实现方向的转变，先达成一些条件，再寻求另一些条件。不要一味的考虑到暴力求解的情况。
 
-=== 'go'
+=== "go"
 
     ```go
     func removeElement(nums []int, val int) int {
@@ -341,7 +341,7 @@
 
 ### 206. 反转链表
 
-=== 'c++'
+=== "c++"
 
     ```c++
     /**
@@ -372,7 +372,7 @@
 
 ### 704. 二分查找
 
-=== 'go'
+=== "go"
 
     ```go
     func search(nums []int, target int) int {
@@ -409,7 +409,7 @@
 
 !!! note "O(n)时间限制"
 
-=== 'go'
+=== "go"
 
     ```go
     func sortedSquares(nums []int) []int {
@@ -434,7 +434,7 @@
 
 ### 1365. 有多少小于当前数字的数字
 
-=== 'python'
+=== "python"
 
     ```python
     class Solution(object):
@@ -458,7 +458,7 @@
 
 ### 1217. 玩筹码
 
-=== 'java'
+=== "java"
 
     ```java
     class Solution {
@@ -483,7 +483,7 @@
 
 ### LCP 01. 猜数字
 
-=== 'java'
+=== "java"
 
     ```java
     class Solution {
@@ -503,7 +503,7 @@
 
 ### LCP 02. 分式化简
 
-=== 'java'
+=== "java"
 
     ``` java
     class Solution {
