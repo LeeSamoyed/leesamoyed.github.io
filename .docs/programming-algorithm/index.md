@@ -1,4 +1,4 @@
-目录
+目录（重点章节加粗）
 ***
 - 编程语言
     - [Go语言标准库](/programming-algorithm/programming-language/go-standard-library)  
