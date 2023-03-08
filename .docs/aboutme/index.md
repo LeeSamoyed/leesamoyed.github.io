@@ -1,14 +1,26 @@
 # 关于我
 
-Hi! 我是李屹(Yam Li),[我的简历](/assets/pdf/yamlee.pdf)
+各位看官～，我叫李屹，[我的简历](/assets/pdf/yamlee.pdf)
 
+Hi! I'm Yam Li, my [CV](/assets/pdf/yamlee.pdf)
 
-一个热爱 **研发** 与 **网安** 的攻城狮
+一个热爱 **研发**/**网安** 的 攻城狮/程序员
 
-!!! tip "当前正在研究这些好玩儿的"
+Research Development & Security
 
-    - CloudNative (Docker & DevOps & Jenkins & VPC & K8S) | RDSec Group | Secure Dev Zone (Microsoft Azure etc.) Team
-    - Building Object Detection System On Large-scale Data
+!!! tip "研究方向(Research Direction)"
+    
+    === CN
+
+        - 软件研发（算法 & 数据库 & 设计模式）
+        - 云原生（Docker & K8S & Devops & VPC & Jenkins ...）
+        - 大数据目标检测
+
+    === EN
+
+        - Research Development(Algorithm & DBMS & Design)
+        - CloudNative (Docker & K8S & Devops & VPC & Jenkins ...)
+        - Building Object Detection System On Large-scale Data
 
 
 
