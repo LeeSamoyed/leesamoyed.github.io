@@ -4,7 +4,7 @@
 
 ### Regressor 回归
 
-```
+```python
 # please note, all tutorial code are running under python3.5.
 # If you use the version like python2.7, please modify the code accordingly
 
@@ -57,7 +57,8 @@ plt.show()
 ```
 
 ### Classifier 分类
-```
+
+```python
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 from keras.datasets import mnist
@@ -114,7 +115,8 @@ print('test accuracy: ', accuracy)
 ![open-source-library-keras-cnn.png](/assets/images/machine-deep-learning/deep-learning/open-source-library-keras-cnn.png)
 
 ##### Code
-```
+
+```python
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 from keras.datasets import mnist
@@ -222,7 +224,8 @@ print('\ntest accuracy: ', accuracy)
 ![open-source-library-keras-lstm.png](/assets/images/machine-deep-learning/deep-learning/open-source-library-keras-lstm.png)
 
 ### RNN Classfier
-```
+
+```python
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 
@@ -291,7 +294,7 @@ for step in range(4001):
 
 ### RNN Regressor
 
-```
+```python
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 import matplotlib.pyplot as plt
@@ -361,7 +364,8 @@ for step in range(501):
 一般使用的时候都只使用前半截，利用精髓，创建小的神经网络使用精髓
 
 ### Antocoder Classfier
-```
+
+```python
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 
@@ -423,7 +427,8 @@ plt.show()
 ```
 
 ### Save & Reload 保存提取
-```
+
+```python
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 

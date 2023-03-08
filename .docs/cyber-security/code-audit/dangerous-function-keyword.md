@@ -1,6 +1,7 @@
 # 危险函数关键字
 
 ### 后端漏洞关键字
+
 |漏洞名称 | 关键词|
 |  -  | -|
 | XXE | SAXReader, DocumentBuilder, XMLStreamReader, ... |
@@ -24,6 +25,7 @@
 | 代码执行 | eval、system、exec |
 
 ### Web
+
 |函数名称 | 关键词|
 |  -  | -|
 | getParameter | request类获取参数方法 |
@@ -45,6 +47,7 @@
 | getUserPrincipal | 获取用户指纹 |
 
 ### 文件
+
 |函数名称 | 关键词|
 |  -  | -|
 | java.io.FileInputStream | 文件输入 |
@@ -53,6 +56,7 @@
 | java.io.FileWriter | 文件写入 |
 
 ### URL重定向
+
 - javax.servlet.http.HttpServletResponse.sendRedirect
 - javax.servlet.http.HttpServletResponse.setStatus
 - javax.servlet.http.HttpServletResponse.addHeader

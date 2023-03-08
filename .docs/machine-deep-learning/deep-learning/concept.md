@@ -49,7 +49,7 @@
 就我们已经实现的组件而言，无论是卷积层还是池化层都是图片（with channels）输入，图片(with channels)输出，全连接层实现的就是将所谓图片的特征表示转化为向量，然后通过 ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697564-d6e31557-a922-408d-b471-24696a6e139d.svg#crop=0&crop=0&crop=1&crop=1&height=23&id=j0tQz&originHeight=23&originWidth=104&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=104) 把转化后向量再一次transform到我们需要的特征空间，也就是样本标记空间。而这个图片到向量的过程就是单纯的展开，用 ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697511-0afa1623-4973-4575-be99-afab399e52bb.svg#crop=0&crop=0&crop=1&crop=1&height=26&id=BoPot&originHeight=26&originWidth=121&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=121) 实现。所以
 ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697534-32501ae3-07f5-4723-99cf-29ade526286c.svg#crop=0&crop=0&crop=1&crop=1&height=23&id=fJFWs&originHeight=23&originWidth=352&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=352)
 
-```
+```python
 import numpy as np
 class FullyConnect(object):
     def __init__(self, shape, output_num=2):
@@ -71,7 +71,7 @@ class FullyConnect(object):
 
 参数求导：![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059697640-c5186fe8-7f40-431d-89e2-f25afecf9b0b.svg#crop=0&crop=0&crop=1&crop=1&height=50&id=YGd12&originHeight=50&originWidth=152&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=152) ,代码里实现时batch的形式， ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059698535-751e9063-3ccb-4933-b0c4-90193733ae0c.svg#crop=0&crop=0&crop=1&crop=1&height=60&id=FtJc4&originHeight=60&originWidth=233&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=233)
 
-```
+```python
 def forward(self, x):
         self.x = x.reshape([self.batchsize, -1])
         output = np.dot(self.x, self.weights)+self.bias

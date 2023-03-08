@@ -6,7 +6,7 @@
 1. Reverse Proxy
 - Stop the docker and add the following code into the **docker-compose.yml** file
 
-```
+```yaml
 ports:
       - "0.0.0.0:5400:5432"
 ```
@@ -15,7 +15,7 @@ ports:
 2. Connect Database
 - Use software Navicat or other to connect PostgreSQL
 
-```
+```yaml
 database: onlinejudge
 username: onlinejudge
 password: onlinejudge
@@ -50,14 +50,14 @@ Some prerequisites:
 The use steps are as follow:
 1. U can use the following code to create a local ssl cert & key
 
-```
+```sh
 openssl genrsa -out tls.key 2048
 openssl req -new -x509 -key tls.key -out tls.cert -days 360 -subj /CN=<your domain name>
 ```
 2. Replace the built-in cert and key files
 3. Use the following code to restart the nginx
 
-```
+```sh
 docker exec -it oj-backend sh -c "cd /app/deploy; supervisorctl restart nginx"
 ```
 
@@ -69,7 +69,7 @@ Same as **'Connect Database'**, just add some code to **docker-compose.yml**
 
 Add the following code to oj-postgres and oj-backend environment and change the POSTGRES_DB & USER & PASSWORD
 
-```
+```yaml
  - POSTGRES_HOST=<your database host>
 ```
 
@@ -88,7 +88,7 @@ Npm:6.13.4
 
 1. Install nodejs & docker first. And then using the following code.
 
-```
+```sh
 # When performing npm install, there is an installation package that will cause npm install to fail due to permission issues.
 npm install browserslist@^4.21.0 -g --no-bin-links
 
@@ -109,7 +109,7 @@ npm run dev
 
 2. After modifying the code. Using the following code. After using the code, U will git a folder named dist
 
-```
+```sh
 npm run build
 ```
 
@@ -117,7 +117,7 @@ npm run build
 
 4. Change the config file **"docker-compose.yml"**, add to **"oj-backend"** modules' **volumes**
 
-```
+```yaml
 - <path of dist>:/app/dist
 
 example:
@@ -126,7 +126,7 @@ example:
 
 5. Update the OJ system. (Maybe need to stop first?)
 
-```
+```sh
 docker-compose up -d
 ```
 

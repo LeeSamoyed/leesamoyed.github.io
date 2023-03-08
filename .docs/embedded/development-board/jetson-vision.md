@@ -2,7 +2,7 @@
 
 ### 更新源（host）
 
-```
+```sh
 sudo gedit /etc/apt/sources.list
 
 ----
@@ -41,7 +41,7 @@ https://developer.nvidia.com/nvidia-sdk-manager
 
 ### TX2换源（板子）
 
-```
+```sh
 sudo gedit /etc/apt/sources.list
 
 ----
@@ -60,14 +60,14 @@ sudo apt-get update
 
 ### 切换python2到python3（板子）
 
-```
+```sh
 cd /usr/bin # 在这个文件夹下
 sudo ln -sf python3 python
 ```
 
 ### pip安装和换源（板子）
 
-```
+```sh
 sudo apt-get install python3-pip
 pip install pip -U
 mkdir ~/.pip/
@@ -82,13 +82,13 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### numpy安装（注意依赖）——1.18.1（板子）
 
-```
+```sh
 pip install numpy==1.18.1
 ```
 
 ### setup换源（板子）
 
-```
+```sh
 sudo gedit ~/.pydistutils.cfg
 ####
 [easy_install]
@@ -123,18 +123,21 @@ gpio
 
 ### 风扇转动（板子）
 
-```
+```sh
 sudo gedit /sys/devices/pwm-fan/target_pwm
 # 255（最大）
 ```
 
 ### 最大功率（板子）
 
-```
+```sh
 # 功率设置最大
 sudo nvpmodel -m 0
 # 功率查看
 sudo nvpmodel --query
 ```
 
-### 注：没有特别说明的缺啥装啥
+***
+
+!!! note "注意"
+    没有特别说明的缺啥装啥
