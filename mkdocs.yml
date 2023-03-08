@@ -126,8 +126,8 @@ extra:
 # Page tree
 nav:
   - 主页: index.html
-  - 关于我: 
-    - 简历: aboutme/resume.md
+  - 关于我:
+    - aboutme/index.md
     - 项目: aboutme/project.md
     - 学术: aboutme/academic.md
   - 编程&算法:
