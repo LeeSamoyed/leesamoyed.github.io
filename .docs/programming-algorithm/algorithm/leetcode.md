@@ -336,6 +336,37 @@ func removeElement(nums []int, val int) int {
 }
 ```
 
+### 206. 反转链表
+
+=== 'c++'
+
+    ```c++
+    /**
+    * Definition for singly-linked list.
+    * struct ListNode {
+    *     int val;
+    *     ListNode *next;
+    *     ListNode() : val(0), next(nullptr) {}
+    *     ListNode(int x) : val(x), next(nullptr) {}
+    *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+    * };
+    */
+    class Solution {
+    public:
+        ListNode* reverseList(ListNode* head) {
+            ListNode* prev = nullptr;
+            ListNode* curr = head;
+            while (curr){
+                ListNode* next = curr->next;
+                curr->next = prev;
+                prev = curr;
+                curr = next;
+            }
+            return prev;
+        }
+    };
+    ```
+
 ### 704. 二分查找
 
 ```go
@@ -394,6 +425,133 @@ func sortedSquares(nums []int) []int {
 }
 ```
 
+### 1365. 有多少小于当前数字的数字
+
+=== 'python'
+
+    ```python
+    class Solution(object):
+
+        def smallerNumbersThanCurrent(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: List[int]
+            """
+            self.nums = nums
+            count = 0
+            list = []
+            for i in self.nums:
+                for j in self.nums:
+                    if i > j:
+                        count = count + 1
+                list.append(count)
+                count = 0
+            return list
+    ```
+
+### 1217. 玩筹码
+
+=== 'java'
+
+    ```java
+    class Solution {
+        public static int minCostToMoveChips(int[] chips) {
+            int cost = 0;
+            int costone = 0;
+
+            for(int i=0;i<chips.length;i++){
+                if(chips[i] % 2 == 0){
+                    cost = cost + 1;
+                }else{
+                    costone = costone + 1;
+                }
+            }
+            if(cost > costone){
+                return costone;
+            }
+            return cost;
+        }
+    }
+    ```
+
+### LCP 01. 猜数字
+
+=== 'java'
+
+    ```java
+    class Solution {
+        public int game(int[] guess, int[] answer) {
+            int count = 0;
+
+            for(int i=0;i<3;i++){
+                if(guess[i] == answer[i]){
+                    count = count + 1;
+                }
+            }
+
+            return count;
+        }
+    }
+    ```
+
+### LCP 02. 分式化简
+
+=== 'java'
+
+    ``` java
+    class Solution {
+            public static int[] fraction(int[] cont) {
+            int m[] = new int[2];
+
+            int mother = cont[cont.length - 1];
+            int son = 1;
+            int temp;
+
+            if(cont.length == 1){
+                m[0] = cont[0];
+                m[1] = 1;
+                return m;
+            }
+
+            for (int i = cont.length - 2; i > 0; i--) {
+                son = cont[i]*mother + son;
+                if(i!=0) {
+                    temp = son;
+                    son = mother;
+                    mother = temp;
+                }
+            }
+            son = cont[0] * mother + son;
+
+            int s = getGCD1(mother,son);
+            mother = mother/s;
+            son = son/s;
+
+            m[0] = Math.abs(son);
+            m[1] = Math.abs(mother);
+
+
+            for(int j=0;j<2;j++){
+                System.out.println(m[j]);
+            }
+
+            return m;
+        }
+
+        public static int getGCD1(int num1, int num2) {
+            num1 = Math.abs(num1);
+            num2 = Math.abs(num2);
+            while (num2 != 0) {
+                int remainder = num1 % num2;
+                num1 = num2;
+                num2 = remainder;
+            }
+
+            return num1;
+        }
+
+    }
+    ```
 
 ### 盲点解析
 
