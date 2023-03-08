@@ -174,6 +174,7 @@
 ### 13. 罗马数字转整数
 
 === 'go'
+
     ```go
     func romanToInt(s string) int {
         
@@ -238,7 +239,7 @@
 
 === 'java'
 
-    '''java
+    ```java
     class Solution {
         public static int romanToInt(String s) {
             try {
@@ -311,30 +312,32 @@
             }
         }
     }
-    '''
+    ```
 
 ### 27. 移除元素
 
 更多在于实现方向的转变，先达成一些条件，再寻求另一些条件。不要一味的考虑到暴力求解的情况。
 
-```go
-func removeElement(nums []int, val int) int {
+=== 'go'
 
-    count := 0
+    ```go
+    func removeElement(nums []int, val int) int {
 
-    for x:= 0; x<len(nums); x++{
-        if nums[x] == val{
-            count = count + 1
-        }else{
-            temp := nums[x-count]
-            nums[x-count] = nums[x]
-            nums[x] = temp
+        count := 0
+
+        for x:= 0; x<len(nums); x++{
+            if nums[x] == val{
+                count = count + 1
+            }else{
+                temp := nums[x-count]
+                nums[x-count] = nums[x]
+                nums[x] = temp
+            }
         }
-    }
 
-    return len(nums) - count
-}
-```
+        return len(nums) - count
+    }
+    ```
 
 ### 206. 反转链表
 
@@ -369,61 +372,65 @@ func removeElement(nums []int, val int) int {
 
 ### 704. 二分查找
 
-```go
-func search(nums []int, target int) int {
-    head := 0
-    tail := len(nums)-1
-    target = findTarget(head, tail, target, nums)
-    return target
-}
+=== 'go'
 
-func findTarget(head int, tail int, target int, nums []int) int{
-    if target < nums[head] || target > nums[tail]{
-		return -1
-	}
-    if head==tail{
-        if nums[head+(tail-head)/2]==target{
-            return head+(tail-head)/2
-        }else{
+    ```go
+    func search(nums []int, target int) int {
+        head := 0
+        tail := len(nums)-1
+        target = findTarget(head, tail, target, nums)
+        return target
+    }
+
+    func findTarget(head int, tail int, target int, nums []int) int{
+        if target < nums[head] || target > nums[tail]{
             return -1
         }
+        if head==tail{
+            if nums[head+(tail-head)/2]==target{
+                return head+(tail-head)/2
+            }else{
+                return -1
+            }
+        }
+        
+        if nums[head+(tail-head)/2]==target{
+            return head+(tail-head)/2
+        }else if nums[head+(tail-head)/2]<target{
+            return findTarget(head+(tail-head)/2+1, tail, target, nums)
+        }else{
+            return findTarget(head, head+(tail-head)/2-1, target, nums)
+        }
+        return -1
     }
-    
-    if nums[head+(tail-head)/2]==target{
-        return head+(tail-head)/2
-    }else if nums[head+(tail-head)/2]<target{
-        return findTarget(head+(tail-head)/2+1, tail, target, nums)
-    }else{
-        return findTarget(head, head+(tail-head)/2-1, target, nums)
-    }
-    return -1
-}
-```
+    ```
 
 ### 977. 有序数组的平方
 
 !!! note "O(n)时间限制"
 
-```go
-func sortedSquares(nums []int) []int {
-   
-    for x:=0; x<len(nums); x++{
-        nums[x] = nums[x]*nums[x]
-    }
+=== 'go'
 
-    for x:=0; x<len(nums)-1; x++{
-        for y := 0; y<len(nums)-1-x; y++{
-            if nums[y] > nums[y+1]{
-                temp := nums[y+1]
-                nums[y+1] = nums[y]
-                nums[y] = temp
+    ```go
+    func sortedSquares(nums []int) []int {
+    
+        for x:=0; x<len(nums); x++{
+            nums[x] = nums[x]*nums[x]
+        }
+
+        for x:=0; x<len(nums)-1; x++{
+            for y := 0; y<len(nums)-1-x; y++{
+                if nums[y] > nums[y+1]{
+                    temp := nums[y+1]
+                    nums[y+1] = nums[y]
+                    nums[y] = temp
+                }
             }
         }
+        
+        return nums    
     }
-    
-    return nums    
-}
-```
+    ```
 
 ### 1365. 有多少小于当前数字的数字
 
