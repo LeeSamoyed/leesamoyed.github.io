@@ -144,6 +144,7 @@ nav:
       - LeetCode: programming-algorithm/algorithm/leetcode.md
       - 基本数据结构: programming-algorithm/algorithm/data-structure-basic.md
   - 研发&设计:
+    - research-development-design/index.md
     - 研发:
       - 数据库系统:
         - MySQL是怎样运行的: research-development-design/sql/how-mysql-work-understand-from-root.md

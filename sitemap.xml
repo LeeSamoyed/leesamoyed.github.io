@@ -351,6 +351,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://leesamoyed.github.io/research-development-design/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://leesamoyed.github.io/research-development-design/business-logic/algorithm/</loc>
          <lastmod>2023-03-08</lastmod>
          <changefreq>daily</changefreq>

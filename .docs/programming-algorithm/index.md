@@ -8,7 +8,6 @@
     - [Python基础扩展 优课达](/programming-algorithm/programming-language/python-extension-ykd.md)
     - [C++ Primer](/programming-algorithm/programming-language/c-primer.md)
     - [环境搭建](/programming-algorithm/programming-language/environment-build.md)
-- 编程语言
-    - [LeetCode](/programming-algorithm/algorithm/leetcode.md)
+- 程序算法
+    - [**LeetCode**](/programming-algorithm/algorithm/leetcode.md)
     - [基本数据结构](/programming-algorithm/algorithm/data-structure-basic.md)
-***
