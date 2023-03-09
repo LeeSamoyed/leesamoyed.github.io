@@ -5,7 +5,7 @@
 !!! tip "思路"
     两层循环暴力破解
 
-!!! tip "go语言与其他语言不同的在于返回会很受限制"
+!!! warning "go语言与其他语言不同的在于返回会很受限制"
 
     例如下面这个返调用会报错：cannot use str_ (type [5]int) as type []int in argument to re
 
@@ -418,7 +418,7 @@
 !!! tip "思路"
     排出特殊情况之后，用字符串构造一个假的栈
 
-!!! attention "if判断的时候||和&&"
+!!! warning "if判断的时候||和&&"
     || 有一个1则过
 
     && 有一个0则不过
