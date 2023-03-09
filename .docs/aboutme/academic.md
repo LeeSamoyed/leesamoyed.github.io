@@ -1,12 +1,39 @@
 # 学术
 
-细节尚未整理
+=== "SCI" 
 
-### 科研学术
+    <h3>Time Series Prediction<h3>
+
+    Paper: [Remaining Useful Life Prediction for Aero-Engines Using a Time-Enhanced Multi-Head Self-Attention Model.](https://www.mdpi.com/2226-4310/10/1/80) <em>Aerospace</em>
+
+    <img style="width:50%;margin-left:25%; alt="ticket" src="/assets/images/about-me/ticket.png"/>
+
+=== "发明专利"
+
+    <h3>Time Series Prediction<h3>
+
+    Paper: [Remaining Useful Life Prediction for Aero-Engines Using a Time-Enhanced Multi-Head Self-Attention Model.](https://www.mdpi.com/2226-4310/10/1/80) <em>Aerospace</em>
+
+    <img style="width:50%;margin-left:25%; alt="ticket" src="/assets/images/about-me/ticket.png"/>
+
+    <div style="background:linear-gradient(to left,#ffffff,#ff8080,#ffffff);height:1px;"></div>
+
+    <h3>Time Series Prediction<h3>
+
+    Paper: [Remaining Useful Life Prediction for Aero-Engines Using a Time-Enhanced Multi-Head Self-Attention Model.](https://www.mdpi.com/2226-4310/10/1/80) <em>Aerospace</em>
+
+    <img style="width:50%;margin-left:25%; alt="ticket" src="/assets/images/about-me/ticket.png"/>
+
+
+
+=== "软件著作"
+
+=== "中文核心"
+
+
+=== "EI会议"
 
 期刊论文:
-
-- Wang, X.; **Li, Y.** ; Xu, Y.; Liu, X.; Zheng, T.; Zheng, B. [Remaining Useful Life Prediction for Aero-Engines Using a Time-Enhanced Multi-Head Self-Attention Model.](https://www.mdpi.com/2226-4310/10/1/80) <em>Aerospace</em> 2023, 10, 80.
 
 - 王欣; **李屹**; 孟天宇; 黄佳琪, [风格迁移增强的机场目标检测方法研究](), 计算机应用与软件.（未见刊）
 - 王欣; 孟天宇; 黄佳琪; **李屹**, [基于ERNIE-SKEP与BiGRU的航空公司旅客评价情感分析](), 计算机仿真.（未见刊）
