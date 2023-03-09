@@ -491,6 +491,74 @@
     }
     ```
 
+### 59. 螺旋矩阵II
+
+!!! tip "思路"
+    两个flag，一个记录已经转了几圈，一个记录方向（逻辑顺畅即可）
+    
+    不过记得每转一圈，就会减少2的行列
+
+=== "go"
+
+    ```go
+    func generateMatrix(n int) [][]int {
+        result := make([][]int, n)
+        for i := range result {
+            result[i] = make([]int, n)
+        }
+        nums := 0
+        forward := 0
+        count := 1
+        for {
+            switch{
+                case forward==0: {
+                    for y:=0; y<n-nums*2; y++{
+                        result[nums][y+nums] = count
+                        count = count+1
+                        if count == n*n+1{
+                            return result
+                        } 
+                    }  
+                    forward = 1 
+                }
+                case forward==1: {
+                    for y:=0; y<n-nums*2-1; y++{
+                        result[y+nums+1][n-nums-1] = count
+                        count = count+1
+                        if count == n*n+1{
+                            return result
+                        }
+                    }
+                    forward = 2
+                    
+                }
+                case forward==2: {
+                    for y:=0; y<n-nums*2-1; y++{
+                        result[n-nums-1][n-nums-2-y] = count
+                        count = count+1
+                        if count == n*n+1{
+                            return result
+                        }
+                    }
+                    forward = 3 
+                }
+                case forward==3: {
+                    for y:=0; y<n-nums*2-2; y++{
+                        result[n-2-nums-y][nums] = count
+                        count = count+1
+                        if count == n*n+1{
+                            return result
+                        }
+                    }
+                    forward = 0
+                    nums = nums+1
+                }
+            }
+        }
+        return result
+    }
+    ```
+
 ### 206. 反转链表
 
 !!! tip "思路"
