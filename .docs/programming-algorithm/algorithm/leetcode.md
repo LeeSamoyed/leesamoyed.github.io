@@ -1,9 +1,44 @@
 # 力扣（LeetCode）
 
-### 1. 两数之和
+### 1. 两数之和 - Attention
 
 !!! tip "思路"
     两层循环暴力破解
+
+!!! tip "go语言与其他语言不同的在于返回会很受限制"
+
+    例如下面这个返调用会报错：cannot use str_ (type [5]int) as type []int in argument to re
+
+    ```go
+    package main
+
+    func main() {
+        str_in := [5]int{1,2,3,4,5}
+        re(str_in)
+    }
+
+    func re(str_in []int) []int{
+        return str_in
+    }
+    ```
+
+    同理，下面这个返回会报错：cannot use re(str_in) (type []int) as type [5]int in assignment
+
+    ```go
+    package main
+
+    func main() {
+        str_in := []int{1,2,3,4,5}
+        var str_out [5]int
+        str_out = re(str_in)
+    }
+
+    func re(str_in []int) []int{
+        return str_in
+    }
+    ```
+
+    数组声明能否不固定长度后续补充？
 
 
 === "go"
@@ -377,6 +412,55 @@
         return result
     }
     ```  
+
+### 20. 有效的括号 - Attention
+
+!!! tip "思路"
+    排出特殊情况之后，用字符串构造一个假的栈
+
+!!! attention "if判断的时候||和&&"
+    || 有一个1则过
+
+    && 有一个0则不过
+
+    例如下面这一句话中如果len(s_)<0，则不会判断后面s_[len(s_)-1]=='('，因此不必担心len(s_)-1为-1的情况
+
+    ```go
+    if s[x]==')' && len(s_)>0 && s_[len(s_)-1]=='('
+    ```
+
+=== "go"
+
+    ``` go
+    func isValid(s string) bool {
+        var s_ string
+        s_ = ""
+        if len(s)==0{
+            return true
+        }
+
+        for x:=0; x<len(s); x++{
+
+            if s[x]=='(' || s[x]=='[' || s[x]=='{'{
+                s_ = s_+s[x:x+1]
+            }else if s[x]==')' && len(s_)>0 && s_[len(s_)-1]=='(' {
+                s_ = s_[:len(s_)-1]
+            }else if s[x]==']'  && len(s_)>0 && s_[len(s_)-1]=='['{
+                s_ = s_[:len(s_)-1]
+            }else if s[x]=='}'  && len(s_)>0 && s_[len(s_)-1]=='{'{
+                s_ = s_[:len(s_)-1]
+            }else{
+                return false
+            }
+        }
+        if s_==""{
+            return true
+        }
+        return false
+        
+    }   
+    ```
+
 
 ### 27. 移除元素
 
@@ -821,7 +905,6 @@
     }
     ```
 
-### 盲点解析
+##### No 1. 
 
-##### No 1. 数组声明能否不固定长度后续补充？
 
