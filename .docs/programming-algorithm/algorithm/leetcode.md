@@ -526,6 +526,34 @@
     }
     ```
 
+### 35. 搜索插入的位置
+
+!!! tip "思路"
+    正常按着条件走，同时在一开始排出两个极端情况即可
+
+=== "go"
+
+    ```go
+    func searchInsert(nums []int, target int) int {
+        if nums[0] > target{
+                return 0
+            }
+        if nums[len(nums)-1]<target{
+            return len(nums)
+        }
+        
+        for x:=0; x<len(nums); x++{
+            if nums[x] == target{
+                return x
+            }
+            if nums[x] < target && nums[x+1] > target{
+                return x+1
+            }
+        }
+        return 0
+    }
+```
+
 ### 59. 螺旋矩阵II - Attention
 
 !!! tip "思路"
