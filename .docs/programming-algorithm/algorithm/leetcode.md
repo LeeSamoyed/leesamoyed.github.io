@@ -461,6 +461,41 @@
     }   
     ```
 
+### 26. 删除有序数组中的重复项 - Attention
+
+!!! tip "思路"
+
+    遇到第几个不同的，数组的第几个位置就行（他只需要返回前面不同的，后面的完全不在意，直接覆盖就好）
+
+!!! warning "思考的思路"
+
+    在解题之前可以先观察一下，它的标准答案，例如第一次循环的答案，第二次循环的答案（简单的思考）。就可以获得高效的答案
+
+=== "go"
+
+    ```go
+    func removeDuplicates(nums []int) int {
+        
+        nums_now := 10001
+        new := 0
+
+        if len(nums)==0{
+            return 0
+        }
+
+        for i:=0; i<len(nums); i++{
+            
+            if nums_now != nums[i]{
+                nums_now = nums[i]
+                nums[new] = nums_now
+                new = new+1
+            }
+        }
+
+        return new
+        
+    }
+    ```
 
 ### 27. 移除元素
 
