@@ -554,6 +554,26 @@
     }
 ```
 
+### 58. 最后一个单词的长度
+!!! tip "思路"
+    简单的切割，极致的享受（但是系统方法一般不是最优解）
+
+=== "go"
+
+    ```go
+    func lengthOfLastWord(s string) int {
+        arr := strings.Split(s," ")
+
+        for x:=len(arr)-1;x>=0;x--{
+            if len(arr[x])>0{
+                return len(arr[x])
+            } 
+        }
+
+        return 0
+    }
+    ```
+
 ### 59. 螺旋矩阵II - Attention
 
 !!! tip "思路"
