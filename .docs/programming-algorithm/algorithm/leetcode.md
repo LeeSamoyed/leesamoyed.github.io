@@ -656,6 +656,57 @@
     }
     ```
 
+### 69. x的平方根
+
+!!! tip "思路"
+    二分查找
+
+    注意(head+tail)/2的时候很可能遇到小数，然后向下去整之后就小于了，例如 例如x为17,head为3，tail为5如果取整，head就是3，tail就是4，但是期待的结果是head为4，tail为5，因此要加个限制，如下
+
+    ```go
+    if (head+tail)/2 * (head+tail)/2 > x{
+                tail = (head+tail)/2
+                if tail*tail < x{
+                    tail = tail + 1
+                }
+            }else{
+                head = (head+tail)/2
+            }
+    ```
+
+=== "go"
+
+    ```go
+    func mySqrt(x int) int {
+        head := 0
+        tail := x
+        for i:=0;i>-1;i++{
+
+            if head*head == x{
+                return head
+            }
+
+            if tail*tail == x{
+                return tail
+            }
+
+            if tail == head + 1{
+                return head
+            }
+
+            if (head+tail)/2 * (head+tail)/2 > x{
+                tail = (head+tail)/2
+                if tail*tail < x{
+                    tail = tail + 1
+                }
+            }else{
+                head = (head+tail)/2
+            }
+        }
+        return 0
+    }
+    ```
+
 ### 83. 删除排序链表中的重复元素
 
 !!! tip "思路"
