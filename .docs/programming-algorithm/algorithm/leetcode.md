@@ -656,6 +656,51 @@
     }
     ```
 
+### 83. 删除排序链表中的重复元素
+
+!!! tip "思路"
+    把头部存下来
+
+    如果重复则Next直接等于Next的Next或者nil（倒数第二个元素和对应最后一个元素相同）
+
+    循环一直跑就行
+
+=== "go"
+
+    ```go
+    /**
+    * Definition for singly-linked list.
+    * type ListNode struct {
+    *     Val int
+    *     Next *ListNode
+    * }
+    */
+    func deleteDuplicates(head *ListNode) *ListNode {
+        var head_head *ListNode
+        head_head = head
+
+        if head == nil{
+            return head
+        }
+
+        num_now := head.Val
+        for head.Next != nil{
+            if head.Next.Val == num_now{
+                if head.Next.Next != nil{
+                    head.Next = head.Next.Next
+                }else{
+                    head.Next = nil
+                }
+                
+            }else{
+                num_now = head.Next.Val
+                head = head.Next
+            }
+        }
+        return head_head
+    }
+    ```
+
 ### 206. 反转链表
 
 !!! tip "思路"
