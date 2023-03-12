@@ -752,6 +752,35 @@
     }
     ```
 
+### 118. 杨辉三角
+
+!!! tip "思路"
+    正常解答即可
+
+=== "go"
+
+    ```go
+    func generate(numRows int) [][]int {
+        
+        total:=0
+        result := make([][]int, numRows)
+        for i:=1; i<=numRows; i++{
+            total = total+i
+            result[i-1] = make([]int, i)
+            result[i-1][0]=1
+            result[i-1][len(result[i-1])-1]=1
+        }
+        if numRows>2{
+            for i:=2; i<numRows; i++{
+                for j:=1; j<len(result[i])-1; j++{
+                    result[i][j] = result[i-1][j]+result[i-1][j-1]
+                }
+            }
+        }
+        return result
+    }
+    ```
+
 ### 206. 反转链表
 
 !!! tip "思路"
