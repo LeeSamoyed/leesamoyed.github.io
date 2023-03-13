@@ -781,6 +781,41 @@
     }
     ```
 
+### 125. 验证回文串
+
+!!! tip "思路"
+    正则表达式+全小写
+
+!!! warning "正则表达式"
+
+    保留字母数字案例：
+
+    ```go
+    reg, _ := regexp.Compile("[^a-zA-Z0-9]+")
+        s = reg.ReplaceAllString(s, "")
+    ```
+
+=== "go"
+
+    ```go
+    func isPalindrome(s string) bool {      
+        if len(s) == 0{
+            return false
+        }
+
+        reg, _ := regexp.Compile("[^a-zA-Z0-9]+")
+        s = reg.ReplaceAllString(s, "")
+        s = strings.ToLower(s)
+        for i:=0; i<len(s)/2; i++{
+            if s[i] != s[len(s)-1-i]{
+                return false
+            }
+        }
+
+        return true
+    }
+    ```
+
 ### 206. 反转链表
 
 !!! tip "思路"
