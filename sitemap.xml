@@ -76,17 +76,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/cmss-paas/</loc>
+         <loc>https://leesamoyed.github.io/cloud-native/system/cmcc-paas/</loc>
          <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/cmss-paas/cloud-native-basic/</loc>
+         <loc>https://leesamoyed.github.io/cloud-native/system/cmcc-paas/cloud-native-basic/</loc>
          <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/cmss-paas/kubernetes-basic/</loc>
+         <loc>https://leesamoyed.github.io/cloud-native/system/cmcc-paas/kubernetes-basic/</loc>
          <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
