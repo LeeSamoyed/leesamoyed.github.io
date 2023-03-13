@@ -781,6 +781,60 @@
     }
     ```
 
+### 121. 买股票的最佳时机
+
+!!! tip "思路"
+    如果当前价格是不是最小的，不是则用最小的替换
+    
+    否则判断当前的价格减去最小的价格是不是利润最大的，是则替换
+
+    理解贪心、动态规划之类的思想！！！
+
+=== "go"
+
+    ```go
+    func maxProfit(prices []int) int {
+        profit := 0
+        price := prices[0]
+
+        if len(prices)<2{
+            return 0
+        }
+
+        for i:=1; i<len(prices); i++{
+            if price > prices[i]{
+                price = prices[i]
+            }else if prices[i]-price > profit{
+                profit = prices[i]-price
+            }
+        }
+
+        if profit==0{
+            return 0
+        }
+
+        return profit
+    }
+    ```
+=== "go爆破——会超时"
+
+    ```
+    func maxProfit(prices []int) int {
+        maxprice:=0
+        for i:=0; i<len(prices)-1; i++{
+            for j:=i+1; j<len(prices); j++{
+                if prices[j]-prices[i] > maxprice{
+                    maxprice = prices[j]-prices[i]
+                }
+            }
+        }
+        if maxprice == 0{
+            return 0
+        }
+        return maxprice
+    }
+    ```
+
 ### 125. 验证回文串
 
 !!! tip "思路"
