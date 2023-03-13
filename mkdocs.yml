@@ -185,6 +185,10 @@ nav:
       - DevOps: cloud-native/system/devops.md
       - Micro Services: cloud-native/system/micro-services.md
       - Service Mesh: cloud-native/system/service-mesh.md
+      - CMCC-PaaS:
+        - cloud-native/cmcc-paas/index.md
+        - 云原生基础: cloud-native/cmcc-paas/cloud-native-basic.md
+        - K8S基础: cloud-native/cmcc-paas/kubernetes-basic.md
     - 工具:
       - KuberShpere: cloud-native/platform/kubersphere.md
       - Jenkins: cloud-native/platform/jenkins.md
