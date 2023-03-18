@@ -18,7 +18,7 @@ if [ $# -gt 0 ]
   echo "***These files will be delelte:***\n"${rmfile}"\n***Input 'y' to continue upgrade and others to shutdown***"
   
   read makesure
-  if [ $makesure == 'y' ]
+  if [ $makesure == "y" ]
   then
   # clean & delete
   mkdocs build --clean
