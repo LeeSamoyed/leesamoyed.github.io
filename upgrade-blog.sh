@@ -17,12 +17,10 @@ if [ $# -gt 0 ]
           grep -v Dockerfile | grep -v action.yml`
   echo "***These files will be delelte:***\n"${rmfile}"\n***Input yes to continue upgrade and others to shutdown***"
   
-  
-
   read makesure
-
   if [ -n "$makesure"="yes" ]
   then
+  # clean & delete
   mkdocs build --clean
   rm -rf $(ls ./ | grep -v .docs | grep -v material | \
           grep -v  .github | grep -v site | grep -v .gitignore | \
@@ -35,7 +33,6 @@ if [ $# -gt 0 ]
   git add .
   git commit -m $1
   git push origin master
-
   fi
 fi
 
