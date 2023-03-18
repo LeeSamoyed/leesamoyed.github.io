@@ -114,10 +114,89 @@
     }
     ```
 
-### 7. 整数反转
+### 3. 无重复字符的最长子串
+
+!!! tip "思路"
+    掐头去尾
+    abcde 遇到 c
+    abcde -> cdec -> dec
+    如果直接写 len(str)[index+1:]（index指c是在最长子串abcde中的位置），可能由于index只有一个导致报错，所以先加上最后一个，在用[1:]区分
+    很直接的暴力思路
+    
+=== "go"
+
+    ```go
+    func lengthOfLongestSubstring(s string) int {
+        if len(s)<=1{
+            return len(s)
+        }
+        str := string(s[0])
+        ans := 1
+        flag := 0
+        index := 0
+        for i:=1; i<len(s); i++{
+            for j:=0; j<len(str); j++{
+                if str[j] == s[i]{
+                    flag = 1
+                    index = j
+                }
+            }
+            if flag == 0{
+                str = str + string(s[i])
+                if len(str) > ans{
+                    ans = len(str)
+                }
+            }else{
+                str = (str[index:] + string(s[i]))[1:]
+                flag = 0
+            }
+        }
+        return ans
+    }
+    ```
+
+### 7. 整数反转 -Attention
 
 !!! tip "思路"
     整数变字符串变整数
+
+!!! warning "整数思路"
+    整数多考虑使用余数和除法，别老考虑使用字符串
+
+    可以使用int来赋值进行try catch
+
+    看看多年前的Java，再看看现在，啧啧啧
+
+=== "go"
+
+    ```go
+    func reverse(x int) int {
+
+        length := int(len(strconv.Itoa(x)))
+        sum := 0
+
+        if x < 0{
+            x = -x
+            for i:=0; i<length-1; i++{
+                sum = sum + x % int(math.Pow(10, float64(i+1))) / int(math.Pow(10, float64(i))) * int(math.Pow(10, float64(length-i-2)))
+                x = x - x % int(math.Pow(10, float64(i+1)))
+                if sum > int(math.Pow(2, float64(31)))-1 || sum < -int(math.Pow(2, float64(31))){
+                    return 0
+                }
+            }
+            return -sum
+        }else{
+            for i:=0; i<length; i++{
+                sum = sum + x % int(math.Pow(10, float64(i+1))) / int(math.Pow(10, float64(i))) * int(math.Pow(10, float64(length-i-1)))
+                if sum > int(math.Pow(2, float64(31)))-1 || sum < -int(math.Pow(2, float64(31))){
+                    return 0
+                }
+            }
+            return sum
+        }
+        return sum
+    }
+    ```
 
 === "java"
 
@@ -142,8 +221,6 @@
         }
     }
     ```
-    
-
 
 ### 9. 回文数
 
@@ -781,6 +858,34 @@
     }
     ```
 
+### 119. 杨辉三角 II
+
+!!! tip "思路"
+    正常解答即可
+
+=== "go"
+
+    ```go
+    func getRow(rowIndex int) []int {
+        total:=0
+        result := make([][]int, rowIndex+1)
+        for i:=1; i<=rowIndex+1; i++{
+            total = total+i
+            result[i-1] = make([]int, i)
+            result[i-1][0]=1
+            result[i-1][len(result[i-1])-1]=1
+        }
+        if rowIndex>=2{
+            for i:=2; i<rowIndex+1; i++{
+                for j:=1; j<len(result[i])-1; j++{
+                    result[i][j] = result[i-1][j]+result[i-1][j-1]
+                }
+            }
+        }
+        return result[rowIndex]
+    }
+    ```
+
 ### 121. 买股票的最佳时机
 
 !!! tip "思路"
@@ -818,7 +923,7 @@
     ```
 === "go爆破——会超时"
 
-    ```
+    ```go
     func maxProfit(prices []int) int {
         maxprice:=0
         for i:=0; i<len(prices)-1; i++{
@@ -835,7 +940,7 @@
     }
     ```
 
-### 125. 验证回文串
+### 125. 验证回文串 - Attention
 
 !!! tip "思路"
     正则表达式+全小写
@@ -867,6 +972,124 @@
         }
 
         return true
+    }
+    ```
+
+### 136. 只出现一次的数字
+
+!!! tip "思路"
+    正常做，（注意两次都要全部遍历，但是注意i!=j）
+
+=== "go"
+
+    ```go
+    func singleNumber(nums []int) int {
+        if len(nums)<2{
+            return nums[0]
+        }
+        target := nums[0]
+        flag := 0
+        for i:=0; i<len(nums);i++{
+            target = nums[i]
+            flag = 0
+            for j:=0; j<len(nums);j++{
+                if i!=j && nums[j] == target{
+                    flag = 1
+                    break
+                }
+            }
+            if flag == 0{
+                return target
+            }
+        }
+        return target
+    }
+    ```
+
+### 182. 查找重复的电子邮箱 - SQL
+!!! tip "思路"
+    SQL
+
+=== "sql"
+
+    ```sql
+    # Write your MySQL query statement below
+
+    select email from Person group by email having count(email) > 1
+    ```
+
+### 195. 第十行 - Linux - Attention
+!!! tip "思路"
+    linux命令
+
+=== "sh"
+
+    ```sh
+    #/bin/bash
+    # 统计文件行数
+    num=`cat file.txt | wc -l`
+    # head 显示前几个 | tail 显示后几个 意思为显示前十个的最后一个
+    ans=`cat file.txt | head -10 | tail -1`
+    # 左边是否小于右边
+    if [ $num -lt 10 ]
+    then 
+        echo ""
+    else echo $ans
+    fi
+    ```
+
+
+### 203. 移除链表元素 - Attention
+
+!!! tip "思路"
+    正常判断即可
+
+!!! warning "注意链表的赋值过程等"
+
+=== "go"
+
+    ```go
+    /**
+    * Definition for singly-linked list.
+    * type ListNode struct {
+    *     Val int
+    *     Next *ListNode
+    * }
+    */
+    func removeElements(head *ListNode, val int) *ListNode {
+        if head == nil{
+            return head
+        }
+        
+        var ans *ListNode
+        ans = head
+
+        for head.Val == val{
+            if head.Next != nil{
+                head = head.Next
+            }else{
+                head = nil
+                return head
+            }
+        }
+
+        for ans.Next != nil{
+            
+            if ans.Next.Val != val{
+                ans = ans.Next
+            }else{
+                if ans.Next.Next != nil{
+                    ans.Next = ans.Next.Next
+                }else{
+                    ans.Next = nil
+                    return head
+                }
+            }
+            if ans.Next == nil{
+                return head
+            }
+        }
+        return head
     }
     ```
 
@@ -982,6 +1205,52 @@
         }
         
         return length, length_shortest, sum, flag
+    }
+    ```
+
+### 217. 存在重复元素
+!!! tip "思路"
+    排序
+    遍历
+
+=== "go"
+
+    ```go
+    func containsDuplicate(nums []int) bool {
+        if len(nums) < 2{
+            return false
+        }
+        sort.Ints(nums)
+        index := nums[0]
+        for i:=0; i<len(nums)-1; i++{
+            if nums[i] == nums[i+1]{
+                return true
+            }
+            if nums[i] != index{
+                index = nums[i]
+            }
+        }
+        return false
+    }
+    ```
+
+### 344. 反转字符串
+
+!!! tip "思路"
+    正常交换最后一个和第一个
+
+=== "go"
+
+    ```go
+    func reverseString(s []byte)  {
+        var temp byte
+        if len(s)>1{
+            for i:=0; i<len(s)/2; i++{
+                temp = s[i]
+                s[i] = s[len(s)-i-1]
+                s[len(s)-i-1] = temp
+            }
+        }
     }
     ```
 

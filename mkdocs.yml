@@ -189,6 +189,7 @@ nav:
         - cloud-native/system/cmcc-paas/index.md
         - 云原生基础: cloud-native/system/cmcc-paas/cloud-native-basic.md
         - K8S基础: cloud-native/system/cmcc-paas/kubernetes-basic.md
+        - docker基础: cloud-native/system/cmcc-paas/docker-basic.md
     - 工具:
       - KuberShpere: cloud-native/platform/kubersphere.md
       - Jenkins: cloud-native/platform/jenkins.md
