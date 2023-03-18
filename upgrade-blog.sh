@@ -15,10 +15,10 @@ if [ $# -gt 0 ]
           grep -v gitpod.yml | grep -v mkdocs.yml | grep -v README.md | \
           grep -v upgrade-blog.sh | grep -v .repo-mirror | \
           grep -v Dockerfile | grep -v action.yml`
-  echo "***These files will be delelte:***\n"${rmfile}"\n***Input yes to continue upgrade and others to shutdown***"
+  echo "***These files will be delelte:***\n"${rmfile}"\n***Input 'y' to continue upgrade and others to shutdown***"
   
   read makesure
-  if [ -n $makesure="yes" ]
+  if [ $makesure == 'y' ]
   then
   # clean & delete
   mkdocs build --clean
@@ -33,6 +33,8 @@ if [ $# -gt 0 ]
   git add .
   git commit -m $1
   git push origin master
+  else
+  echo "***Exit***"
   fi
 fi
 
