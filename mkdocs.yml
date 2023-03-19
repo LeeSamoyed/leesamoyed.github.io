@@ -171,10 +171,6 @@ nav:
         - 算法的引入: research-development-design/business-logic/algorithm.md
       - 设计模式:
         - 大话设计模式: research-development-design/design-pattern/westward-design-patterns.md
-  - 嵌入式:
-    - embedded/index.md
-    - 开发板:
-      - Jetson + 视觉: embedded/development-board/jetson-vision.md
   - 云原生:
     - cloud-native/index.md
     - 体系:
@@ -196,6 +192,10 @@ nav:
     - 搭建&维护:
       - AKS SelfHost Gitpod: cloud-native/build-ops/aks-selfhost-gitpod.md
       - AKS QDUOJ: cloud-native/build-ops/aks-qduoj.md
+  - 嵌入式:
+    - embedded/index.md
+    - 开发板:
+      - Jetson + 视觉: embedded/development-board/jetson-vision.md
   - 网络安全:
     - cyber-security/index.md
     - 渗透测试:
