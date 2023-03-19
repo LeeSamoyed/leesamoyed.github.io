@@ -22,19 +22,23 @@ if [ $# -gt 0 ]
   then
   # clean & delete
   mkdocs build --clean
+  echo "***Build success***"
   rm -rf $(ls ./ | grep -v .docs | grep -v material | \
           grep -v  .github | grep -v site | grep -v .gitignore | \
           grep -v gitpod.yml | grep -v mkdocs.yml | grep -v README.md | \
           grep -v upgrade-blog.sh | grep -v .repo-mirror | \
           grep -v Dockerfile | grep -v action.yml)
+  echo "***Delete success***"
   mv ./site/* ./
+  echo "***Move success***"
 
   # auto push to github
   git add .
   git commit -m $1
   git push origin master
+  echo "***Upgrade success***"
   else
-  echo "***Exit***"
+    echo "***Exit***"
   fi
 fi
 
