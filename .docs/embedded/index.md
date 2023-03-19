@@ -1,6 +1,6 @@
-目录（重点章节加粗）
+# 导航
 
-***
+=== "目录"
 
-- 开发板
-    - [**Jetson + 视觉**](/embedded/development-board/jetson-vision)  
+    - 开发板
+        - [**Jetson + 视觉**](/embedded/development-board/jetson-vision)  

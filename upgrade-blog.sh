@@ -30,7 +30,7 @@ if [ $# -gt 0 ]
   #         grep -v upgrade-blog.sh | grep -v .repo-mirror | \
   #         grep -v Dockerfile | grep -v action.yml)
   # echo "***Delete success***"
-  cp -r ./site/*  ./
+  cp -rf ./site/*  ./
   echo "***Copy success***"
 
   # auto push to github
