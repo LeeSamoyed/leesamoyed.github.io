@@ -29,7 +29,7 @@ if [ $# -gt 0 ]
           grep -v upgrade-blog.sh | grep -v .repo-mirror | \
           grep -v Dockerfile | grep -v action.yml)
   echo "***Delete success***"
-  mv ./site/* ./
+  mv ./site/*  ./
   echo "***Move success***"
 
   # auto push to github
