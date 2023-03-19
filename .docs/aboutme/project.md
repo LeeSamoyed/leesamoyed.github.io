@@ -34,7 +34,7 @@
 
     <h5>2020——智能化人群密度检测监控系统</5>
 
-    <img style="width:50%;margin-left:25%; alt="crowd-arch" src="/assets/images/about-me/crowdarch.png"/>
+    <img style="width:50%;margin-left:25%; alt="crowd-arch" src="/assets/images/about-me/crowd-arch.png"/>
 
     <img style="width:50%;margin-left:25%; alt="crowd-show" src="/assets/images/about-me/crowd-show.png"/>
 
@@ -44,7 +44,7 @@
 
     <h5>2017——家庭图书管理系统</5>
 
-    <img style="width:50%;margin-left:25%; alt="lib-arch" src="/assets/images/about-me/li barch.png"/>
+    <img style="width:50%;margin-left:25%; alt="lib-arch" src="/assets/images/about-me/lib-arch.png"/>
 
     <h5>2018——基于人脸识别的相面应用App</5>
 
