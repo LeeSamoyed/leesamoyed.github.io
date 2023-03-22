@@ -6,19 +6,22 @@
 
 === "目录"
 
-    - 体系
-        - [云原生综述](/cloud-native/system/summarize)  
-        - [VPC](/cloud-native/system/vpc)  
-        - [Docker](/cloud-native/system/docker)  
-        - [Kubernetes](/cloud-native/system/k8s)  
-        - [DevOps](/cloud-native/system/devops)  
-        - [Micro Services](/cloud-native/system/micro-services)  
-        - [Service Mesh](/cloud-native/system/service-mesh)
-        - CMCC-PaaS:
-            - [PaaS证书](/cloud-native/system/cmcc-paas/index)
-            - [云原生基础](/cloud-native/system/cmcc-paas/cloud-native-basic)
-            - [K8S基础](/cloud-native/system/cmcc-paas/kubernetes-basic)
-            - [docker基础](/cloud-native/system/cmcc-paas/docker-basic)
+    - [云原生综述](/cloud-native/summarize)
+    - [DevOps](/cloud-native/devops) 
+    - [Micro Services](/cloud-native/micro-services)
+    - Cloud:
+        - [VPC](/cloud-native/cloud/vpc)  
+    - Container
+        - [Docker](/cloud-native/container/docker)  
+        - [Kubernetes](/cloud-native/container/k8s)  
+    - Service Mesh
+        - [服务网格基础](/cloud-native/service-mesh/service-mesh-basic)
+        - [Istio](/cloud-native/service-mesh/istio)
+    - CMCC-PaaS:
+        - [PaaS证书](/cloud-native/certificate/cmcc-paas/index)
+        - [云原生基础](/cloud-native/certificate/cmcc-paas/cloud-native-basic)
+        - [K8S基础](/cloud-native/certificate/cmcc-paas/kubernetes-basic)
+        - [docker基础](/cloud-native/certificate/cmcc-paas/docker-basic)
     - 工具
         - [KuberShpere](/cloud-native/platform/kubersphere)  
         - [Jenkins](/cloud-native/platform/jenkins)  

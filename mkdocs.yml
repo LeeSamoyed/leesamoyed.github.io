@@ -173,19 +173,21 @@ nav:
         - 大话设计模式: research-development-design/design-pattern/westward-design-patterns.md
   - 云原生:
     - cloud-native/index.md
-    - 体系:
-      - 云原生综述: cloud-native/system/summarize.md
-      - VPC: cloud-native/system/vpc.md
-      - Docker: cloud-native/system/docker.md
-      - Kubernetes: cloud-native/system/k8s.md
-      - DevOps: cloud-native/system/devops.md
-      - Micro Services: cloud-native/system/micro-services.md
-      - Service Mesh: cloud-native/system/service-mesh.md
-      - CMCC-PaaS:
-        - cloud-native/system/cmcc-paas/index.md
-        - 云原生基础: cloud-native/system/cmcc-paas/cloud-native-basic.md
-        - K8S基础: cloud-native/system/cmcc-paas/kubernetes-basic.md
-        - docker基础: cloud-native/system/cmcc-paas/docker-basic.md
+    - 云原生综述: cloud-native/summarize.md
+    - DevOps: cloud-native/devops.md
+    - Cloud:
+        - VPC: cloud-native/cloud/vpc.md
+    - Container
+        - Docker: cloud-native/container/docker.md
+        - Kubernetes: cloud-native/container/k8s.md
+    - Service Mesh
+        - 服务网格基础: cloud-native/service-mesh/service-mesh-basic.md
+        - Istio: cloud-native/service-mesh/istio.md
+    - CMCC-PaaS:
+        - PaaS证书: cloud-native/certificate/cmcc-paas/index.md
+        - 云原生基础: cloud-native/certificate/cmcc-paas/cloud-native-basic.md
+        - K8S基础: cloud-native/certificate/cmcc-paas/kubernetes-basic.md
+        - docker基础: cloud-native/certificate/cmcc-paas/docker-basic.md
     - 工具:
       - KuberShpere: cloud-native/platform/kubersphere.md
       - Jenkins: cloud-native/platform/jenkins.md
