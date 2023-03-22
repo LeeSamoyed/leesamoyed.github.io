@@ -64,7 +64,7 @@
 
     <h3>本科——基于深度学习网络的情感自动分析系统的设计与实现</h3>
 
-    <img style="width:50%;margin-left:25%; alt="bachelor-arch" src="/assets/images/about-me/bachelorarch.png"/>
+    <img style="width:50%;margin-left:25%; alt="bachelor-arch" src="/assets/images/about-me/bachelor-arch.png"/>
 
     <img style="width:50%;margin-left:25%; alt="bachelor-show" src="/assets/images/about-me/bachelor-show.png"/>
 
