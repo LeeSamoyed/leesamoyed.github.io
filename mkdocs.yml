@@ -177,10 +177,10 @@ nav:
     - DevOps: cloud-native/devops.md
     - Cloud:
         - VPC: cloud-native/cloud/vpc.md
-    - Container
+    - Container:
         - Docker: cloud-native/container/docker.md
         - Kubernetes: cloud-native/container/k8s.md
-    - Service Mesh
+    - Service Mesh:
         - 服务网格基础: cloud-native/service-mesh/service-mesh-basic.md
         - Istio: cloud-native/service-mesh/istio.md
     - CMCC-PaaS:

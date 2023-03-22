@@ -21,12 +21,57 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://leesamoyed.github.io/cloud-native/devops/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cloud-native/summarize/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://leesamoyed.github.io/cloud-native/build-ops/aks-qduoj/</loc>
          <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://leesamoyed.github.io/cloud-native/build-ops/aks-selfhost-gitpod/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cloud-native/certificate/cmcc-paas/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cloud-native/certificate/cmcc-paas/cloud-native-basic/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cloud-native/certificate/cmcc-paas/docker-basic/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cloud-native/certificate/cmcc-paas/kubernetes-basic/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cloud-native/cloud/vpc/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cloud-native/container/docker/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cloud-native/container/k8s/</loc>
          <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -41,57 +86,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/devops/</loc>
+         <loc>https://leesamoyed.github.io/cloud-native/service-mesh/istio/</loc>
          <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/docker/</loc>
-         <lastmod>2023-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/k8s/</loc>
-         <lastmod>2023-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/micro-services/</loc>
-         <lastmod>2023-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/service-mesh/</loc>
-         <lastmod>2023-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/summarize/</loc>
-         <lastmod>2023-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/vpc/</loc>
-         <lastmod>2023-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/cmcc-paas/</loc>
-         <lastmod>2023-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/cmcc-paas/cloud-native-basic/</loc>
-         <lastmod>2023-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/cmcc-paas/docker-basic/</loc>
-         <lastmod>2023-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/cloud-native/system/cmcc-paas/kubernetes-basic/</loc>
+         <loc>https://leesamoyed.github.io/cloud-native/service-mesh/service-mesh-basic/</loc>
          <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
