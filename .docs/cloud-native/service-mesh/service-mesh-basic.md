@@ -8,4 +8,31 @@
 
 **控制平面**
 
-与前端代理通信控制其工作逻辑的组建
+与前端代理通信控制其工作逻辑的组件
+
+## 服务网格功能
+
+=== "Traffic management"
+
+    - Protocol: layer 7 (http, grpc)
+    - Dynamic Routing: conditional, weighting, mirroring
+    - Resiliency: timeouts, retries, circuit breakers
+    - Policy: access control, rate limits, quotas
+    - Testing: fault injection
+
+=== "Security"
+
+    - Encryption: mTLS, certificate management, external CA
+    - Strong: ldentity: SPIFFE or similar
+    - Auth: authentication, authorisation
+
+=== "Observability"
+
+    - Metrics: golden metrics, prometheus, grafana
+    - Tracing: traces across workloads
+    - Traffic: cluster, ingress/egress
+
+=== "Mesh"
+
+    - Supported Compute: Kubernetes, virtual machines
+    - Multi-cluster: gateways, federation
