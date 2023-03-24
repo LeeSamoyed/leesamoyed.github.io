@@ -12,10 +12,12 @@ if [ $# -gt 0 ]
   then
 
   # build
+  echo "***Build begin***"
   mkdocs build --clean
   echo "***Build success***"
 
-  # clean & delete
+  # delete
+  echo "***Delete begin***"
   origin=./site   #文件夹a
   target=./
   for i in `ls $origin`
@@ -25,11 +27,13 @@ if [ $# -gt 0 ]
   done
   echo "***Delete success***"
 
+  echo "***Remove begin***"
   mv ./site/*  ./
   echo "***Remove success***"
   rm -rf ./site
 
   # auto push to github
+  echo "***Upgrade begin***"
   git add .
   git commit -m $1
   git push origin master
