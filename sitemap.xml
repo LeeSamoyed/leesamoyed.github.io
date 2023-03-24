@@ -16,12 +16,107 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/databases/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/paper-arrangement/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/deep-learning/attention-mechanism/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/deep-learning/computer-vision/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/deep-learning/concept/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/deep-learning/natural-language-processing/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/deep-learning/neural-architecture-search/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/deep-learning/open-source-library/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/deep-learning/time-series-prediction/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/deep-learning-pytorch-object-detection/pytorch-basic/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/deep-learning-pytorch-object-detection/pytorch-object-detection/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/machine-learning/frequentist%26bayesian/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/machine-learning/gaussian-distribution/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/machine-learning/linear-classification/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/machine-learning/regression/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/statistical-methods/k-nearest-neighbor/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/artificial-intelligence/statistical-methods/perceptron/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://leesamoyed.github.io/cloud-native/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://leesamoyed.github.io/cloud-native/devops/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/cloud-native/summarize/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -172,96 +267,6 @@
     </url>
     <url>
          <loc>https://leesamoyed.github.io/knowledge/new-concept/metaverse/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/databases/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/paper-arrangement/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/attention-mechanism/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/computer-vision/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/concept/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/natural-language-processing/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/neural-architecture-search/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/open-source-library/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning/time-series-prediction/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning-pytorch-object-detection/pytorch-basic/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/deep-learning-pytorch-object-detection/pytorch-object-detection/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/machine-learning/frequentist%26bayesian/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/machine-learning/gaussian-distribution/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/machine-learning/linear-classification/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/machine-learning/regression/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/statistical-methods/k-nearest-neighbor/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/machine-deep-learning/statistical-methods/perceptron/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -476,102 +481,52 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/</loc>
+         <loc>https://leesamoyed.github.io/self-improvement/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/efficiency-improvement/common/</loc>
+         <loc>https://leesamoyed.github.io/self-improvement/efficiency-improvement/common/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/efficiency-improvement/macos/</loc>
+         <loc>https://leesamoyed.github.io/self-improvement/efficiency-improvement/macos/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/manuals/docker/</loc>
+         <loc>https://leesamoyed.github.io/self-improvement/efficiency-improvement/paper/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/manuals/git/</loc>
+         <loc>https://leesamoyed.github.io/self-improvement/manuals/docker/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/manuals/latex/</loc>
+         <loc>https://leesamoyed.github.io/self-improvement/manuals/git/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/operation-system-issue/linuxos/</loc>
+         <loc>https://leesamoyed.github.io/self-improvement/manuals/latex/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/operation-system-issue/windowsos/</loc>
+         <loc>https://leesamoyed.github.io/self-improvement/operation-system-issue/linuxos/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/review/research-and-development/</loc>
+         <loc>https://leesamoyed.github.io/self-improvement/operation-system-issue/windowsos/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/big-data/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/cloud-native/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/crawler/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/cyber-security/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/deep-learning/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/design-pattern/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/develop-research/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/embedded-development/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/machine-learning/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/mathematical-theory/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/resources-opinion/study-routes/paper/</loc>
+         <loc>https://leesamoyed.github.io/self-improvement/review/research-and-development/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>

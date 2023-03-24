@@ -15,4 +15,14 @@
     - 工具
         - [抢占式服务器配置](/cyber-security/tools/preemptive-server-configuration)  
         - [ECS代理池](/cyber-security/tools/ecs-proxypool)  
-        - [工具相关](/cyber-security/tools/tool-relevant)  
+        - [工具相关](/cyber-security/tools/tool-relevant) 
+
+=== "资料"
+
+    **课程**
+
+    [小迪安全](https://www.bilibili.com/video/BV1JZ4y1c7ro/?spm_id_from=333.337.search-card.all.click)
+
+    **路线**
+
+    [Python爬虫](https://www.yuque.com/office/yuque/0/2022/pdf/358780/1666662647025-a6d7b30b-2dc5-42fc-8893-cca43b3834eb.pdf?from=https%3A%2F%2Fwww.yuque.com%2Fleesamoyed%2Faioqs5%2Fwmw8yn%2Fedit)

@@ -33,7 +33,9 @@
         - [**AKS SelfHost Gitpod**](/cloud-native/build-ops/aks-selfhost-gitpod)  
         - [**AKS QDUOJ**](/cloud-native/build-ops/aks-qduoj)  
 
-=== "参考资料"
+=== "资料"
+
+    **课程**
 
     [尚硅谷](https://space.bilibili.com/302417610) + [云原生](https://www.bilibili.com/video/BV13Q4y1C7hS?p=1)
 

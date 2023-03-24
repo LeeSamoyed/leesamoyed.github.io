@@ -18,3 +18,11 @@
         - [虚数和实数](/mathematical-theory/expand/imaginary-and-real-numbers)  
         - [最美的公式](/mathematical-theory/expand/euler-formula)  
         - [exp&e](/mathematical-theory/expand/exp-e)  
+
+=== "资料"
+
+    **课程**
+
+    [微积分的本质](https://space.bilibili.com/88461692/channel/detail?cid=13407)
+
+    [麻省-线性代数](https://www.bilibili.com/video/BV1ix411f7Yp?from=search&seid=16171556689207969814&spm_id_from=333.337.0.0)
