@@ -34,8 +34,6 @@
    - Kubernetes外部：日志、监控、配置管理、CI、CD、Workflow、FaaS、OTS应用、ChatOps等
    - Kubernetes内部：CRI、CNI、CVI、镜像仓库、Cloud Provider、集群自身的配置和管理等
 
-## 
-
 ## K8S架构
 
 ## K8S部署(集群搭建)
@@ -44,6 +42,7 @@
 
 
 ## 核心使用
+
 ### 核心概念
 - Namespace: 对集群资源进行隔离划分。默认只隔离资源，不隔离网络(可以用于区分两套完全一样的环境，例如区分prod和dev环境)
 - Pod: Kubernetes应用的最小单位
