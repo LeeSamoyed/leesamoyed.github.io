@@ -4,6 +4,14 @@
 
     ![容器安全](/assets/images/cloud-native/container-security.png)
 
+=== "云原生网关"
+
+    ![云原生网关](/assets/images/cloud-native/gateway.png)
+
+    ![服务网格网关](/assets/images/cloud-native/gateway-istio.png)
+
+    ![Traefik网关](/assets/images/cloud-native/gateway-traefik.png)
+
 === "目录"
 
     - [云原生综述](/cloud-native/summarize)
@@ -17,11 +25,8 @@
     - Service Mesh
         - [服务网格基础](/cloud-native/service-mesh/service-mesh-basic)
         - [Istio](/cloud-native/service-mesh/istio)
-    - CMCC-PaaS:
-        - [PaaS证书](/cloud-native/certificate/cmcc-paas/index)
-        - [云原生基础](/cloud-native/certificate/cmcc-paas/cloud-native-basic)
-        - [K8S基础](/cloud-native/certificate/cmcc-paas/kubernetes-basic)
-        - [docker基础](/cloud-native/certificate/cmcc-paas/docker-basic)
+    - 云原生证书:
+        - [CMCC-PaaS证书](/cloud-native/certificate/cmcc-paas)
     - 工具
         - [KuberShpere](/cloud-native/platform/kubersphere)  
         - [Jenkins](/cloud-native/platform/jenkins)  

@@ -183,11 +183,8 @@ nav:
     - Service Mesh:
         - 服务网格基础: cloud-native/service-mesh/service-mesh-basic.md
         - Istio: cloud-native/service-mesh/istio.md
-    - CMCC-PaaS:
-        - PaaS证书: cloud-native/certificate/cmcc-paas/index.md
-        - 云原生基础: cloud-native/certificate/cmcc-paas/cloud-native-basic.md
-        - K8S基础: cloud-native/certificate/cmcc-paas/kubernetes-basic.md
-        - docker基础: cloud-native/certificate/cmcc-paas/docker-basic.md
+    - 云原生证书证书:
+        - CMCC-PaaS: cloud-native/certificate/cmcc-paas.md
     - 工具:
       - KuberShpere: cloud-native/platform/kubersphere.md
       - Jenkins: cloud-native/platform/jenkins.md
