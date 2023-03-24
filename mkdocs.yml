@@ -210,7 +210,7 @@ nav:
       - 抢占式服务器配置: cyber-security/tools/preemptive-server-configuration.md
       - ECS代理池: cyber-security/tools/ecs-proxypool.md
       - 工具相关: cyber-security/tools/tool-relevant.md
-  - 机器&深度学习:
+  - 人工智能:
     - artificial-intelligence/index.md
     - 机器学习:
       - 频率派&贝叶斯派: artificial-intelligence/machine-learning/frequentist&bayesian.md
