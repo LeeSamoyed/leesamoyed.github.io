@@ -173,7 +173,6 @@ nav:
         - 大话设计模式: research-development-design/design-pattern/westward-design-patterns.md
   - 云原生:
     - cloud-native/index.md
-    - 云原生综述: cloud-native/summarize.md
     - DevOps: cloud-native/devops.md
     - Cloud:
         - VPC: cloud-native/cloud/vpc.md
@@ -184,7 +183,7 @@ nav:
         - 服务网格基础: cloud-native/service-mesh/service-mesh-basic.md
         - Istio: cloud-native/service-mesh/istio.md
     - 云原生证书证书:
-        - CMCC-PaaS: cloud-native/certificate/cmcc-paas.md
+        - CMCC-PaaS证书: cloud-native/certificate/cmcc-paas.md
     - 工具:
       - KuberShpere: cloud-native/platform/kubersphere.md
       - Jenkins: cloud-native/platform/jenkins.md
