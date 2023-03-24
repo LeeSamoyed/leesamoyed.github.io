@@ -24,12 +24,12 @@ if [ $# -gt 0 ]
   # clean & delete
   mkdocs build --clean
   echo "***Build success***"
-  # rm -rf $(ls ./ | grep -v .docs | grep -v material | \
-  #         grep -v  .github | grep -v site | grep -v .gitignore | \
-  #         grep -v gitpod.yml | grep -v mkdocs.yml | grep -v README.md | \
-  #         grep -v upgrade-blog.sh | grep -v .repo-mirror | \
-  #         grep -v Dockerfile | grep -v action.yml)
-  # echo "***Delete success***"
+  rm -rf $(ls ./ | grep -v .docs | grep -v material | \
+          grep -v  .github | grep -v site | grep -v .gitignore | \
+          grep -v gitpod.yml | grep -v mkdocs.yml | grep -v README.md | \
+          grep -v upgrade-blog.sh | grep -v .repo-mirror | \
+          grep -v Dockerfile | grep -v action.yml)
+  echo "***Delete success***"
   cp -rf ./site/*  ./
   echo "***Copy success***"
 
