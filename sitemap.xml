@@ -251,21 +251,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://leesamoyed.github.io/knowledge/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/knowledge/knowledge-list/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://leesamoyed.github.io/knowledge/new-concept/metaverse/</loc>
-         <lastmod>2023-03-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://leesamoyed.github.io/mathematical-theory/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
@@ -511,12 +496,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://leesamoyed.github.io/self-improvement/new-concept/metaverse/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://leesamoyed.github.io/self-improvement/operation-system-issue/linuxos/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://leesamoyed.github.io/self-improvement/operation-system-issue/windowsos/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://leesamoyed.github.io/self-improvement/reading/list/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>

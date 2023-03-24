@@ -28,7 +28,7 @@ if [ $# -gt 0 ]
   echo "***Delete success***"
 
   echo "***Remove begin***"
-  mv ./site/*  ./
+  cp -rf ./site/*  ./
   echo "***Remove success***"
   rm -rf ./site
 
