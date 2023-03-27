@@ -29,8 +29,8 @@ if [ $# -gt 0 ]
 
   echo "***Remove begin***"
   cp -rf ./site/*  ./
-  echo "***Remove success***"
   rm -rf ./site
+  echo "***Remove success***"
 
   # auto push to github
   echo "***Upgrade begin***"

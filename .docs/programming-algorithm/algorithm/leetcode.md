@@ -1,6 +1,6 @@
 # 力扣（LeetCode）
 
-### 1. 两数之和 - Attention
+### 1. 两数之和 - go限制解释
 
 !!! tip "思路"
     两层循环暴力破解
@@ -155,7 +155,7 @@
     }
     ```
 
-### 7. 整数反转 -Attention
+### 7. 整数反转 - 整数题思路
 
 !!! tip "思路"
     整数变字符串变整数
@@ -490,7 +490,7 @@
     }
     ```  
 
-### 20. 有效的括号 - Attention
+### 20. 有效的括号 - ||和&&注意事项
 
 !!! tip "思路"
     排出特殊情况之后，用字符串构造一个假的栈
@@ -536,6 +536,81 @@
         return false
         
     }   
+    ```
+
+### 24. 两两交换链表中的节点 - 腾讯笔试升级版
+
+!!! tip "思路"
+
+    直接换
+
+=== "go"
+
+    ```
+    /**
+    * Definition for singly-linked list.
+    * type ListNode struct {
+    *     Val int
+    *     Next *ListNode
+    * }
+    */
+    func swapPairs(head *ListNode) *ListNode {
+        // write code here
+        if head == nil || head.Next == nil {
+            return head
+        }
+        
+        var first, second *ListNode
+        
+        first, second = head, head.Next
+        first.Next = swapPairs(second.Next)
+        second.Next = first 
+        return second 
+        
+    }
+    ```
+
+=== go(升级版)
+
+    ```
+    package main
+    import . "nc_tools"
+
+    /*
+    * type ListNode struct{
+    *   Val int
+    *   Next *ListNode
+    * }
+    */
+
+    /**
+    * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+    * 
+    * @param head ListNode类 
+    * @return ListNode类
+    */
+    func reorderList( head *ListNode ) *ListNode {
+        // write code here
+        if head == nil || head.Next == nil || head.Next.Next == nil{
+            return head
+        }
+        
+        var first, second, third, fourth *ListNode
+        
+        if head.Next.Next.Next != nil{
+            first, second, third, fourth = head, head.Next , head.Next.Next, head.Next.Next.Next
+            second.Next = reorderList(fourth.Next)
+            fourth.Next = first 
+            return third 
+        }else{
+            first, second, third = head, head.Next , head.Next.Next
+            second.Next = third.Next
+            third.Next = first
+            return third
+        }
+        
+        
+    }
     ```
 
 ### 26. 删除有序数组中的重复项 - Attention
@@ -651,7 +726,7 @@
     }
     ```
 
-### 59. 螺旋矩阵II - Attention
+### 59. 螺旋矩阵II - 数组声明
 
 !!! tip "思路"
     两个flag，一个记录已经转了几圈，一个记录方向（逻辑顺畅即可）
@@ -940,7 +1015,7 @@
     }
     ```
 
-### 125. 验证回文串 - Attention
+### 125. 验证回文串 - 正则
 
 !!! tip "思路"
     正则表达式+全小写
@@ -1018,7 +1093,7 @@
     select email from Person group by email having count(email) > 1
     ```
 
-### 195. 第十行 - Linux - Attention
+### 195. 第十行 - Linux
 !!! tip "思路"
     linux命令
 
@@ -1039,7 +1114,7 @@
     ```
 
 
-### 203. 移除链表元素 - Attention
+### 203. 移除链表元素 - 链表赋值过程
 
 !!! tip "思路"
     正常判断即可
