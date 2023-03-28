@@ -1,5 +1,7 @@
 # 力扣（LeetCode）
 
+## LeetCode
+
 ### 1. 两数之和 - go限制解释
 
 !!! tip "思路"
@@ -1628,3 +1630,50 @@
     }
     ```
 
+## 场子笔试
+
+### SHEIN - 2023.03.29
+
+!!! note "题目"
+    
+    1. 平均年龄
+    2. 马挡兵路
+
+!!! tip "思路"
+
+    1. 乘除少做，很多时候需要用数学思路解决问题！！！
+    2. 
+
+=== "go"
+
+    ```
+    package main
+
+    import (
+        "fmt"
+    )
+
+    func main() {
+        W := 0
+        Y := 0
+        X := 0.0
+        N := 0
+        for {
+            n, _ := fmt.Scan(&W, &Y, &X, &N)
+            if n == 0 {
+                break
+            } else {
+                Y_ := float64(Y)
+                for i:=0; i<N; i++{
+                    Y_ = (Y_+1)*(1-X) + X*21.0
+                }
+                if Y_ > float64(int(Y_)){
+                    Y=int(Y_)+1
+                }else{
+                    Y=int(Y_)
+                }
+                fmt.Println(Y)
+            }
+        }
+    }
+    ```
