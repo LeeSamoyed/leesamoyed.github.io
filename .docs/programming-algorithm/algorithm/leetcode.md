@@ -1526,28 +1526,68 @@
             return list
     ```
 
-### 1217. 玩筹码
+### 1641. 统计字典序元音字符串的数目
 
-=== "java"
+=== "go"
 
-    ```java
-    class Solution {
-        public static int minCostToMoveChips(int[] chips) {
-            int cost = 0;
-            int costone = 0;
+!!! tip "思路"
 
-            for(int i=0;i<chips.length;i++){
-                if(chips[i] % 2 == 0){
-                    cost = cost + 1;
-                }else{
-                    costone = costone + 1;
-                }
-            }
-            if(cost > costone){
-                return costone;
-            }
-            return cost;
+    递归手撕
+
+    不过注意以下两个代码区别
+
+    ```
+    count, level = chara('a', count, level, n)
+    ```
+
+    ```
+    count, level = chara('a', count, level, n)
+    count, level = chara('e', count, level, n)
+    count, level = chara('i', count, level, n)
+    count, level = chara('o', count, level, n)
+    count, level = chara('u', count, level, n)
+    ```
+
+    在于其实每一次从a开始迭就可以了，如果加上后面的就会把从e, i, o, u开始的情况也算进去，等于做了多做了四次题目第一次是a, e, i, o, u，第二次是e, i, o, u ...
+
+=== "go"
+
+    ```go
+    func countVowelStrings(n int) int {
+        count := 0
+        level := 0
+
+        count, level = chara('a', count, level, n)
+
+        return count
+    }
+
+    func chara(character byte, count int, level int, n int) (int, int) {
+        if level == n{
+            count = count + 1
+            return count, level
         }
+        level = level + 1
+        if level <= n{
+            switch character{
+                case 'a':
+                    count,level = chara('a', count, level, n)
+                    fallthrough
+                case 'e':
+                    count, level = chara('e', count, level, n)
+                    fallthrough
+                case 'i':
+                    count, level = chara('i', count, level, n)
+                    fallthrough
+                case 'o':
+                    count, level = chara('o', count, level, n)
+                    fallthrough
+                case 'u':
+                    count, level = chara('u', count, level, n)
+            }
+        }
+        level = level - 1
+        return count, level
     }
     ```
 
