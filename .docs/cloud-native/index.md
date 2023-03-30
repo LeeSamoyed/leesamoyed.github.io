@@ -12,6 +12,10 @@
 
     ![容器安全](/assets/images/cloud-native/container-security.png)
 
+=== "服务发现"
+
+    ![容器安全](/assets/images/cloud-native/service-discovery.png)
+
 === "目录"
 
     - [DevOps](/cloud-native/devops) 

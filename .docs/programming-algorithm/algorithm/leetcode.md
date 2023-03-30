@@ -1526,9 +1526,85 @@
             return list
     ```
 
-### 1641. 统计字典序元音字符串的数目
+### 1637. 
+
+!!! tip "思路"
+
+    这个题和纵坐标无关，把横坐标拉出来排序，前减后求最大值即可，不过没法冒泡，后续更新快排
 
 === "go"
+
+    ```go
+    func partition(list []int, low, high int) int {
+        pivot := list[low] //导致 low 位置值为空
+        for low < high {
+            //high指针值 >= pivot high指针\U0001f448移
+            for low < high && pivot <= list[high] {
+                high--
+            }
+            //填补low位置空值
+            //high指针值 < pivot high值 移到low位置
+            //high 位置值空
+            list[low] = list[high]
+            //low指针值 <= pivot low指针\U0001f449移
+            for low < high && pivot >= list[low] {
+                low++
+            }
+            //填补high位置空值
+            //low指针值 > pivot low值 移到high位置
+            //low位置值空
+            list[high] = list[low]
+        }
+        //pivot 填补 low位置的空值
+        list[low] = pivot
+        return low
+    }
+
+    func QuickSort(list []int,low,high int)  {
+        if high > low{
+            //位置划分
+            pivot := partition(list,low,high)
+            //左边部分排序
+            QuickSort(list,low,pivot-1)
+            //右边排序
+            QuickSort(list,pivot+1,high)
+        }
+    }
+
+
+    func maxWidthOfVerticalArea(points [][]int) int {
+        list := make([]int, len(points))
+        for i:=0; i<len(points); i++{
+            list[i] = points[i][0]
+        }
+
+        // for i:=0; i<len(list); i++{
+        //     max := list[i]
+        //     max_index := i
+        //     for j:=i+1; j<len(points); j++{
+        //         if list[j] > max{
+        //             max = list[j]
+        //             max_index = j
+        //         }
+        //     } 
+        //     temp := list[i]
+        //     list[i] = max
+        //     list[max_index] = temp
+        // }
+
+        QuickSort(list,0,len(list)-1)
+
+        max := list[1]-list[0]
+        for i:=1; i<len(list)-1; i++{
+            if list[i+1]-list[i] > max{
+                max = list[i+1]-list[i]
+            }
+        }
+        return max
+    }
+    ```
+
+### 1641. 统计字典序元音字符串的数目
 
 !!! tip "思路"
 
