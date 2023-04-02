@@ -706,7 +706,7 @@
         }
         return 0
     }
-```
+    ```
 
 ### 58. 最后一个单词的长度
 !!! tip "思路"
@@ -1369,6 +1369,132 @@
     }
     ```
 
+### 707. 设计链表 - 究极基本功
+
+!!! tip "思路"
+
+    基本功，多回忆，多练练
+
+=== "go"
+
+    ```go
+    type MyLinkedList struct {
+        head *ListNode
+        size int
+    }
+
+
+    func Constructor() MyLinkedList {
+        var myLinkedList MyLinkedList
+        var head *ListNode
+        size := 0
+        myLinkedList.head = head
+        myLinkedList.size = size
+        return myLinkedList
+    }
+
+
+    func (this *MyLinkedList) Get(index int) int {
+        
+        if index < 0 || index >= this.size{
+            return -1
+        }else{
+            var head *ListNode
+            head = this.head
+            for i:=0; i<index; i++{
+                head = head.Next
+            }
+            return head.Val
+        }
+        return -1
+    }
+
+
+    func (this *MyLinkedList) AddAtHead(val int)  {
+        this.AddAtIndex(0, val)
+        
+    }
+
+
+    func (this *MyLinkedList) AddAtTail(val int)  {
+        this.AddAtIndex(this.size, val)
+    }
+
+
+    func (this *MyLinkedList) AddAtIndex(index int, val int)  {
+
+        if(this.size < index){
+            return
+        }
+        if(index == 0){
+            var _head ListNode
+            _head.Val = val
+            _head.Next = this.head
+            this.head = &_head
+            this.size = this.size + 1
+        }else{
+            var head *ListNode
+            head = this.head
+            for i:=0; i<index-1; i++{
+                head = head.Next
+            }
+            var tail ListNode
+            tail.Val = val
+            tail.Next = head.Next
+            head.Next = &tail
+            this.size = this.size + 1
+        }
+        
+    }
+
+
+    func (this *MyLinkedList) DeleteAtIndex(index int)  {
+
+        if(this.size <= index){
+            return
+        }else if(index == 0 && this.size > 1){
+            this.head = this.head.Next
+            this.size = this.size-1
+        }else if(index == 0 && this.size == 1){
+            var head *ListNode
+            size := 0
+            this.head = head
+            this.size = size
+            this.size = this.size-1
+        }else if(index == this.size -1){
+            var head *ListNode
+            head = this.head
+            for i:=0; i<index-1; i++{
+                head = head.Next
+            }
+            head.Next = nil
+            this.size = this.size-1
+        }else if(this.size > index){
+            var head *ListNode
+            head = this.head
+            for i:=0; i<index-1; i++{
+                head = head.Next
+            }
+
+            head.Next = head.Next.Next
+            this.size = this.size-1
+        }
+        return
+
+    }
+
+
+    /**
+    * Your MyLinkedList object will be instantiated and called as such:
+    * obj := Constructor();
+    * param_1 := obj.Get(index);
+    * obj.AddAtHead(val);
+    * obj.AddAtTail(val);
+    * obj.AddAtIndex(index,val);
+    * obj.DeleteAtIndex(index);
+    */
+    ```
+
 ### 977. 有序数组的平方
 
 !!! tip "思路"
@@ -1526,7 +1652,7 @@
             return list
     ```
 
-### 1637. 
+### 1637. 两点之间不包含任何点的最宽垂直区域
 
 !!! tip "思路"
 
@@ -1667,6 +1793,40 @@
     }
     ```
 
+### 2367. 算术三元组的数目
+
+!!! tip "思路"
+
+    正常解答
+
+=== "go"
+
+    ```go
+    func arithmeticTriplets(nums []int, diff int) int {
+
+        count := 0
+
+        for i:=0; i<len(nums); i++{
+            for j:=i+1; j<len(nums); j++{
+                if nums[j]-nums[i] == diff{
+                    for ij:=j+1; ij<len(nums); ij++{
+                        if nums[ij] - nums[j] == diff{
+                            count = count + 1
+                        }
+                        if nums[ij] - nums[j] > diff{
+                            ij = ij + len(nums)
+                        }
+                    }
+                }
+                if nums[j]-nums[i] > diff{
+                    j = j+len(nums)
+                }
+            }
+        }
+        return count
+    }
+```
+
 ### LCP 01. 猜数字
 
 === "java"
@@ -1746,7 +1906,7 @@
     }
     ```
 
-## 场子笔试
+## 笔试
 
 ### SHEIN - 2023.03.29
 
