@@ -492,6 +492,65 @@
     }
     ```  
 
+### 19. 删除链表的倒数第N个结点
+
+!!! tip "思路"
+
+    反转之后正向删除，再反转回来
+
+=== "go"
+
+    ```
+    /**
+    * Definition for singly-linked list.
+    * type ListNode struct {
+    *     Val int
+    *     Next *ListNode
+    * }
+    */
+    func removeNthFromEnd(head *ListNode, n int) *ListNode {
+        
+        var ans *ListNode
+        head = reverseList(head)
+        ans = head
+        n = n-1
+        if n == 0{
+            head = head.Next
+            head = reverseList(head)
+            return head
+        }
+        for i:=1; i<n; i++{
+            head = head.Next
+        }
+        if head.Next.Next == nil{
+            head.Next = nil
+        }else{
+            head.Next = head.Next.Next
+        }
+        ans = reverseList(ans)
+        return ans
+    }
+
+    func reverseList(head *ListNode) *ListNode {
+
+        if head == nil || head.Next == nil{
+            return head
+        }
+        
+        var pre, cur *ListNode
+        pre = nil
+        cur = head
+        for (cur != nil) {
+            nex := cur.Next;
+            cur.Next = pre;
+            pre = cur;
+            cur = nex;
+        }
+        return pre;
+
+    }
+    ```
+
 ### 20. 有效的括号 - ||和&&注意事项
 
 !!! tip "思路"
@@ -1083,6 +1142,43 @@
     }
     ```
 
+### 142. 环形链表II
+
+!!! tip "思路"
+
+    成环的话，结点是确定不会变的，因此用一个list去已经遍历过的结点
+
+=== "go"
+    
+    ```go
+    /**
+    * Definition for singly-linked list.
+    * type ListNode struct {
+    *     Val int
+    *     Next *ListNode
+    * }
+    */
+    func detectCycle(head *ListNode) *ListNode {
+        var cur *ListNode
+        var loc []*ListNode
+        if head ==nil || head.Next == nil{
+            return nil
+        }
+        cur = head
+        loc = append(loc, cur)
+        for cur.Next != nil{
+            cur = cur.Next
+            for i:=0; i<len(loc); i++{
+                if cur == loc[i]{
+                    return cur
+                }
+            }
+            loc = append(loc, cur)
+        }
+        return nil
+    }
+    ```
+
 ### 182. 查找重复的电子邮箱 - SQL
 !!! tip "思路"
     SQL
@@ -1115,6 +1211,37 @@
     fi
     ```
 
+### 202. 快乐数 - Pow
+
+!!! tip "思路"
+
+    记住Pow
+
+=== "go"
+
+    ```go
+    func res(n int) int{
+        res:=0
+        for n >= 1{
+            res = res + int(math.Pow(float64(n%10),2))
+            n=n/10
+        }
+        return res
+    }
+
+    func isHappy(n int) bool {
+        repeat := [1000]int{0}
+        for n != 1{
+            n = res(n)
+            if repeat[n] != 0{
+                return false
+            }else{
+                repeat[n] = 1
+            }
+        }
+        return true
+    }
+    ```
 
 ### 203. 移除链表元素 - 链表赋值过程
 
@@ -1170,10 +1297,42 @@
     }
     ```
 
-### 206. 反转链表
+### 206. 反转链表 - 究极基本功
 
 !!! tip "思路"
-    正常反转
+
+    直接将链表的连接反转过来，不用考虑把链表拔出来之类的（思路很重要）
+
+=== "go"
+
+    ```go
+    /**
+    * Definition for singly-linked list.
+    * type ListNode struct {
+    *     Val int
+    *     Next *ListNode
+    * }
+    */
+
+    func reverseList(head *ListNode) *ListNode {
+
+        if head == nil || head.Next == nil{
+            return head
+        }
+        
+        var pre, cur *ListNode
+        pre = nil
+        cur = head
+        for (cur != nil) {
+            nex := cur.Next;
+            cur.Next = pre;
+            pre = cur;
+            cur = nex;
+        }
+        return pre;
+
+    }
+    ```
 
 === "c++"
 
@@ -1311,6 +1470,36 @@
     }
     ```
 
+### 242. 有效的字母异位词
+
+!!! tip "思路"
+
+    因为只有小写字母可以直接储存（用数组，int('b'-'a')）这种方式
+
+=== "go"
+
+    ```go
+    func isAnagram(s string, t string) bool {
+        list_s := [26]int{0}
+        list_t := [26]int{0}
+        if len(s) != len(t) || len(s)<=0 || len(t)<=0{
+            return false
+        }
+        for i:=0; i<len(s); i++{
+            list_s[int(s[i]-'a')] = list_s[int(s[i]-'a')]+1
+        }
+        for i:=0; i<len(t); i++{
+            list_t[int(t[i]-'a')] = list_t[int(t[i]-'a')]+1
+        }
+        for i:=0; i<len(list_s); i++{
+            if(list_s[i] != list_t[i]){
+                return false
+            }
+        }
+        return true
+    }
+    ```
+
 ### 344. 反转字符串
 
 !!! tip "思路"
@@ -1328,6 +1517,138 @@
                 s[len(s)-i-1] = temp
             }
         }
+    }
+    ```
+
+### 349. 两个数组的交集
+
+!!! tip "思路"
+
+    送分题，可以参考1002解法
+
+=== "go"
+
+    ```go
+    func intersection(nums1 []int, nums2 []int) []int {
+        common := [1000]int{0}
+        var ans []int
+        for i:=0; i<len(nums1); i++{
+            common[nums1[i]] = 1
+        }
+        for i:=0; i<len(nums2); i++{
+            if common[nums2[i]] == 1{
+                ans = append(ans, nums2[i])
+                common[nums2[i]] = 2
+            }
+        }
+        return ans
+    }
+    ```
+
+### 383. 救赎信
+
+!!! tip "思路"
+
+    送分题
+
+=== "go"
+
+    ```go
+    func canConstruct(ransomNote string, magazine string) bool {
+        nums_ransomNote := [26]int{0}
+        nums_magazine := [26]int{0}
+
+        for i:=0; i<len(ransomNote);i++{
+            nums_ransomNote[int(ransomNote[i]-'a')] = nums_ransomNote[int(ransomNote[i]-'a')]+1
+        }
+        for i:=0; i<len(magazine);i++{
+            nums_magazine[int(magazine[i]-'a')] = nums_magazine[int(magazine[i]-'a')]+1
+        }
+
+        for i:=0; i<26;i++{
+            if nums_ransomNote[i] > nums_magazine[i]{
+                return false
+            }
+        }
+        return true
+    }
+    ```
+
+### 459. 重复的字符串
+
+!!! tip "思路"
+
+    爆破思路如上所示，但是超时
+
+    把字符串扩充一倍，然后从头开始截取和原字符串一样长的字符串，如果原字符串能够重复，那么中间截取出来的某一个字符串一定能和原字符串相等
+
+    假设原字符串为S1+S2（两倍情况），扩充之后为S1+S2+S1+S2，如果S1和S2不相等，那么S2+S1是不等于S1+S2的，反之则成立。
+
+=== "go"
+
+    ```go
+    // func repeatedSubstringPattern(s string) bool {
+    //     var sub string
+    //     var ans string
+    //     for i:=0; i<len(s); i++{
+    //         for j:=1; i+j<len(s); j++{
+    //             sub = s[i:i+j]
+    //             ans = ""
+    //             if len(s)%len(sub) == 0{
+    //                 for x:=0; x<len(s)/len(sub); x++{
+    //                     ans = ans + sub
+    //                 }
+    //                 if ans == s{
+    //                     return true
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     return false
+    // }
+
+    func repeatedSubstringPattern(s string) bool {
+        var com string
+        ss := s+s
+        for i:=1;i+len(s)<len(ss);i++{
+            com = ss[i:i+len(s)]
+            if com == s{
+                return true
+            }
+        }
+        return false
+    }
+    ```
+
+### 541. 反转字符串II
+
+!!! tip "思路"
+
+    送分题，注意审题
+
+=== "go"
+
+    ```go
+    func reverseStr(s string, k int) string {
+        var ans string
+        for len(s) >= k{
+            var trans string
+            if len(s) >= 2*k{
+                trans = s[:2*k]
+                s = s[2*k:]
+            }else{
+                trans = s[:len(s)]
+                s = s[len(s):]
+            }
+            for i:=0; i<k; i++{
+                ans = ans + string(trans[k-i-1:k-i])
+            }
+            ans = ans + trans[k:]
+        }
+        for i:=0; i<len(s); i++{
+            ans = ans + string(s[len(s)-i-1:len(s)-i])
+        }
+        return ans
     }
     ```
 
@@ -1524,6 +1845,105 @@
         }
         
         return nums    
+    }
+    ```
+
+### 1002. 查找公用字符
+
+!!! tip "思路"
+
+    这个题要是不统计重复会简单很多，开始统计重复就给人一种不是简单的题
+    
+    暴力的美，统计每个字符中a~z出现的次数，取公共都有的且最小的出现次数最少的为基准进行添加
+    
+    解释，a在每个字符串中都出现了，但是最少的是一次，那么就添加一个a进ans数组
+
+=== "go"
+
+    ```go
+    func commonChars(words []string) []string {
+
+        common := make([][]int, len(words))
+        for i:=0; i<len(words); i++{
+            common[i] = make([]int, 26)
+        }
+
+        for i:=0; i<len(words); i++{
+            for j:=0; j<len(words[i]); j++{
+                common[i][int(words[i][j]-'a')] = common[i][int(words[i][j]-'a')]+1
+            }
+        }
+
+        var ans []string
+
+        for i:=0; i<26; i++{
+            min := 100
+            flag := 0
+            for j:=0 ; j<len(common); j++{
+                if common[j][i] == 0{
+                    flag = 1
+                    j = j+26
+                }else if common[j][i] < min{
+                    min = common[j][i]
+                }
+            }
+            if flag == 0{
+                for x:=0; x<min; x++{
+                    ans = append(ans, string('a'+i))
+                }
+            }
+        }
+
+        return ans
+    }
+    ```
+
+=== "go(不统计重复)"
+
+    func commonChars(words []string) []string {
+        common := [26]int{0}
+
+        for i:=0; i<len(words); i++{
+            for j:=0; j<len(words[i]); j++{
+                index := int(words[i][j]-'a')
+                if common[index] == i{
+                    common[index] = common[index] + 1
+                }
+            }
+        }
+
+        var ans []string
+
+        for i:=0; i<len(common); i++{
+            if common[i] == len(words){
+                ans = append(ans, string('a'+i))
+            }  
+        }
+
+        return ans
+    }
+
+### 1047. 删除字符串中的所有相邻重复项
+
+!!! tip "思路"
+
+    堆栈
+
+=== "go"
+
+    ```go
+    func removeDuplicates(s string) string {
+        var waitcom string
+        for i:=0; i<len(s); i++{
+            if len(waitcom) == 0{
+                waitcom = waitcom+string(s[i:i+1])
+            }else if string(s[i:i+1]) == waitcom[len(waitcom)-1:]{
+                waitcom = waitcom[:len(waitcom)-1]
+            }else{
+                waitcom = waitcom+string(s[i:i+1])
+            }
+        }
+        return waitcom
     }
     ```
 
