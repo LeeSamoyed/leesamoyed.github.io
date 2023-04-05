@@ -1642,6 +1642,58 @@
     }
     ```
 
+### 347. 前K个高频元素 - Bug
+
+!!! tip "思路"
+
+    桶排序或者Hash在第一时间没想到怎么用Go复现，给顶了0～100000的长度，就直接建立了200000的计数表(排除负数的情况，但是这里其实有个大Bug，就是给定的数不可以太大，不然表会非常大)
+
+    然后建立了两个长度为K的数组，分别记录高频元素和其出现的次数。遍历时候对计数表进行++，找到最小的次数，如果这个出现的次数大于这个次数，则替换。当然这里要判断这个数字是否已经在这个列表中了，如果在，则直接对出现次数进行添加即可
+    
+    题目做下来的时间复杂度为O+K（感觉很快，但有Bug）
+    
+=== "go"
+
+    ```go
+    func topKFrequent(nums []int, k int) []int {
+    
+        count := [200000]int{0}
+        ans_count := make([]int, k)
+        ans := make([]int, k)
+        index := -1
+
+        for i:=0; i<len(nums); i++{
+            ans_count, index = findMin(ans, ans_count, nums[i])
+            count[nums[i]+100000] = count[nums[i]+100000]+1
+            if count[nums[i]+100000] > ans_count[index]{  
+                ans_count[index] = count[nums[i]+100000]
+                ans[index] = nums[i]
+            }
+            
+        }
+
+        return ans
+    }
+
+    func findMin(ans []int, ans_count []int, nums int) ([]int, int){
+        min := 100000
+        index := -1
+        for i:=0; i<len(ans_count); i++{
+            if ans[i] == nums{
+                min = ans_count[i]
+                index = i
+                return ans_count, index
+            }
+            if ans_count[i] < min{
+                min = ans_count[i]
+                index = i
+            }
+
+        }
+        return ans_count, index
+    }
+    ```
+
 ### 349. 两个数组的交集
 
 !!! tip "思路"
@@ -1693,6 +1745,56 @@
             }
         }
         return true
+    }
+    ```
+
+### 454. 两数相加
+
+!!! tip "思路"
+
+    由于存储大小有限制，所以不用考虑数组了，用Map直接做
+
+=== "go"
+
+    ```go
+    // 暴力
+    // func fourSumCount(nums1 []int, nums2 []int, nums3 []int, nums4 []int) int {
+    //     ans := 0
+    //     for num1:=0; num1<len(nums1); num1++{
+    //         for num2:=0; num2<len(nums2); num2++{
+    //             for num3:=0; num3<len(nums3); num3++{
+    //                 for num4:=0; num4<len(nums4); num4++{
+    //                     if nums1[num1] + nums2[num2] + nums3[num3] + nums4[num4] == 0{
+    //                         count = count+1
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     return ans
+    // }
+
+    func fourSumCount(nums1 []int, nums2 []int, nums3 []int, nums4 []int) int {
+
+        nums := map[int]int{}
+        ans := 0
+
+        for i:=0; i<len(nums1); i++{
+            for j:=0; j<len(nums2); j++{
+                nums[nums1[i]+nums2[j]] = nums[nums1[i]+nums2[j]] + 1
+            }
+        }
+
+        fmt.Println(nums)
+
+        for i:=0; i<len(nums3); i++{
+            for j:=0; j<len(nums4); j++{
+                ans = ans + nums[-nums3[i]-nums4[j]]
+            }
+        }
+
+        return ans
+
     }
     ```
 
@@ -1936,6 +2038,84 @@
     * obj.AddAtIndex(index,val);
     * obj.DeleteAtIndex(index);
     */
+    ```
+
+### 912. 排序数组 - Bug
+
+!!! tip "排序整理"
+
+    快速排序
+
+=== "go标答"
+
+    ```go
+    import "math/rand"
+
+    func sortArray(nums []int) []int {
+    quick(&nums, 0, len(nums) - 1)
+    return nums
+    }
+
+    func quick(arr *([]int), i, j int) {
+    if i >= j {return}
+    mid := partition(arr, i, j)
+    quick(arr, i, mid - 1)
+    quick(arr, mid + 1, j)
+    }
+
+    func partition(arr *([]int), i int, j int) int {
+    p := rand.Intn(j - i + 1) + i  // 随机选取“支点”
+    nums := *arr
+    nums[i], nums[p]  = nums[p], nums[i]
+    for i < j {
+        for nums[i] < nums[j] && i < j { j-- }  // 修改原来的 nums[j] >= nums[i]，增加交换频率
+        if (i < j) {
+        nums[i], nums[j] = nums[j], nums[i]
+        i++
+        }
+        for nums[i] < nums[j] && i < j { i++ }  // 修改原来的 nums[j] >= nums[i]，增加交换频率
+        if i < j {
+        nums[i], nums[j] = nums[j], nums[i]
+        j--
+        }
+    }
+    return i
+    }
+    ```
+
+=== "go自己"
+
+    ```go
+    func sortArray(nums []int) []int {
+        return quickSort(nums, 0, len(nums)-1)
+    }
+
+    func partition(nums []int, head int, tail int) int {
+
+        base := nums[head]
+        for head < tail{
+            for head<tail && nums[tail] >= base{
+                tail = tail -1
+            }
+            nums[head] = nums[tail]
+            for head<tail && nums[head] <= base{
+                head = head + 1
+            }
+            nums[tail] = nums[head]
+        }
+        nums[head] = base
+
+        return head
+    }
+
+    func quickSort(nums []int, head int, tail int) []int {
+        if tail > head{
+            base := partition(nums, head, tail)
+            quickSort(nums, head, base-1)
+            quickSort(nums, base+1, tail)
+        }
+        return nums
+    }
     ```
 
 ### 977. 有序数组的平方
