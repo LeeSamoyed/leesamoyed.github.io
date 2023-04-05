@@ -1446,7 +1446,9 @@
 
 ### 217. 存在重复元素
 !!! tip "思路"
+
     排序
+
     遍历
 
 === "go"
@@ -1468,6 +1470,126 @@
         }
         return false
     }
+    ```
+### 225. 用队列实现栈 - 究极基本功
+
+!!! tip "思路"
+
+    用数组实现主队列和辅助队列
+    
+    一个队列为主队列，一个为辅助队列，当入栈操作时，我们先将主队列内容导入辅助队列，然后将入栈元素放入主队列队头位置，再将辅助队列内容，依次添加进主队列即可。
+
+=== "go"
+
+    ```go
+    type MyStack struct {
+        queue1, queue2 []int
+    }
+
+
+    func Constructor() (ans MyStack) {
+        return
+    }
+
+
+    func (this *MyStack) Push(x int)  {
+        this.queue2 = append(this.queue2, x)
+        for len(this.queue1) > 0 {
+            this.queue2 = append(this.queue2, this.queue1[0])
+            this.queue1 = this.queue1[1:]
+        }
+        this.queue1, this.queue2 = this.queue2, this.queue1
+
+    }
+
+
+    func (this *MyStack) Pop() int {
+        ans := this.queue1[0]
+        this.queue1 = this.queue1[1:]
+        return ans
+    }
+
+
+    func (this *MyStack) Top() int {
+        return this.queue1[0]
+    }
+
+
+    func (this *MyStack) Empty() bool {
+        return len(this.queue1) == 0
+    }
+
+
+    /**
+    * Your MyStack object will be instantiated and called as such:
+    * obj := Constructor();
+    * obj.Push(x);
+    * param_2 := obj.Pop();
+    * param_3 := obj.Top();
+    * param_4 := obj.Empty();
+    */
+    ```
+
+### 232. 用栈实现队列 - 究极基本功
+
+!!! tip "思路"
+
+    用数组实现入栈和出栈实现
+
+=== "go"
+
+    ```go
+    type MyQueue struct {
+        inStack, outStack []int
+    }
+
+
+    func Constructor() MyQueue {
+        return MyQueue{}
+    }
+
+
+    func (this *MyQueue) Push(x int)  {
+        this.inStack = append(this.inStack, x)
+    }
+
+    func (this *MyQueue) in2out() {
+        for len(this.inStack) > 0 {
+            this.outStack = append(this.outStack, this.inStack[len(this.inStack)-1])
+            this.inStack = this.inStack[:len(this.inStack)-1]
+        }
+    }
+
+    func (this *MyQueue) Pop() int {
+        if len(this.outStack) == 0 {
+            this.in2out()
+        }
+        x := this.outStack[len(this.outStack)-1]
+        this.outStack = this.outStack[:len(this.outStack)-1]
+        return x
+    }
+
+
+    func (this *MyQueue) Peek() int {
+        if len(this.outStack) == 0 {
+            this.in2out()
+        }
+        return this.outStack[len(this.outStack)-1]
+    }
+
+    func (this *MyQueue) Empty() bool {
+        return len(this.inStack) == 0 && len(this.outStack) == 0
+    }
+
+
+    /**
+    * Your MyQueue object will be instantiated and called as such:
+    * obj := Constructor();
+    * obj.Push(x);
+    * param_2 := obj.Pop();
+    * param_3 := obj.Peek();
+    * param_4 := obj.Empty();
+    */
     ```
 
 ### 242. 有效的字母异位词
@@ -2245,7 +2367,31 @@
         }
         return count
     }
-```
+    ```
+
+### 2427. 公因子的数目
+
+!!! tip "思路"
+
+    送分题
+
+=== "go"
+
+    ```go
+    func commonFactors(a int, b int) int {
+        max := a
+        if b > max{
+            max = b
+        }
+        count := 0
+        for i:=1; i<=max ;i++{
+            if (a%i == 0 && b%i == 0){
+                count = count+1
+            }
+        }
+        return count
+    }
+    ```
 
 ### LCP 01. 猜数字
 
@@ -2266,6 +2412,8 @@
         }
     }
     ```
+
+
 
 ### LCP 02. 分式化简
 
