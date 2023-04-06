@@ -2231,9 +2231,9 @@
 
     暴力会超时
 
-=== "go"
+=== "go(暴力)"
 
-    ```go(暴力)
+    ```go
     func baseNeg2(n int) string {
 
         ans := "0" 
@@ -2312,7 +2312,6 @@
         }
         return string(res)
     }
-
     ```
 
 ### 1047. 删除字符串中的所有相邻重复项
