@@ -14,6 +14,7 @@ if [ $# -gt 0 ]
   # build
   echo "***Build begin***"
   mkdocs build --clean
+  sleep 5
   echo "***Build success***"
 
   # delete
@@ -25,12 +26,18 @@ if [ $# -gt 0 ]
   echo $i
   rm -rf $target/$i 
   done
+  sleep 5
   echo "***Delete success***"
+
+  
 
   echo "***Remove begin***"
   cp -rf ./site/*  ./
   rm -rf ./site
+  sleep 5
   echo "***Remove success***"
+
+  
 
   # auto push to github
   echo "***Upgrade begin***"
