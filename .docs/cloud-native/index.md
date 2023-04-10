@@ -34,6 +34,7 @@
         - [KuberShpere](/cloud-native/platform/kubersphere)  
         - [Jenkins](/cloud-native/platform/jenkins)  
     - 搭建&维护
+        - [**Docker2K8S**](/cloud-native/build-ops/Docker2K8S)
         - [**AKS SelfHost Gitpod**](/cloud-native/build-ops/aks-selfhost-gitpod)  
         - [**AKS QDUOJ**](/cloud-native/build-ops/aks-qduoj)  
 

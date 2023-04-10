@@ -188,6 +188,7 @@ nav:
       - KuberShpere: cloud-native/platform/kubersphere.md
       - Jenkins: cloud-native/platform/jenkins.md
     - 搭建&维护:
+      - Docker2K8S: cloud-native/build-ops/Docker2K8S.md
       - AKS SelfHost Gitpod: cloud-native/build-ops/aks-selfhost-gitpod.md
       - AKS QDUOJ: cloud-native/build-ops/aks-qduoj.md
   - 嵌入式:
