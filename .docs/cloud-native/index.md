@@ -1,20 +1,40 @@
 # 导航
 
+=== "广义容器"
+
+    容器进程
+
+    ![容器进程](/assets/images/cloud-native/host-docker-process.png)
+
+    容器网络
+
+    ![容器网络](/assets/images/cloud-native/host-docker-network.png)
+
 === "云原生网关"
+
+    云原生网关
 
     ![云原生网关](/assets/images/cloud-native/gateway.png)
 
+    服务网格网关
+
     ![服务网格网关](/assets/images/cloud-native/gateway-istio.png)
+
+    Traefik网关实例
 
     ![Traefik网关](/assets/images/cloud-native/gateway-traefik.png)
 
 === "容器安全(Falco方案思考)"
 
+    容器安全
+
     ![容器安全](/assets/images/cloud-native/container-security.png)
 
 === "服务发现"
 
-    ![容器安全](/assets/images/cloud-native/service-discovery.png)
+    服务发现流程
+
+    ![服务发现](/assets/images/cloud-native/service-discovery.png)
 
 === "目录"
 
