@@ -1,8 +1,4 @@
-# 导航
-
-=== "我脑海中的系统"
-
-    ![系统架构](/assets/images/research-development-design/arch.png)
+# 研发&设计
 
 === "目录"
 

@@ -130,6 +130,26 @@ nav:
     - aboutme/index.md
     - 项目: aboutme/project.md
     - 学术: aboutme/academic.md
+  - 云原生:
+    - cloud-native/index.md
+    - DevOps: cloud-native/devops.md
+    - Cloud:
+        - VPC: cloud-native/cloud/vpc.md
+    - Container:
+        - Docker: cloud-native/container/docker.md
+        - Kubernetes: cloud-native/container/k8s.md
+    - Service Mesh:
+        - 服务网格基础: cloud-native/service-mesh/service-mesh-basic.md
+        - Istio: cloud-native/service-mesh/istio.md
+    - 云原生证书证书:
+        - CMCC-PaaS证书: cloud-native/certificate/cmcc-paas.md
+    - 工具:
+      - KuberShpere: cloud-native/platform/kubersphere.md
+      - Jenkins: cloud-native/platform/jenkins.md
+    - 搭建&维护:
+      - Docker2K8S: cloud-native/build-ops/Docker2K8S.md
+      - AKS SelfHost Gitpod: cloud-native/build-ops/aks-selfhost-gitpod.md
+      - AKS QDUOJ: cloud-native/build-ops/aks-qduoj.md
   - 编程&算法:
     - programming-algorithm/index.md
     - 编程语言:
@@ -171,30 +191,6 @@ nav:
         - 算法的引入: research-development-design/business-logic/algorithm.md
       - 设计模式:
         - 大话设计模式: research-development-design/design-pattern/westward-design-patterns.md
-  - 云原生:
-    - cloud-native/index.md
-    - DevOps: cloud-native/devops.md
-    - Cloud:
-        - VPC: cloud-native/cloud/vpc.md
-    - Container:
-        - Docker: cloud-native/container/docker.md
-        - Kubernetes: cloud-native/container/k8s.md
-    - Service Mesh:
-        - 服务网格基础: cloud-native/service-mesh/service-mesh-basic.md
-        - Istio: cloud-native/service-mesh/istio.md
-    - 云原生证书证书:
-        - CMCC-PaaS证书: cloud-native/certificate/cmcc-paas.md
-    - 工具:
-      - KuberShpere: cloud-native/platform/kubersphere.md
-      - Jenkins: cloud-native/platform/jenkins.md
-    - 搭建&维护:
-      - Docker2K8S: cloud-native/build-ops/Docker2K8S.md
-      - AKS SelfHost Gitpod: cloud-native/build-ops/aks-selfhost-gitpod.md
-      - AKS QDUOJ: cloud-native/build-ops/aks-qduoj.md
-  - 嵌入式:
-    - embedded/index.md
-    - 开发板:
-      - Jetson + 视觉: embedded/development-board/jetson-vision.md
   - 网络安全:
     - cyber-security/index.md
     - 渗透测试:
@@ -234,10 +230,14 @@ nav:
       - Pytorch基础: artificial-intelligence/deep-learning-pytorch-object-detection/pytorch-basic.md
     - 论文整理: artificial-intelligence/paper-arrangement.md
     - 数据集整理: artificial-intelligence/databases.md
+  - 嵌入式:
+    - embedded/index.md
+    - 开发板:
+      - Jetson + 视觉: embedded/development-board/jetson-vision.md
   - 分布式系统:
     - distributed-systems/index.md
     - 分布式一致性算法: distributed-systems/distributed-consistency-algorithm.md
-  - 代码改进:
+  - 开源改进:
     - code-improvements/index.md
     - QDUOJ 青岛大学开源OJ系统: code-improvements/qduoj.md
   - 数理:
