@@ -24,6 +24,12 @@
 
     ![Traefik网关](/assets/images/cloud-native/gateway-traefik.png)
 
+=== "CI/CD"
+
+    ArgoCD方案
+
+    ![ArgoCD](/assets/images/cloud-native/argocd.png)
+
 === "容器安全(Falco方案思考)"
 
     容器安全
