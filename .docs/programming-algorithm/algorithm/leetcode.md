@@ -2743,6 +2743,78 @@
     }
     ```
 
+## 周赛
+
+### 102双周
+
+=== "查询网格图中每一列的宽度"
+
+    ```go
+        func getLength(nums int) int{
+    
+        length := 0
+        if nums < 0{
+            nums = -nums
+            length += 1
+        }
+        for nums>=1{
+            nums = nums/10
+            length += 1
+        }
+        if length == 0{
+            length = 1
+        }
+        return length
+    }
+
+    func findColumnWidth(grid [][]int) []int {
+        ans := make([]int, len(grid[0]))
+        
+        for i:=0; i<len(grid[0]); i++{
+            max := 0
+            for j:=0; j<len(grid); j++{
+                getlength := getLength(grid[j][i])
+                if getlength > max{
+                    max = getlength
+                }
+            }
+            ans[i] = max
+        }
+        
+        return ans
+    }
+
+    ```
+
+=== "一个数组所有前缀的分数"
+
+    ```go
+    func findPrefixScore(nums []int) []int64 {
+    
+        ans := make([]int64, len(nums))
+        
+        if len(nums)<0 {
+            return ans
+        }
+        
+        max := nums[0]
+        covert := make([]int64, len(nums))
+        var score int64
+        score = 0
+        
+        for i:=0; i<len(nums); i++{
+            if nums[i] > max{
+                max = nums[i]
+            }
+            covert[i] = int64(max+nums[i])
+            score += covert[i]
+            ans[i] = score
+        }
+        
+        return ans
+    }
+    ```
+
 ## 笔试
 
 ### SHEIN - 2023.03.29

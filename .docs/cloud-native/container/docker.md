@@ -3,7 +3,12 @@
 ## Docker简介
 
 === "Docker定义"
+
     Docker是go语言编写的开源的PaaS
+
+=== "Docker独有的能力"
+
+    Docker相比于传统的PaaS解决的最大的问题就是打包问题！！！
 
 === "Docker实现"
     Docker基于Linux内核实现（基于LXC的高级封装后面变为自研的runc）
