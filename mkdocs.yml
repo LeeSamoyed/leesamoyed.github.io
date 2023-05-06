@@ -171,6 +171,7 @@ nav:
         - MySQL必知必会: research-development-design/sql/sams-teach-yourself-sql-in-10-minutes.md
       - 开发框架:
         - 框架综述: research-development-design/development-framework/summarize.md
+        - Gin: research-development-design/development-framework/gin.md
       - 流量:
         - Nginx: research-development-design/flow/nginx.md
       - 测试:

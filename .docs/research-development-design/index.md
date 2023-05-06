@@ -7,7 +7,8 @@
             - [MySQL是怎样运行的](/research-development-design/sql/how-mysql-work-understand-from-root)  
             - [MySQL必知必会](/research-development-design/sql/sams-teach-yourself-sql-in-10-minutes)  
         - 开发框架
-            - [框架综述](/research-development-design/development-framework/summarize)  
+            - [框架综述](/research-development-design/development-framework/summarize) 
+            - [Gin](/research-development-design/development-framework/gin) 
         - 流量
             - [Nginx](/research-development-design/flow/nginx)  
         - 测试
