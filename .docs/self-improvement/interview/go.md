@@ -94,6 +94,8 @@
 
     方法是一个特殊的函数，函数是指不属于任何结构体、类型的方法，也就是说函数是没有接收者的；而方法是有接收者的
 
+    
+
 === "代码"
 
     ```go
@@ -109,9 +111,125 @@
     }
     ```
 
+    注意方法中还区分值接收者和指针接收者，在下面一个问题中进行阐述
+
 ### 方法值接收者和指针接收者区别
 
 === "方法值接收者和指针接收者区别"
+
+    !!! tip "注意点一：本身和副本"
+
+        如果方法的接收者是指针类型，无论调用者是对象还是对象指针，修改的都是对象本身，会影响调用者
+
+        如果方法的接收者是值类型，无论调用者是对象还是对象指针，修改的都是对象的副本，不影响调用者
+
+    ```go
+    //值接收者
+    type person struct{
+        name string
+    }
+    func (p person) String() string {
+        return "the person name is " + p.name
+    }
+
+    // 指针接收者
+    // 下述例子，打印出来的值还是Test，对其进行的修改无效。如果我们使用一个指针作为接收者，那么就会其作用了，因为指针接收者传递的是一个指向原值指针的副本，指针的副本，指向的还是原来类型的值，所以修改时，同时也会影响原来类型变量的值。
+    type person struct{
+        name string
+    }
+    func (p person) String() string {
+        return "the person name is " + p.name
+    }
+    func (p person) modify(){
+        p.name = "YamLee"
+    }
+    func main(){
+        p := person{name:"Test"}
+        p.modify()
+        fmt.Println(p.String())
+    }
+    
+    // 在调用方法的时候，传递的接收者本质上都是副本，只不过一个是这个值副本，一是指向这个值指针的副本。指针具有指向原有值的特性，所以修改了指针指向的值，也就修改了原有的值。我们可以简单的理解为值接收者使用的是值的副本来调用方法，而指针接收者使用实际的值来调用方法。
+    type person struct {
+        name string
+    }
+    func (p person) String() string{
+        return "the person name is "+p.name
+    }
+    func (p *person) modify(){
+        p.name = "YamLee"
+    }
+    func main() {
+        p := person{name:"Test"}
+        p.modify() //指针接收者，修改有效
+        fmt.Println(p.String())
+    }
+
+    // 在上面的例子中，有没有发现，我们在调用指针接收者方法的时候，使用的也是一个值的变量，并不是一个指针，如果我们使用下面的也是可以的。
+    p := person{name:"Test"}
+    (&p).modify() //指针接收者，修改有效
+
+    // 下述方法也是可以的。如果我们没有这么强制使用指针进行调用，Go的编译器自动会帮我们取指针，以满足接收者的要求。同样的，如果是一个值接收者的方法，使用指针也是可以调用的，Go编译器自动会解引用，以满足接收者的要求，比如例子中定义的String()方法，也可以这么调用：
+    p:=person{name:"Test"}
+    fmt.Println((&p).String())
+    ```
+
+    !!! tip "注意点二：方法的隐含实现"
+
+        Go的语法糖
+
+        1. 如果实现了接收者是指针类型的方法，会隐含地也实现了接收者是值类型的方法
+        2. 如果实现了接收者是值类型的方法，会隐含地也实现了接收者是指针类型的方法
+
+    ```go
+    type Person struct {
+        age int
+    }
+
+    // 如果实现了接收者是指针类型的方法，会隐含地也实现了接收者是值类型的IncrAge1方法。
+    // 会修改age的值
+    func (p *Person) IncrAge1() {
+        p.age += 1
+    }
+    // 如果实现了接收者是值类型的方法，会隐含地也实现了接收者是指针类型的IncrAge2方法。
+    // 不会修改age的值
+    func (p Person) IncrAge2() {
+        p.age += 1
+    }
+    // 如果实现了接收者是值类型的方法，会隐含地也实现了接收者是指针类型的GetAge方法。
+    func (p Person) GetAge() int {
+        return p.age
+    }
+
+    func main() {
+        
+        // p1 是值类型
+        p := Person{age: 10}
+        // 值类型 调用接收者是指针类型的方法
+        p.IncrAge1()
+        fmt.Println(p.GetAge())
+        // 值类型 调用接收者是值类型的方法
+        p.IncrAge2()
+        fmt.Println(p.GetAge())
+
+        // ----------------------
+
+        // p2 是指针类型
+        p2 := &Person{age: 20}
+        // 指针类型 调用接收者是指针类型的方法
+        p2.IncrAge1()
+        fmt.Println(p2.GetAge())
+        // 指针类型 调用接收者是值类型的方法
+        p2.IncrAge2()
+        fmt.Println(p2.GetAge())
+    }
+
+    !!! note "注意点二：方法的隐含实现"
+
+        1. 使用指针类型能够修改调用者的值。
+        2. 使用指针类型可以避免在每次调用方法时复制该值，在值的类型为大型结构体时，这样做会更加高效。
+
+    ```
 
 ### 函数返回局部变量的指针是否安全
 
