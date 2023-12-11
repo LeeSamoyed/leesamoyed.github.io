@@ -1,10 +1,10 @@
 # 关于我
 
-各位看官～，我叫李屹，[我的项目](/aboutme/project/)， [我的学术](/aboutme/academic/)
+各位看官～，我叫李屹，[我的项目](project.md)， [我的学术](academic.md)
 
-一个热爱 **研发**/**网安** 的 攻城狮/程序员
+一个热爱 **研发**/**运维** 的 攻城狮/程序员
 
-Hi! I'm Yam Li, [My CV](/assets/pdf/yamlee.pdf), [My Project](/aboutme/project/), [My Academic](/aboutme/academic/)
+Hi! I'm Yam Li, [My Project](project.md), [My Academic](academic.md)
 
 Research Development & Security
 
