@@ -3,7 +3,7 @@
 === "目录"
 
     - 开发板
-        - [**Jetson + 视觉**](/embedded/development-board/jetson-vision)  
+        - [**Jetson + 视觉**](development-board/jetson-vision.md)  
 
 === "资料"
 

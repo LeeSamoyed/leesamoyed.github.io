@@ -3,26 +3,26 @@
 === "目录"
 
     - 机器学习
-        - [频率派&贝叶斯派](/artificial-intelligence/machine-learning/frequentist&bayesian)  
-        - [高斯分布](/artificial-intelligence/machine-learning/gaussian-distribution)  
-        - [回归](/artificial-intelligence/machine-learning/regression)  
-        - [线性分类](/artificial-intelligence/machine-learning/linear-classification)  
+        - [频率派&贝叶斯派](machine-learning/frequentist&bayesian.md)  
+        - [高斯分布](machine-learning/gaussian-distribution.md)  
+        - [回归](machine-learning/regression.md)  
+        - [线性分类](machine-learning/linear-classification.md)  
     - 深度学习
-        - [基本概念](/artificial-intelligence/deep-learning/concept)  
-        - [神经网络架构搜索](/artificial-intelligence/deep-learning/neural-architecture-search)  
-        - [注意力机制](/artificial-intelligence/deep-learning/attention-mechanism)  
-        - [计算机视觉](/artificial-intelligence/deep-learning/computer-vision)  
-        - [自然语言处理](/artificial-intelligence/deep-learning/natural-language-processing)  
-        - [时序预测](/artificial-intelligence/deep-learning/time-series-prediction)  
-        - [深度学习框架](/artificial-intelligence/deep-learning/open-source-library)  
+        - [基本概念](deep-learning/concept.md)  
+        - [神经网络架构搜索](deep-learning/neural-architecture-search.md)  
+        - [注意力机制](deep-learning/attention-mechanism.md)  
+        - [计算机视觉](deep-learning/computer-vision.md)  
+        - [自然语言处理](deep-learning/natural-language-processing.md)  
+        - [时序预测](deep-learning/time-series-prediction.md)  
+        - [深度学习框架](deep-learning/open-source-library.md)  
     - 统计学习方法
-        - [感知机](/artificial-intelligence/statistical-methods/perceptron)  
-        - [K近邻](/artificial-intelligence/statistical-methods/k-nearest-neighbor)  
+        - [感知机](statistical-methods/perceptron.md)  
+        - [K近邻](statistical-methods/k-nearest-neighbor.md)  
     - 深度学习之PyTorch物体检测实战
-        - [浅谈物体检测和PyTorch](/artificial-intelligence/deep-learning-pytorch-object-detection/pytorch-object-detection)  
-        - [Pytorch基础](/artificial-intelligence/deep-learning-pytorch-object-detection/pytorch-basic)  
-    - [论文整理](/artificial-intelligence/paper-arrangement)  
-    - [数据集整理](/artificial-intelligence/databases)  
+        - [浅谈物体检测和PyTorch](deep-learning-pytorch-object-detection/pytorch-object-detection.md)  
+        - [Pytorch基础](deep-learning-pytorch-object-detection/pytorch-basic.md)  
+    - [论文整理](paper-arrangement.md)  
+    - [数据集整理](databases.md)  
 
 === "资料"
 

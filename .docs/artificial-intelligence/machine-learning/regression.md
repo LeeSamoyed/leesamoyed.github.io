@@ -43,7 +43,7 @@
 
 ##### 线性拟合是用线去拟合样本点：
 
-![least -square-method.png](/assets/images/artificial-intelligence/machine-learning/least -square-method.png)
+![least -square-method.png](../../assets/images/artificial-intelligence/machine-learning/least -square-method.png)
 
 假设：$D=\{(x_1,y_1),(x_2,y_2),...,(x_N,y_N)\}$
 
@@ -167,7 +167,7 @@ $\hat{W}=(X^TX+\lambda I)^{-1}X^TY$
 
 频率角度：
 
-![ridge-regression-0.png](/assets/images/artificial-intelligence/machine-learning/ridge-regression-0.png)
+![ridge-regression-0.png](../../assets/images/artificial-intelligence/machine-learning/ridge-regression-0.png)
 
 贝叶斯角度：
 
@@ -191,7 +191,7 @@ $\hat{W}=\arg\min\mathop \Sigma \limits_{i=1} \limits^{N}(\frac{1}{2}(y_i -W^Tx_
 
 和$J(W)$一样 
 
-![ridge-regression-1.png](/assets/images/artificial-intelligence/machine-learning/ridge-regression-1.png)
+![ridge-regression-1.png](../../assets/images/artificial-intelligence/machine-learning/ridge-regression-1.png)
 
 Regularized$LSE \Leftrightarrow MAP$（noise为Gaussian Dist）（prior也是GD）
 

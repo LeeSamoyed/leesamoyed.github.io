@@ -2,4 +2,4 @@
 
 === "目录"
 
-    - [分布式一致性算法](/distributed-systems/distributed-consistency-algorithm)  
+    - [分布式一致性算法](distributed-consistency-algorithm.md)  

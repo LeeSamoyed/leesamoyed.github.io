@@ -112,7 +112,7 @@ print('test accuracy: ', accuracy)
 - 神经网络：神经网络能看见边缘之类的信息（批量过滤器）
     * 注意：如果是图片是有高的（灰度为1，彩色可能为3之类的），每一次卷积它都会获得长宽更短，高度更高的图片
     * 每一次卷积都可能会丢失一些信息，这个时候就需要用到池化（Pooling）
-![open-source-library-keras-cnn.png](/assets/images/artificial-intelligence/deep-learning/open-source-library-keras-cnn.png)
+![open-source-library-keras-cnn.png](../../assets/images/artificial-intelligence/deep-learning/open-source-library-keras-cnn.png)
 
 ##### Code
 
@@ -201,19 +201,19 @@ print('\ntest accuracy: ', accuracy)
 ### RNN 什么是循环神经网络
 ##### 数据关联
 
-![open-source-library-keras-rnn-0.png](/assets/images/artificial-intelligence/deep-learning/open-source-library-keras-rnn-0.png)
+![open-source-library-keras-rnn-0.png](../../assets/images/artificial-intelligence/deep-learning/open-source-library-keras-rnn-0.png)
 
 让神经网络记住之前发生的事情，调用老的记忆
 
-![open-source-library-keras-rnn-1.png](/assets/images/artificial-intelligence/deep-learning/open-source-library-keras-rnn-1.png)
+![open-source-library-keras-rnn-1.png](../../assets/images/artificial-intelligence/deep-learning/open-source-library-keras-rnn-1.png)
 
 ### LSTM 什么是LSTM
 
 ##### RNN问题（梯度消失和梯度爆炸）
 
-![open-source-library-keras-rnn-2.png](/assets/images/artificial-intelligence/deep-learning/open-source-library-keras-rnn-2.png)
+![open-source-library-keras-rnn-2.png](../../assets/images/artificial-intelligence/deep-learning/open-source-library-keras-rnn-2.png)
 
-![open-source-library-keras-rnn-3.png](/assets/images/artificial-intelligence/deep-learning/open-source-library-keras-rnn-3.png)
+![open-source-library-keras-rnn-3.png](../../assets/images/artificial-intelligence/deep-learning/open-source-library-keras-rnn-3.png)
 
 ##### LSTM的好处
 1. 如果分线很重要，那么会按着重要程度写入主线
@@ -221,7 +221,7 @@ print('\ntest accuracy: ', accuracy)
 3. 主线取决于输入和忘记
 4. 输出就是主线和分线的总和
 
-![open-source-library-keras-lstm.png](/assets/images/artificial-intelligence/deep-learning/open-source-library-keras-lstm.png)
+![open-source-library-keras-lstm.png](../../assets/images/artificial-intelligence/deep-learning/open-source-library-keras-lstm.png)
 
 ### RNN Classfier
 
@@ -359,7 +359,7 @@ for step in range(501):
 - 解压：用包含信息量小但包含关键信息的图片还原
 - 好处：神经网络输入的信息大，经过压缩后的数据再交给神经网络利于学习
 
-![open-source-library-keras-autocoder.png](/assets/images/artificial-intelligence/deep-learning/open-source-library-keras-autocoder.png)
+![open-source-library-keras-autocoder.png](../../assets/images/artificial-intelligence/deep-learning/open-source-library-keras-autocoder.png)
 
 一般使用的时候都只使用前半截，利用精髓，创建小的神经网络使用精髓
 

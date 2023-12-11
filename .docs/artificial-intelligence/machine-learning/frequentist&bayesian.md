@@ -17,7 +17,7 @@ $\theta$：r.v，$\theta \sim p(\theta)$，其中$p(\theta)$称为先验，
 
 MAP（最大后验概率估计）：$\theta_{MAP}=\arg\max _\theta P(\theta | X) = \arg\max_\theta P(X|\theta) \cdot p(\theta)$
 
-![bayesian.png](/assets/images/artificial-intelligence/machine-learning/bayesian.png)
+![bayesian.png](../../assets/images/artificial-intelligence/machine-learning/bayesian.png)
 然而真正的贝叶斯估计：$p(\theta | X) = \frac {p(X|\theta) \cdot p(\theta)}{\int_{\theta} p(X|\theta)p(\theta)d\theta}$
 
 求出最大后验概率->贝叶斯预测：$X$，假如来了新样本：$\mathop x \limits^ \sim$，预测问题就是求$p(\mathop x \limits^ \sim | X) = \int p(\mathop x \limits^ \sim , \theta | X)d\theta$（边缘概率）$= \int p(\mathop x \limits^ \sim | X)p(\theta | X)d\theta$（后验概率）

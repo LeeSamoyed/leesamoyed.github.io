@@ -10,7 +10,7 @@
 ports:
       - "0.0.0.0:5400:5432"
 ```
-![proxy](/assets/images/open-source-code-improvements/qduoj/database-proxy.png)
+![proxy](../assets/images/open-source-code-improvements/qduoj/database-proxy.png)
 
 2. Connect Database
 - Use software Navicat or other to connect PostgreSQL
@@ -20,11 +20,11 @@ database: onlinejudge
 username: onlinejudge
 password: onlinejudge
 ```
-![database](/assets/images/open-source-code-improvements/qduoj/database-connect.png)
+![database](../assets/images/open-source-code-improvements/qduoj/database-connect.png)
 3. Check the Database
 
 - Database info is showing as follow
-![info](/assets/images/open-source-code-improvements/qduoj/database-info.png)
+![info](../assets/images/open-source-code-improvements/qduoj/database-info.png)
 
 ### Timed Task (Clone Database)
 **Attention！！！There are some problems with the original database import and export code**
@@ -73,7 +73,7 @@ Add the following code to oj-postgres and oj-backend environment and change the 
  - POSTGRES_HOST=<your database host>
 ```
 
-![own](/assets/images/open-source-code-improvements/qduoj/database-own.png)
+![own](../assets/images/open-source-code-improvements/qduoj/database-own.png)
 
 ### Browser Side
 
@@ -132,4 +132,4 @@ docker-compose up -d
 
 ### K8S Build
 
-[K8S-QDUOJ](/cloud-native/build-ops/aks-qduoj)
+[K8S-QDUOJ](../cloud-native/build-ops/aks-qduoj)

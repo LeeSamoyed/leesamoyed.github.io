@@ -3,19 +3,19 @@
 === "目录" 
          
     - 阅读:
-      - [阅读清单](/self-improvement/reading/list)
+      - [阅读清单](reading/list.md)
     - 新概念:
-      - [元宇宙](/self-improvement/new-concept/metaverse)
+      - [元宇宙](new-concept/metaverse.md)
     - 效率提升
-      - [MacOS自我修养](/self-improvement/efficiency-improvement/macos)  
-      - [通用自我修养](/self-improvement/efficiency-improvement/common)
-      - [论文写作](/self-improvement/efficiency-improvement/paper)    
+      - [MacOS自我修养](efficiency-improvement/macos.md)  
+      - [通用自我修养](efficiency-improvement/common.md)
+      - [论文写作](efficiency-improvement/paper.md)    
     - 使用手册
-      - [Git](/self-improvement/manuals/git)  
-      - [Docker](/self-improvement/manuals/docker)  
-      - [Latex](/self-improvement/manuals/latex)
+      - [Git](manuals/git.md)  
+      - [Docker](manuals/docker.md)  
+      - [Latex](manuals/latex.md)
     - 操作系统相关问题
-      - [LinuxOS](/self-improvement/operation-system-issue/linuxos)  
-      - [WindowsOS](/self-improvement/operation-system-issue/windowsos)  
+      - [LinuxOS](operation-system-issue/linuxos.md)  
+      - [WindowsOS](operation-system-issue/windowsos.md)  
     - 面经:
-      - [Go](/self-improvement/interview/go)
+      - [Go](interview/go.md)

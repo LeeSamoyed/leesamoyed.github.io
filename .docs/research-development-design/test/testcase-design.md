@@ -2,7 +2,7 @@
 
 ## 测试案例设计图
 
-![testcase-design](/assets/images/research-development-design/test/testcase-design.png)
+![testcase-design](../../assets/images/research-development-design/test/testcase-design.png)
 
 主要分为：单功能测试和联调
 

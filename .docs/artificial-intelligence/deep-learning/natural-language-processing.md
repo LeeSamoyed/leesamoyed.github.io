@@ -18,9 +18,9 @@ encoder、decoder架构
     * 注意：在语言里面之所以可以保持长度不一样，是因为他有一个标注作为停止，例如 我在学习。 这个"。"其实就是一个停止，RNN有一个特点就是最后一个状态（当然其他的也有，这里只是举例RNN），那么当最后一个状态是"。"时，这个句子就会停止翻译或者停止encoder。因为长度可以不唯一。（输入也是）按着时刻走到停就行。
   2. encoder把最后时刻的隐藏状态和输入句子的embedding进行组合作为decoder的输入，既（编码器其实不需要输出，对于Seq2Seq模型，它只要拿到RNN最后一个状态即可）
   3. 在decoder的时候，记得它是有真实的输入的，因此并不担心前一个翻译错误。（注意观察训练和推理时encoder的不同之处）
-    ![natural-language-processing-seq2seq-endocer-decoder](/assets/images/artificial-intelligence/deep-learning/natural-language-processing-seq2seq-endocer-decoder.png)
+    ![natural-language-processing-seq2seq-endocer-decoder](../../assets/images/artificial-intelligence/deep-learning/natural-language-processing-seq2seq-endocer-decoder.png)
   4. BLEU
-    ![natural-language-processing-seq2seq-bleu](/assets/images/artificial-intelligence/deep-learning/natural-language-processing-seq2seq-bleu.png)
+    ![natural-language-processing-seq2seq-bleu](../../assets/images/artificial-intelligence/deep-learning/natural-language-processing-seq2seq-bleu.png)
 
 ***
 

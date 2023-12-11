@@ -72,10 +72,10 @@ Fortify
 
 Maven ｜ 初始页：http://localhost:8080/xss_0618/
 
-![XSS-Demo](/assets/images/cyber-security/code-audit/xss-env.png)
+![XSS-Demo](../../assets/images/cyber-security/code-audit/xss-env.png)
 
 - Hospital
 
 SpringBoot ｜ 初始页：localhost/index ｜ 数据库：isHospital（hospital + hospital1--）
 
-![Hospital](/assets/images/cyber-security/code-audit/hospital-env.png)
+![Hospital](../../assets/images/cyber-security/code-audit/hospital-env.png)

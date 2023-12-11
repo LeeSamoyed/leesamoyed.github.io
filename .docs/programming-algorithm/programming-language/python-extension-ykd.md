@@ -829,7 +829,7 @@ print('日期：' + targetText)
 
 浏览器和服务器请求机制
 
-![python-extension-ykd-crawler-basic](/assets/images/programming-algorithm/programming-language/python-extension-ykd-crawler-basic.png)
+![python-extension-ykd-crawler-basic](../../assets/images/programming-algorithm/programming-language/python-extension-ykd-crawler-basic.png)
 
 ### HTML和Chrome开发者工具
 

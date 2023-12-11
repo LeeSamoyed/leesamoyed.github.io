@@ -3,19 +3,19 @@
 === "目录"
 
     - 渗透测试
-        - [信息收集](/cyber-security/penetration-test/information-gathering)  
-        - [OWASP-Top10](/cyber-security/penetration-test/owasp-top10)  
-        - [CMS](/cyber-security/penetration-test/cms)  
-        - [靶场相关](/cyber-security/penetration-test/range-relevant)  
+        - [信息收集](penetration-test/information-gathering.md)  
+        - [OWASP-Top10](penetration-test/owasp-top10.md)  
+        - [CMS](penetration-test/cms.md)  
+        - [靶场相关](penetration-test/range-relevant.md)  
     - 代码审计
-        - [审计流程](/cyber-security/code-audit/audit-process)  
-        - [危险函数关键字](/cyber-security/code-audit/dangerous-function-keyword)  
+        - [审计流程](code-audit/audit-process.md)  
+        - [危险函数关键字](code-audit/dangerous-function-keyword.md)  
     - 爬虫
-        - [爬虫综述](/cyber-security/crawler/summarize)  
+        - [爬虫综述](crawler/summarize.md)  
     - 工具
-        - [抢占式服务器配置](/cyber-security/tools/preemptive-server-configuration)  
-        - [ECS代理池](/cyber-security/tools/ecs-proxypool)  
-        - [工具相关](/cyber-security/tools/tool-relevant) 
+        - [抢占式服务器配置](tools/preemptive-server-configuration.md)  
+        - [ECS代理池](tools/ecs-proxypool.md)  
+        - [工具相关](tools/tool-relevant.md) 
 
 === "资料"
 

@@ -22,7 +22,7 @@
 ### 神经元：
 神经元又可以称为感知器。下图中圆圈即是神经元。
 
-![concept-neurons](/assets/images/artificial-intelligence/deep-learning/concept-neurons.png)
+![concept-neurons](../../assets/images/artificial-intelligence/deep-learning/concept-neurons.png)
 
 神经网络主要工作在隐层元这一块。
 
@@ -31,7 +31,7 @@
 
 - 关于池化层，最初接触的时候我在想这不就是 ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059650803-eb3f3c92-eeb4-4a00-ad61-fe7648e61c9b.svg#crop=0&crop=0&crop=1&crop=1&height=23&id=CQnEs&originHeight=23&originWidth=104&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=104) 么，实际上如果读者有印象，最基础的那一张LeNet的结构框图上池化层的标注就是 ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059650855-bc2f263a-dbce-4deb-83de-aa89723af7f8.svg#crop=0&crop=0&crop=1&crop=1&height=23&id=xiAtC&originHeight=23&originWidth=104&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=104).回忆一下在图像处理中,我们会出于什么样的理由会去使用 ![](https://cdn.nlark.com/yuque/0/2021/svg/358780/1626059650840-ca7df22a-1c51-4060-a5ca-d456165c4550.svg#crop=0&crop=0&crop=1&crop=1&height=23&id=hOTRV&originHeight=23&originWidth=104&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=104) ,最直接的原因，我们需要一个更小尺寸的图像。或者我们需要不同尺度的信息，例如 SIFT里面就通过不断的下采样（插值算法）构建一个多尺度空间从而寻找不同尺度下的特征。
 
-![concept-maxpool](/assets/images/artificial-intelligence/deep-learning/concept-maxpool.png)
+![concept-maxpool](../../assets/images/artificial-intelligence/deep-learning/concept-maxpool.png)
 
 - 在深度学习，卷积神经网络中，我们使用池化层的原因也是同上（可以理解为换个说法）：
 
@@ -92,31 +92,31 @@ def forward(self, x):
 ## 人工神经网络和生物神经网络
 
 ### 生物神经网络
-![concept-artificial&biological-0](/assets/images/artificial-intelligence/deep-learning/concept-artificial&biological-0.png)
+![concept-artificial&biological-0](../../assets/images/artificial-intelligence/deep-learning/concept-artificial&biological-0.png)
 
 ### 人工神经网络
-![concept-artificial&biological-1](/assets/images/artificial-intelligence/deep-learning/concept-artificial&biological-1.png)
+![concept-artificial&biological-1](../../assets/images/artificial-intelligence/deep-learning/concept-artificial&biological-1.png)
 
 - 主要区别：不会自行产生
 
 - 概念:
     - 正向传播和误差反向传递（反向传播）
 
-    ![concept-artificial&biological-2](/assets/images/artificial-intelligence/deep-learning/concept-artificial&biological-2.png)
+    ![concept-artificial&biological-2](../../assets/images/artificial-intelligence/deep-learning/concept-artificial&biological-2.png)
 
     - 生物神经网络会通过刺激产生新的连接，而人工神经网络则是通过训练修正的过程
 
 ## 什么是神经网络
 
 ### 理解
-![concept-neural-networks-0](/assets/images/artificial-intelligence/deep-learning/concept-neural-networks-0.png)
+![concept-neural-networks-0](../../assets/images/artificial-intelligence/deep-learning/concept-neural-networks-0.png)
 
 ### 可视化神经网络
 - 计算机主要以01区分（以数字加工处理获得另一串数字，通过这样获得数字含有的意义）
 
-![concept-neural-networks-1](/assets/images/artificial-intelligence/deep-learning/concept-neural-networks-1.png)
+![concept-neural-networks-1](../../assets/images/artificial-intelligence/deep-learning/concept-neural-networks-1.png)
 
-![concept-neural-networks-2](/assets/images/artificial-intelligence/deep-learning/concept-neural-networks-2.png)
+![concept-neural-networks-2](../../assets/images/artificial-intelligence/deep-learning/concept-neural-networks-2.png)
 
 ### 具体
 - 大量数据进行学习和训练
@@ -179,17 +179,17 @@ def forward(self, x):
 3. 输出端（输出）
 4. 把黑盒理解为将一种代表特征变成另一种代表特征（黑盒开灯）
 
-![concept-black-box-0](/assets/images/artificial-intelligence/deep-learning/concept-black-box-0.png)
+![concept-black-box-0](../../assets/images/artificial-intelligence/deep-learning/concept-black-box-0.png)
 
 5. 举个例子：**（区域划分，代表特征，人类看不懂计算机能看懂）**
 
-![concept-black-box-1](/assets/images/artificial-intelligence/deep-learning/concept-black-box-1.png)
+![concept-black-box-1](../../assets/images/artificial-intelligence/deep-learning/concept-black-box-1.png)
 
 6. 黑盒开灯的理解：迁移学习
 
-![concept-black-box-2](/assets/images/artificial-intelligence/deep-learning/concept-black-box-2.png)
+![concept-black-box-2](../../assets/images/artificial-intelligence/deep-learning/concept-black-box-2.png)
 
-![concept-black-box-3](/assets/images/artificial-intelligence/deep-learning/concept-black-box-3.png)
+![concept-black-box-3](../../assets/images/artificial-intelligence/deep-learning/concept-black-box-3.png)
 
 ***
 

@@ -2,8 +2,8 @@
 
 ### RNN
 
-[RNN](/artificial-intelligence/deep-learning/open-source-library/)
+[RNN](open-source-library.md)
 
 ### LSTM
 
-[LSTM](/artificial-intelligence/deep-learning/open-source-library/)
+[LSTM](open-source-library.md)

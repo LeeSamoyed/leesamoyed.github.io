@@ -4,31 +4,31 @@
 
     - 研发
         - 数据库系统
-            - [MySQL是怎样运行的](/research-development-design/sql/how-mysql-work-understand-from-root)  
-            - [MySQL必知必会](/research-development-design/sql/sams-teach-yourself-sql-in-10-minutes)  
+            - [MySQL是怎样运行的](sql/how-mysql-work-understand-from-root.md)  
+            - [MySQL必知必会](sql/sams-teach-yourself-sql-in-10-minutes.md)  
         - 开发框架
-            - [框架综述](/research-development-design/development-framework/summarize) 
-            - [Gin](/research-development-design/development-framework/gin) 
+            - [框架综述](development-framework/summarize.md) 
+            - [Gin](development-framework/gin.md) 
         - 流量
-            - [Nginx](/research-development-design/flow/nginx)  
+            - [Nginx](flow/nginx.md)  
         - 测试
-            - [Testcase设计](/research-development-design/test/testcase-design)  
+            - [Testcase设计](test/testcase-design.md)  
     - 设计
         - 系统设计
-            - [**解耦**](/research-development-design/system-design/decoupling)  
-            - [**扩展性**](/research-development-design/system-design/extensibility)  
-            - [**模块化设计**](/research-development-design/system-design/modular-design)  
-            - [**健壮性**](/research-development-design/system-design/robustness)  
-            - [**简化操作**](/research-development-design/system-design/simplified-operation)  
+            - [**解耦**](system-design/decoupling.md)  
+            - [**扩展性**](system-design/extensibility.md)  
+            - [**模块化设计**](system-design/modular-design.md)  
+            - [**健壮性**](system-design/robustness.md)  
+            - [**简化操作**](system-design/simplified-operation.md)  
         - 需求分析与设计
-            - [**分析与设计**](/research-development-design/requirements-analysis-design/analysis-design)  
+            - [**分析与设计**](requirements-analysis-design/analysis-design.md)  
         - 业务逻辑
-            - [**请求的安全与健全**](/research-development-design/business-logic/soundness-and-security-of-requests)  
-            - [**唯一数据插入**](/research-development-design/business-logic/unique-insert)  
-            - [**标识位的利用**](/research-development-design/business-logic/flag-is-important)  
-            - [**算法的引入**](/research-development-design/business-logic/algorithm)  
+            - [**请求的安全与健全**](business-logic/soundness-and-security-of-requests.md)  
+            - [**唯一数据插入**](business-logic/unique-insert.md)  
+            - [**标识位的利用**](business-logic/flag-is-important.md)  
+            - [**算法的引入**](business-logic/algorithm.md)  
         - 设计模式
-            - [大话设计模式](/research-development-design/design-pattern/westward-design-patterns)  
+            - [大话设计模式](design-pattern/westward-design-patterns.md)  
 
 
 === "资料"

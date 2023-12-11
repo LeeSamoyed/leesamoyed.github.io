@@ -2,8 +2,8 @@
 
 ## 线性分类综述：
 
-![linear-classification-summarize-0.png](/assets/images/artificial-intelligence/machine-learning/linear-classification-summarize-0.png)
-![linear-classification-summarize-1.png](/assets/images/artificial-intelligence/machine-learning/linear-classification-summarize-1.png)
+![linear-classification-summarize-0.png](../../assets/images/artificial-intelligence/machine-learning/linear-classification-summarize-0.png)
+![linear-classification-summarize-1.png](../../assets/images/artificial-intelligence/machine-learning/linear-classification-summarize-1.png)
                                                
 
 
